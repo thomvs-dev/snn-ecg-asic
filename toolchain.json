@@ -1,0 +1,17 @@
+{
+  "reference_rtl_commit": "c6e7fee7040968e4cce95aa7d0394c6f039a247f",
+  "inspected_orfs_checkout_commit": "cab543eb3508039715a90f402a517852218b5e8f",
+  "physical_flow_image": "openroad/orfs@sha256:dd46c586ac071475bd54f32d6bc52bb6bba463304e133b3dbf0d49e825a79174",
+  "container_git_metadata": "not included; use image digest",
+  "container_openroad_version": "reports unknown; use image digest",
+  "container_yosys_version": "0.68+post, git UNKNOWN",
+  "container_klayout_version": "0.30.12",
+  "host": "Ubuntu 26.04 on WSL2",
+  "iverilog": "12.0",
+  "generic_synthesis_yosys": "0.52 fee39a3284c90249e1d9684cf6944ffbbcbb8f90",
+  "host_klayout": "0.30.0",
+  "platform": "sky130hd",
+  "timing_corner": "tt_025C_1v80",
+  "liberty_sha256_lf": "ec0e1067a35c8bf20b11e58d1e8ac53326067e4dac84a125cc1b917a3518d0d9",
+  "clock_period_ns": 40
+}

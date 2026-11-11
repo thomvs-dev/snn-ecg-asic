@@ -1,0 +1,8 @@
+dbu_per_um 1000
+die_dbu 0 0 609360 609360
+core_dbu 10120 10880 598920 598400
+total_instances 49322
+type CORE count 12044 area_dbu2 131727587200
+type CORE_WELLTAP count 4578 area_dbu2 5727993600
+type CORE_ANTENNACELL count 10 area_dbu2 25024000
+type CORE_SPACER count 32690 area_dbu2 208451171200

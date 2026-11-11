@@ -1,0 +1,4 @@
+Generated ASIC network and constant ROMs; original vendor sources unchanged.
+VCD info: dumpfile reports/core_first_beat.vcd opened for output.
+FATAL: tb/tb_core.sv:34: unknown result
+       Time: 11501000  Scope: tb_core.submit

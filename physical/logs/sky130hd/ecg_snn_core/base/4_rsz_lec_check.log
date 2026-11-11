@@ -1,0 +1,91 @@
+[2026-11-11 07:21:44.193] [miter_logger] [info] MiterStrategy::run starting
+[2026-11-11 07:21:44.201] [miter_logger] [info] Collecting POs for design 0: ecg_snn_core
+
+[2026-11-11 07:21:44.263] [miter_logger] [info] Collected 2669 PIs for design 0
+
+[2026-11-11 07:21:44.265] [miter_logger] [info] Collected 7321 POs for design 0
+
+[2026-11-11 07:21:44.272] [miter_logger] [info] design 0 PI summary by model/term (2669 total terminals, 9 unique rows):
+| Model                     | Term       | Count |
+|---------------------------|------------|-------|
+| sky130_fd_sc_hd__edfxtp_1 | Q          |  2048 |
+| sky130_fd_sc_hd__dfxtp_1  | Q          |   577 |
+| sky130_fd_sc_hd__conb_1   | HI         |    18 |
+| sky130_fd_sc_hd__conb_1   | LO         |    18 |
+| ecg_snn_core              | load_data  |     4 |
+| ecg_snn_core              | clk        |     1 |
+| ecg_snn_core              | load_valid |     1 |
+| ecg_snn_core              | reset      |     1 |
+| ecg_snn_core              | start      |     1 |
+
+[2026-11-11 07:21:44.282] [miter_logger] [info] design 0 PO summary by model/term (7321 total terminals, 12 unique rows):
+| Model                     | Term             | Count |
+|---------------------------|------------------|-------|
+| sky130_fd_sc_hd__edfxtp_1 | CLK              |  2048 |
+| sky130_fd_sc_hd__edfxtp_1 | D                |  2048 |
+| sky130_fd_sc_hd__edfxtp_1 | DE               |  2048 |
+| sky130_fd_sc_hd__dfxtp_1  | CLK              |   577 |
+| sky130_fd_sc_hd__dfxtp_1  | D                |   577 |
+| ecg_snn_core              | inference_cycles |    16 |
+| ecg_snn_core              | result_class     |     2 |
+| ecg_snn_core              | busy             |     1 |
+| ecg_snn_core              | done             |     1 |
+| ecg_snn_core              | input_complete   |     1 |
+| ecg_snn_core              | load_ready       |     1 |
+| ecg_snn_core              | no_spike         |     1 |
+
+[2026-11-11 07:21:44.290] [miter_logger] [info] Collecting POs for design 1: ecg_snn_core
+
+[2026-11-11 07:21:44.347] [miter_logger] [info] size of common inputs: 2633
+[2026-11-11 07:21:44.353] [miter_logger] [info] size of diff0 inputs: 0
+[2026-11-11 07:21:44.359] [miter_logger] [info] size of diff1 inputs: 0
+[2026-11-11 07:21:44.366] [miter_logger] [info] Collected 2669 PIs for design 1
+
+[2026-11-11 07:21:44.374] [miter_logger] [info] Collected 7321 POs for design 1
+
+[2026-11-11 07:21:44.381] [miter_logger] [info] design 1 PI summary by model/term (2669 total terminals, 9 unique rows):
+| Model                     | Term       | Count |
+|---------------------------|------------|-------|
+| sky130_fd_sc_hd__edfxtp_1 | Q          |  2048 |
+| sky130_fd_sc_hd__dfxtp_1  | Q          |   577 |
+| sky130_fd_sc_hd__conb_1   | HI         |    18 |
+| sky130_fd_sc_hd__conb_1   | LO         |    18 |
+| ecg_snn_core              | load_data  |     4 |
+| ecg_snn_core              | clk        |     1 |
+| ecg_snn_core              | load_valid |     1 |
+| ecg_snn_core              | reset      |     1 |
+| ecg_snn_core              | start      |     1 |
+
+[2026-11-11 07:21:44.388] [miter_logger] [info] design 1 PO summary by model/term (7321 total terminals, 12 unique rows):
+| Model                     | Term             | Count |
+|---------------------------|------------------|-------|
+| sky130_fd_sc_hd__edfxtp_1 | CLK              |  2048 |
+| sky130_fd_sc_hd__edfxtp_1 | D                |  2048 |
+| sky130_fd_sc_hd__edfxtp_1 | DE               |  2048 |
+| sky130_fd_sc_hd__dfxtp_1  | CLK              |   577 |
+| sky130_fd_sc_hd__dfxtp_1  | D                |   577 |
+| ecg_snn_core              | inference_cycles |    16 |
+| ecg_snn_core              | result_class     |     2 |
+| ecg_snn_core              | busy             |     1 |
+| ecg_snn_core              | done             |     1 |
+| ecg_snn_core              | input_complete   |     1 |
+| ecg_snn_core              | load_ready       |     1 |
+| ecg_snn_core              | no_spike         |     1 |
+
+[2026-11-11 07:21:44.390] [miter_logger] [info] normalizeInputs: starting
+[2026-11-11 07:21:44.406] [miter_logger] [info] size of common inputs: 2669
+[2026-11-11 07:21:44.412] [miter_logger] [info] size of diff0 inputs: 0
+[2026-11-11 07:21:44.416] [miter_logger] [info] size of diff1 inputs: 0
+[2026-11-11 07:21:44.419] [miter_logger] [info] normalizeOutputs: starting
+[2026-11-11 07:21:44.438] [miter_logger] [info] size of common outputs: 7321
+[2026-11-11 07:21:44.445] [miter_logger] [info] size of diff0 outputs: 0
+[2026-11-11 07:21:44.447] [miter_logger] [info] size of diff1 outputs: 0
+[2026-11-11 07:21:44.457] [miter_logger] [info] size of PIs in circuit 0: 2669
+[2026-11-11 07:21:44.465] [miter_logger] [info] size of PIs in circuit 1: 2669
+[2026-11-11 07:21:44.473] [miter_logger] [info] size of POs in circuit 0: 7321
+[2026-11-11 07:21:44.479] [miter_logger] [info] size of POs in circuit 1: 7321
+[2026-11-11 07:21:44.687] [miter_logger] [info] Building miter expression
+[2026-11-11 07:21:44.695] [miter_logger] [info] Finished building miter expression
+[2026-11-11 07:21:44.702] [miter_logger] [info] Starting solver
+[2026-11-11 07:21:44.705] [miter_logger] [info] SAT solver finished: UNSAT
+[2026-11-11 07:21:44.706] [miter_logger] [info] Circuits are IDENTICAL

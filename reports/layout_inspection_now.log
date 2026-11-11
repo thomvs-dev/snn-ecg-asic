@@ -1,0 +1,8 @@
+{"gds": "/work/physical/results/sky130hd/ecg_snn_core/base/6_final.gds", "top": "ecg_snn_core", "dbu_um": 0.0009999999999999998, "bbox_um": [0.0, 0.0, 609.3599999999999, 609.3599999999999], "top_cells": ["ecg_snn_core"], "cell_definitions": 120, "layers": 40}
+OPENROAD: /OpenROAD-flow-scripts/tools/OpenROAD
+OpenROAD unknown 
+Features included (+) or not (-): -GPU +GUI
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+Annotated 40853 pin activities.
+Annotated 40853 pin activities.

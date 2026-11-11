@@ -1,0 +1,52 @@
+{
+  "vectors": 500,
+  "class_counts": {
+    "0": 95,
+    "1": 0,
+    "2": 405,
+    "3": 0
+  },
+  "timeout_count": 0,
+  "cycles": {
+    "min": 19,
+    "max": 15017,
+    "mean": 281.628
+  },
+  "target_clock_ns": 40.0,
+  "latency_us": {
+    "min": 0.76,
+    "max": 600.68,
+    "mean": 11.26512
+  },
+  "accuracy": null,
+  "f1": null,
+  "labels_available": false,
+  "rtl": {
+    "tested": 500,
+    "mismatches": 0,
+    "complete": true,
+    "simulation_log": "PASS vectors=500 mismatches=0 protocol_checks=pass",
+    "directed_protocol_log": "PASS protocol: timeout, excess load, period zero, consecutive repeat, reset during RUN, stale start"
+  },
+  "generic_gate": {
+    "tested": 500,
+    "mismatches": 0,
+    "complete": true,
+    "simulation_log": "PASS vectors=500 mismatches=0 protocol_checks=pass",
+    "directed_protocol_log": "PASS protocol: timeout, excess load, period zero, consecutive repeat, reset during RUN, stale start"
+  },
+  "mapped_gate": {
+    "tested": 500,
+    "mismatches": 0,
+    "complete": true,
+    "simulation_log": "PASS vectors=500 mismatches=0 protocol_checks=pass",
+    "directed_protocol_log": "PASS protocol: timeout, excess load, period zero, consecutive repeat, reset during RUN, stale start"
+  },
+  "final_gate": {
+    "tested": 500,
+    "mismatches": 0,
+    "complete": true,
+    "simulation_log": "PASS vectors=500 mismatches=0 protocol_checks=pass",
+    "directed_protocol_log": "PASS protocol: timeout, excess load, period zero, consecutive repeat, reset during RUN, stale start"
+  }
+}

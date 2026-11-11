@@ -1,0 +1,6 @@
+OPENROAD: /OpenROAD-flow-scripts/tools/OpenROAD
+unknown 
+Yosys 0.68+post (git sha1 UNKNOWN, Release, GNU /usr/local/bin/wrapped-cc/g++ 15.2.0)
+KLayout 0.30.12
+fatal: not a git repository (or any of the parent directories): .git
+Container omits git metadata; reproduce by image digest.

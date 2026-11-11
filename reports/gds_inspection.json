@@ -1,0 +1,16 @@
+{
+  "gds": "/work/physical/results/sky130hd/ecg_snn_core/base/6_final.gds",
+  "top": "ecg_snn_core",
+  "dbu_um": 0.0009999999999999998,
+  "bbox_um": [
+    0.0,
+    0.0,
+    609.3599999999999,
+    609.3599999999999
+  ],
+  "top_cells": [
+    "ecg_snn_core"
+  ],
+  "cell_definitions": 120,
+  "layers": 40
+}

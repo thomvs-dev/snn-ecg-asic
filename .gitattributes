@@ -1,0 +1,19 @@
+# Source and docs: stored with LF line endings
+* text=auto eol=lf
+*.sh text eol=lf
+
+# Binary layout, database and image files
+*.gds binary
+*.odb binary
+*.png binary
+*.webp binary
+*.zip binary
+
+# Large generated evidence: store bytes verbatim (keeps SHA-256 hashes valid), no diffs
+*.lvsdb -text -diff
+*.spef -text -diff
+*.def -text -diff
+*.vcd -text -diff
+*.cdl -text -diff
+*.cir -text -diff
+physical/results/** -text -diff

@@ -1,0 +1,11 @@
+Final post-route netlist directed protocol test
+Executed: 2026-11-11, Icarus Verilog 12.0 on Ubuntu 24.04.5 LTS (separate Linux host, not the WSL2 host).
+Commands (identical to scripts/verify_final.sh):
+  iverilog -g2012 -s tb_protocol -o build/final_protocol physical/results/sky130hd/ecg_snn_core/base/6_final.v build/sky130hd_sim.v tb/tb_protocol.sv
+  vvp build/final_protocol
+Input SHA-256 (match the D:\snn copies):
+dd393c0662ebb950b9d2ef57ed6819de6a29fba049f7f2ff3895bfac8d080751  physical/results/sky130hd/ecg_snn_core/base/6_final.v
+5064a89685304349c03942838acb0cb946770a8e742d10750000072a1af626f4  build/sky130hd_sim.v
+cd5abeb63ab08e8fe52fe5e2ab6c53281ea62251b9ceac9dbba24665559e2880  tb/tb_protocol.sv
+Result: PASS protocol: timeout, excess load, period zero, consecutive repeat, reset during RUN, stale start
+Zero-delay functional simulation; no SDF back-annotation.

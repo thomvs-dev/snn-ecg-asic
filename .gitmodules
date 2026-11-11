@@ -1,0 +1,3 @@
+[submodule "vendor/HDL-SpikingNet-ECG"]
+	path = vendor/HDL-SpikingNet-ECG
+	url = https://github.com/alirezaamir/HDL-SpikingNet-ECG.git

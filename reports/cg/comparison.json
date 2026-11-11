@@ -1,0 +1,42 @@
+{
+  "base": {
+    "setup_ws_ns": 29.8642,
+    "hold_ws_ns": 0.0465724,
+    "setup_tns_ns": 0,
+    "hold_tns_ns": 0,
+    "stdcell_area_um2": 137481,
+    "stdcell_count": 16632,
+    "utilization": 0.397421,
+    "clock_buffers": 444,
+    "drc_violations": 0,
+    "lvs": "match",
+    "antenna_net_violations": 0,
+    "activity_unannotated_pins": null,
+    "activity_window_us": null,
+    "activity_power_mW": null,
+    "idle_power_mW": null,
+    "idle_clock_group_mW": null,
+    "leakage_nW": null,
+    "final_netlist_500_vectors": "PASS"
+  },
+  "cg": {
+    "setup_ws_ns": null,
+    "hold_ws_ns": null,
+    "setup_tns_ns": null,
+    "hold_tns_ns": null,
+    "stdcell_area_um2": null,
+    "stdcell_count": null,
+    "utilization": null,
+    "clock_buffers": null,
+    "drc_violations": null,
+    "lvs": null,
+    "antenna_net_violations": null,
+    "activity_unannotated_pins": null,
+    "activity_window_us": null,
+    "activity_power_mW": null,
+    "idle_power_mW": null,
+    "idle_clock_group_mW": null,
+    "leakage_nW": null,
+    "final_netlist_500_vectors": null
+  }
+}

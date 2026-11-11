@@ -1,0 +1,4 @@
+VCD info: dumpfile ../../reports/baseline_first_beat.vcd opened for output.
+          0 : 2,0,	               27000
+27000.000000
+build/baseline_wave.v:81: $finish called at 27000 (1ns)

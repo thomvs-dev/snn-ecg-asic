@@ -1,0 +1,46 @@
+OPENROAD: /OpenROAD-flow-scripts/tools/OpenROAD
+cp /work/flow/constraint.sdc /work/physical/results/sky130hd/ecg_snn_core/base/1_2_yosys.sdc
+touch -r /work/flow/constraint.sdc /work/physical/results/sky130hd/ecg_snn_core/base/1_2_yosys.sdc
+No elapsed time found in /work/physical/logs/sky130hd/ecg_snn_core/base/6_drc.log
+/work/physical/logs/sky130hd/ecg_snn_core/base
+Log                    Ext     Elapsed      CPU     CPU/ Peak Mem sha1sum
+                                     s        s  Elapsed       MB [0:10)
+1_1_yosys_canonicalize .rtlil        3        1     0.24       82 18addf03f6
+1_2_yosys              .v           24       23     0.95      162 e7f31b0971
+1_2_yosys              .sdc                                       79db772d5d
+1_synth                .odb          3        1     0.25      137 da54c2847a
+1_synth                .sdc                                       9f86335f39
+2_1_floorplan          .odb          2        2     0.70      179 f3ba09b98a
+2_1_floorplan          .sdc                                       9f86335f39
+2_2_floorplan_macro    .odb          0        0     0.42      119 f3ba09b98a
+2_2_floorplan_macro    .sdc                                       9f86335f39
+2_3_floorplan_tapcell  .odb          0        0     0.38      121 281a6440eb
+2_3_floorplan_tapcell  .sdc                                       9f86335f39
+2_4_floorplan_pdn      .odb          0        1     0.55      146 bb3b8b2864
+2_4_floorplan_pdn      .sdc                                       9f86335f39
+3_1_place_gp_skip_io   .odb          2        3     1.29      150 2e40360474
+3_1_place_gp_skip_io   .sdc                                       9f86335f39
+3_2_place_iop          .odb          1        0     0.28      125 f4b26acc9f
+3_2_place_iop          .sdc                                       9f86335f39
+3_3_place_gp           .odb         13       20     1.48      435 39db925437
+3_3_place_gp           .sdc                                       9f86335f39
+3_4_place_resized      .odb          6        4     0.64      271 39db925437
+3_4_place_resized      .sdc                                       9f86335f39
+3_5_place_dp           .odb          7        7     0.88      283 76f820f08e
+3_5_place_dp           .sdc                                       9f86335f39
+4_1_cts                .odb          5        2     0.39       78 aa47385b58
+4_1_cts                .sdc                                       a7e554d401
+4_rsz_lec                            5        2     0.39       78 N/A
+5_1_grt                .odb         69      213     3.05      446 5202281a90
+5_1_grt                .sdc                                       a7e554d401
+5_2_route              .odb        692     2344     3.38     1152 85d2082084
+5_2_route              .sdc                                       a7e554d401
+5_3_fillcell           .odb          5        1     0.17      191 0778118126
+5_3_fillcell           .sdc                                       a7e554d401
+6_1_fill               .odb          3        1     0.14      155 0778118126
+6_1_fill               .sdc                                       a7e554d401
+6_1_merge                            7        3     0.39      496 N/A
+6_final_lec            .v            4        3     0.63      130 82de582581
+6_report                             4        3     0.63      130 N/A
+write_binary_libs                    5        1     0.14       80 N/A
+Total                              851     2630     3.04     1152

@@ -1,0 +1,2 @@
+PASS protocol: timeout, excess load, period zero, consecutive repeat, reset during RUN, stale start
+tb/tb_protocol.sv:48: $finish called at 2460021000 (1ps)

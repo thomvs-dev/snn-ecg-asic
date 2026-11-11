@@ -1,0 +1,3 @@
+VCD info: dumpfile reports/mapped_activity.vcd opened for output.
+PASS vectors=20 mismatches=0 protocol_checks=pass
+tb/tb_core.sv:73: $finish called at 628861000 (1ps)

@@ -1,0 +1,37 @@
+Clock-gated variant: pre-ORFS checks (2026-11-11), run on Ubuntu 24.04.5 LTS,
+Icarus Verilog 12.0, Yosys 0.33. These are NOT the ORFS synthesis.
+
+1. RTL (rtl_cg + tb/sky130_icg_model.v), via scripts/verify_cg.sh:
+   reports/cg/rtl_simulation.log  PASS vectors=500 mismatches=0 protocol_checks=pass
+   reports/cg/rtl_protocol.log    PASS protocol: timeout, excess load, period zero, consecutive repeat, reset during RUN, stale start
+   reports/cg/rtl_idle.log        PASS 100 us idle window, clock running, full valid input buffer, start low
+   rtl_predictions.csv is byte-identical to reports/baseline.csv.
+2. Yosys 0.33 flat synthesis mapped to the SKY130 TT Liberty
+   (synth; dfflibmap; abc): yosys033_mapped.v, cg_synth_check.log
+   sky130_fd_sc_hd__dfxtp_1     2624
+   sky130_fd_sc_hd__dlclkp_1       2
+   Gate simulation (build/sky130hd_sim.v + tb/sky130_icg_model.v):
+   cg_gate_simulation.log  PASS vectors=500 mismatches=0 protocol_checks=pass
+   cg_gate_protocol.log    PASS protocol: timeout, excess load, period zero, consecutive repeat, reset during RUN, stale start
+   cg_gate_predictions.csv is byte-identical to reports/baseline.csv.
+3. Negative control: enabling the network clock only in RUN (omitting the PREP
+   reset edge) fails tb_core at vector 0 (got 3/1/30013, expected 2/0/24).
+4. Idle window, 100 us, clock running: gated clock nets 0 rising edges (RTL);
+   in the mapped netlist only clk and the two ICG CLK inputs toggle.
+Zero-delay functional simulation; no timing, no power numbers.
+Input SHA-256:
+82e4a674a26be9c3257200e243ac2704d41a582cb876abf7215b1ee07bb4bb8b  rtl_cg/arbitrator.v
+e6dc493070e32d01477bdc5d84509257e15fa7a512b93fc1b80a59fb2b0aa825  rtl_cg/clock_gate.v
+ffa214d39b20d805022a3979579f4b5d094a91a862c7c5dbed06b36be1b6772f  rtl_cg/ecg_snn_core.v
+852d1d9d29c35176a62222b0c8004619bfb1fc2f8c2112e1defef5b0e1df4952  rtl_cg/handler_block.v
+3909dcb631458c1ab122893783a55a5940787f5136f6a08f39dfe0fe376557ef  rtl_cg/hidden_controler.v
+15f913148610e1ed55cd48f48bf89784d542b06bc27dc45b40264e01aad4e160  rtl_cg/hidden_neuron.v
+84f2a06d8aeafaf1dbfee92312d55d98ca4af3a928ccb733bd50ffc1d00e1a17  rtl_cg/input_neuron.v
+ae34e99ab215552a72f1b9f6f29de6f62cffec7777646f97a26b743befbc1291  rtl_cg/main_counter.v
+485cc69526e284703f72ef1c5362c042097eadf37175c72ffcdca47fadac67e5  rtl_cg/output_controller.v
+c4998c76795570f8f1176eeab3853987582f3f6756223ca707b931202df2ad77  rtl_cg/output_neuron.v
+24485d83817bf029745e6adf0b8c4559b3e90b42ba37b1d7f70ea36aeb1a0fe4  rtl_cg/snn_network.v
+33ab14da4e4a350359ed72cdad6ba845fd8edf8b6ad4c63fa19d69cc7f061769  tb/sky130_icg_model.v
+d5a45314084cf2d0efb8c8735a8fb12fc5d0156b8a50c1c7097a20261aa98f34  tb/tb_core.sv
+cd5abeb63ab08e8fe52fe5e2ab6c53281ea62251b9ceac9dbba24665559e2880  tb/tb_protocol.sv
+4090cb795b23d0de257b594e2fb77f9625efaab20f52169dc728ca501bf96f70  tb/tb_idle_vcd.sv

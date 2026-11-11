@@ -1,0 +1,50 @@
+{
+  "gds": "physical/results/sky130hd/ecg_snn_core/base/6_final.gds",
+  "gds_modified": false,
+  "top_cell": "ecg_snn_core",
+  "die_um": [
+    0.0,
+    0.0,
+    609.3599999999999,
+    609.3599999999999
+  ],
+  "full": {
+    "file": "layout_full_readable.png",
+    "box_um": [
+      0.0,
+      0.0,
+      609.3599999999999,
+      609.3599999999999
+    ],
+    "layers": [
+      "met1",
+      "met2",
+      "met3",
+      "met4 (PDN)",
+      "met5 (PDN)"
+    ]
+  },
+  "closeup": {
+    "file": "layout_closeup_readable.png",
+    "box_um": [
+      292.67999999999995,
+      296.48,
+      316.67999999999995,
+      312.48
+    ],
+    "layers": [
+      "nwell",
+      "diff",
+      "tap",
+      "poly",
+      "licon",
+      "li1",
+      "mcon",
+      "met1",
+      "via",
+      "met2",
+      "prBoundary"
+    ]
+  },
+  "renderer": "KLayout Python module 0.30.13"
+}

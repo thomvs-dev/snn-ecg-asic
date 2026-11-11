@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1150" height="540" viewBox="0 0 1150 540">
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="#64748b"/></marker></defs>
+<rect width="1150" height="540" fill="#f8fafc"/>
+<rect x="30" y="100" width="180" height="100" rx="8" fill="#e0f2fe" stroke="#334155"/>
+<text x="120.0" y="124" text-anchor="middle" font-family="Arial" font-size="15" fill="#0f172a">Host preprocessing</text>
+<text x="120.0" y="148" text-anchor="middle" font-family="Arial" font-size="15" fill="#0f172a">off chip</text>
+<text x="120.0" y="172" text-anchor="middle" font-family="Arial" font-size="15" fill="#0f172a">256 four-bit periods</text>
+<rect x="250" y="100" width="190" height="100" rx="8" fill="#e0f2fe" stroke="#334155"/>
+<text x="345.0" y="124" text-anchor="middle" font-family="Arial" font-size="15" fill="#0f172a">Load / start interface</text>
+<text x="345.0" y="148" text-anchor="middle" font-family="Arial" font-size="15" fill="#0f172a">1024-bit period storage</text>
+<text x="345.0" y="172" text-anchor="middle" font-family="Arial" font-size="15" fill="#0f172a">ready, busy, done</text>
+<rect x="480" y="100" width="180" height="100" rx="8" fill="#e0f2fe" stroke="#334155"/>
+<text x="570.0" y="124" text-anchor="middle" font-family="Arial" font-size="15" fill="#0f172a">256 spike encoders</text>
+<text x="570.0" y="148" text-anchor="middle" font-family="Arial" font-size="15" fill="#0f172a">2501-clock timer</text>
+<text x="570.0" y="172" text-anchor="middle" font-family="Arial" font-size="15" fill="#0f172a">pending spike bits</text>
+<rect x="700" y="100" width="180" height="100" rx="8" fill="#e0f2fe" stroke="#334155"/>
+<text x="790.0" y="124" text-anchor="middle" font-family="Arial" font-size="15" fill="#0f172a">Priority arbitration</text>
+<text x="790.0" y="148" text-anchor="middle" font-family="Arial" font-size="15" fill="#0f172a">lowest index first</text>
+<text x="790.0" y="172" text-anchor="middle" font-family="Arial" font-size="15" fill="#0f172a">8-bit input address</text>
+<rect x="920" y="100" width="190" height="100" rx="8" fill="#e0f2fe" stroke="#334155"/>
+<text x="1015.0" y="124" text-anchor="middle" font-family="Arial" font-size="15" fill="#0f172a">8 hidden IF neurons</text>
+<text x="1015.0" y="148" text-anchor="middle" font-family="Arial" font-size="15" fill="#0f172a">unsigned 11-bit state</text>
+<text x="1015.0" y="172" text-anchor="middle" font-family="Arial" font-size="15" fill="#0f172a">fire when &gt; 320</text>
+<rect x="700" y="310" width="180" height="100" rx="8" fill="#e0f2fe" stroke="#334155"/>
+<text x="790.0" y="334" text-anchor="middle" font-family="Arial" font-size="15" fill="#0f172a">6 output IF neurons</text>
+<text x="790.0" y="358" text-anchor="middle" font-family="Arial" font-size="15" fill="#0f172a">unsigned 11-bit state</text>
+<text x="790.0" y="382" text-anchor="middle" font-family="Arial" font-size="15" fill="#0f172a">fire when &gt; 112</text>
+<rect x="480" y="310" width="180" height="100" rx="8" fill="#e0f2fe" stroke="#334155"/>
+<text x="570.0" y="334" text-anchor="middle" font-family="Arial" font-size="15" fill="#0f172a">Class / timeout</text>
+<text x="570.0" y="358" text-anchor="middle" font-family="Arial" font-size="15" fill="#0f172a">first spike wins</text>
+<text x="570.0" y="382" text-anchor="middle" font-family="Arial" font-size="15" fill="#0f172a">12-tick timeout</text>
+<rect x="250" y="310" width="190" height="100" rx="8" fill="#e0f2fe" stroke="#334155"/>
+<text x="345.0" y="334" text-anchor="middle" font-family="Arial" font-size="15" fill="#0f172a">Latched result</text>
+<text x="345.0" y="358" text-anchor="middle" font-family="Arial" font-size="15" fill="#0f172a">numeric class 0/1/2</text>
+<text x="345.0" y="382" text-anchor="middle" font-family="Arial" font-size="15" fill="#0f172a">no_spike, cycles</text>
+<rect x="920" y="20" width="190" height="55" rx="8" fill="#fef3c7" stroke="#334155"/>
+<text x="1015.0" y="44" text-anchor="middle" font-family="Arial" font-size="15" fill="#0f172a">8 x 256 x 8-bit</text>
+<text x="1015.0" y="68" text-anchor="middle" font-family="Arial" font-size="15" fill="#0f172a">constant weight ROM</text>
+<rect x="700" y="440" width="180" height="55" rx="8" fill="#fef3c7" stroke="#334155"/>
+<text x="790.0" y="464" text-anchor="middle" font-family="Arial" font-size="15" fill="#0f172a">6 x 8 x 8-bit</text>
+<text x="790.0" y="488" text-anchor="middle" font-family="Arial" font-size="15" fill="#0f172a">constant weight ROM</text>
+<path d="M210,150 H250" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#a)"/>
+<path d="M440,150 H480" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#a)"/>
+<path d="M660,150 H700" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#a)"/>
+<path d="M880,150 H920" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#a)"/>
+<path d="M1015,75 V100" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#a)"/>
+<path d="M1015,200 V360 H880" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#a)"/>
+<path d="M700,360 H660" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#a)"/>
+<path d="M480,360 H440" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#a)"/>
+<path d="M790,440 V410" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#a)"/>
+<polygon points="250,150 240,145 240,155" fill="#64748b"/>
+<polygon points="480,150 470,145 470,155" fill="#64748b"/>
+<polygon points="700,150 690,145 690,155" fill="#64748b"/>
+<polygon points="920,150 910,145 910,155" fill="#64748b"/>
+<polygon points="1015,100 1010,90 1020,90" fill="#64748b"/>
+<polygon points="880,360 890,355 890,365" fill="#64748b"/>
+<polygon points="660,360 670,355 670,365" fill="#64748b"/>
+<polygon points="440,360 450,355 450,365" fill="#64748b"/>
+<polygon points="790,410 785,420 795,420" fill="#64748b"/>
+<text x="790" y="270" font-family="Arial" font-size="14" fill="#334155">hidden-spike arbitration</text>
+<text x="30" y="525" font-family="Arial" font-size="15" fill="#334155">Synchronous inference core. Training, ECG acquisition, and preprocessing remain off chip.</text></svg>

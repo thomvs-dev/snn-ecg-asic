@@ -1,0 +1,100 @@
+{
+  "ROM_hid0": {
+    "count": 256,
+    "min": 0,
+    "max": 27,
+    "zero_count": 106,
+    "unique": 24
+  },
+  "ROM_hid1": {
+    "count": 256,
+    "min": 0,
+    "max": 26,
+    "zero_count": 106,
+    "unique": 22
+  },
+  "ROM_hid2": {
+    "count": 256,
+    "min": 0,
+    "max": 135,
+    "zero_count": 190,
+    "unique": 26
+  },
+  "ROM_hid3": {
+    "count": 256,
+    "min": 0,
+    "max": 135,
+    "zero_count": 190,
+    "unique": 27
+  },
+  "ROM_hid4": {
+    "count": 256,
+    "min": 0,
+    "max": 26,
+    "zero_count": 106,
+    "unique": 22
+  },
+  "ROM_hid5": {
+    "count": 256,
+    "min": 0,
+    "max": 27,
+    "zero_count": 106,
+    "unique": 23
+  },
+  "ROM_hid6": {
+    "count": 256,
+    "min": 0,
+    "max": 29,
+    "zero_count": 106,
+    "unique": 25
+  },
+  "ROM_hid7": {
+    "count": 256,
+    "min": 0,
+    "max": 136,
+    "zero_count": 190,
+    "unique": 26
+  },
+  "ROM_out0": {
+    "count": 8,
+    "min": 3,
+    "max": 55,
+    "zero_count": 0,
+    "unique": 8
+  },
+  "ROM_out1": {
+    "count": 8,
+    "min": 10,
+    "max": 22,
+    "zero_count": 0,
+    "unique": 7
+  },
+  "ROM_out2": {
+    "count": 8,
+    "min": 8,
+    "max": 23,
+    "zero_count": 0,
+    "unique": 7
+  },
+  "ROM_out3": {
+    "count": 8,
+    "min": 9,
+    "max": 22,
+    "zero_count": 0,
+    "unique": 8
+  },
+  "ROM_out4": {
+    "count": 8,
+    "min": 11,
+    "max": 20,
+    "zero_count": 0,
+    "unique": 6
+  },
+  "ROM_out5": {
+    "count": 8,
+    "min": 7,
+    "max": 96,
+    "zero_count": 0,
+    "unique": 8
+  }
+}

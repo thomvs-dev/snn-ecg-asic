@@ -1,0 +1,17 @@
+warning: Some design elements have no explicit time unit and/or
+       : time precision. This may cause confusing timing results.
+       : Affected design elements are:
+       :   -- module IF_neuron_hidden declared here: rtl/hidden_neuron.v:2133
+       :   -- module IF_neuron_out declared here: rtl/output_neuron.v:114
+       :   -- module ROMFile_hidden declared here: rtl/hidden_neuron.v:48
+       :   -- module ROMFile_out declared here: rtl/output_neuron.v:35
+       :   -- module arbitrator declared here: rtl/arbitrator.v:2
+       :   -- module ecg_snn_core declared here: rtl/ecg_snn_core.v:2
+       :   -- module handler_block declared here: rtl/handler_block.v:2
+       :   -- module hidden_controler declared here: rtl/hidden_controler.v:2
+       :   -- module hidden_neuron declared here: rtl/hidden_neuron.v:2
+       :   -- module input_neuron declared here: rtl/input_neuron.v:2
+       :   -- module main_counter declared here: rtl/main_counter.v:2
+       :   -- module output_controller declared here: rtl/output_controller.v:2
+       :   -- module output_neuron declared here: rtl/output_neuron.v:2
+       :   -- module snn_network declared here: rtl/snn_network.v:2

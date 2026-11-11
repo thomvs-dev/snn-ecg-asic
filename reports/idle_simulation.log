@@ -1,0 +1,3 @@
+VCD info: dumpfile reports/idle_activity.vcd opened for output.
+PASS 100 us idle window, clock running, full valid input buffer, start low
+tb/tb_idle.sv:23: $finish called at 110560000 (1ps)

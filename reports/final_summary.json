@@ -1,0 +1,191 @@
+{
+  "functional": {
+    "vectors": 500,
+    "class_counts": {
+      "0": 95,
+      "1": 0,
+      "2": 405,
+      "3": 0
+    },
+    "timeout_count": 0,
+    "cycles": {
+      "min": 19,
+      "max": 15017,
+      "mean": 281.628
+    },
+    "target_clock_ns": 40.0,
+    "latency_us": {
+      "min": 0.76,
+      "max": 600.68,
+      "mean": 11.26512
+    },
+    "accuracy": null,
+    "f1": null,
+    "labels_available": false,
+    "rtl": {
+      "tested": 500,
+      "mismatches": 0,
+      "complete": true,
+      "simulation_log": "PASS vectors=500 mismatches=0 protocol_checks=pass",
+      "directed_protocol_log": "PASS protocol: timeout, excess load, period zero, consecutive repeat, reset during RUN, stale start"
+    },
+    "generic_gate": {
+      "tested": 500,
+      "mismatches": 0,
+      "complete": true,
+      "simulation_log": "PASS vectors=500 mismatches=0 protocol_checks=pass",
+      "directed_protocol_log": "PASS protocol: timeout, excess load, period zero, consecutive repeat, reset during RUN, stale start"
+    },
+    "mapped_gate": {
+      "tested": 500,
+      "mismatches": 0,
+      "complete": true,
+      "simulation_log": "PASS vectors=500 mismatches=0 protocol_checks=pass",
+      "directed_protocol_log": "PASS protocol: timeout, excess load, period zero, consecutive repeat, reset during RUN, stale start"
+    },
+    "final_gate": {
+      "tested": 500,
+      "mismatches": 0,
+      "complete": true,
+      "simulation_log": "PASS vectors=500 mismatches=0 protocol_checks=pass",
+      "directed_protocol_log": "PASS protocol: timeout, excess load, period zero, consecutive repeat, reset during RUN, stale start"
+    }
+  },
+  "physical": {
+    "timing_corner": "sky130_fd_sc_hd tt_025C_1v80, OpenRCX extracted parasitics",
+    "clock_period_ns": 40.0,
+    "setup_ws_ns": 29.8642,
+    "setup_tns_ns": 0,
+    "hold_ws_ns": 0.0465724,
+    "hold_tns_ns": 0,
+    "clock_uncertainty_ns_in_slack": 0.4,
+    "sta_fmax_mhz_single_corner": 98.6605,
+    "max_slew_violations": 0,
+    "max_cap_violations": 0,
+    "max_fanout_violations": 0,
+    "clock_skew_setup_ns": 0.441623,
+    "die_um": [
+      609.36,
+      609.36
+    ],
+    "core_um": [
+      588.8,
+      587.52
+    ],
+    "stdcell_count_excl_fill": 16632,
+    "stdcell_area_um2_excl_fill": 137480.6048,
+    "utilization_excl_fill": 0.39742115162037045,
+    "cells_by_type": {
+      "CORE": {
+        "count": 12044,
+        "area_um2": 131727.5872
+      },
+      "CORE_WELLTAP": {
+        "count": 4578,
+        "area_um2": 5727.9936
+      },
+      "CORE_ANTENNACELL": {
+        "count": 10,
+        "area_um2": 25.024
+      },
+      "CORE_SPACER": {
+        "count": 32690,
+        "area_um2": 208451.1712
+      }
+    },
+    "total_instances_incl_fill": 49322,
+    "sequential_cells": 2625,
+    "clock_buffers": 444,
+    "flow_warnings": 0,
+    "flow_errors": 0,
+    "detailed_route_final_violations": 0,
+    "antenna": {
+      "global_route_initial_violations": 23,
+      "global_route_jumpers_and_nets": [
+        50,
+        22
+      ],
+      "global_route_diodes": 1,
+      "post_detailed_route_violations": 8,
+      "post_detailed_route_diodes": 9,
+      "final_check_net_violations": [
+        0
+      ],
+      "final_check_pin_violations": [
+        0
+      ],
+      "antenna_cells_in_final_layout": 10,
+      "checker": "OpenROAD check_antennas (LEF antenna rules); not a KLayout antenna deck"
+    },
+    "klayout_drc": {
+      "violations": 0,
+      "deck": "ORFS platforms/sky130hd/drc/sky130hd.lydrc",
+      "deck_sections_enabled": {
+        "FEOL": false,
+        "BEOL": true,
+        "OFFGRID": true
+      },
+      "sections_run": [
+        "DRC",
+        "BEOL",
+        "OFFGRID-ANGLES"
+      ]
+    },
+    "klayout_lvs": {
+      "result": "match",
+      "reference": "6_final.cdl (from 6_final.v) vs netlist extracted from 6_final.gds"
+    },
+    "lec_post_resizer": "IDENTICAL",
+    "lec_final": "IDENTICAL"
+  },
+  "power": {
+    "conditions": "OpenSTA report_power, TT 25C 1.8 V Liberty, 25 MHz SDC clock, final SPEF; zero-delay VCD (no glitch power)",
+    "activity_netlist": "physical/results/sky130hd/ecg_snn_core/base/1_2_yosys.v (synthesis-mapped), annotated onto 6_final.odb",
+    "activity_window": {
+      "vectors": 20,
+      "duration_us": 628.861,
+      "clock_cycles": 15721.525,
+      "load_cycles": 5120,
+      "run_cycles": 10533,
+      "other_cycles": 68.52499999999964,
+      "longest_beat_run_cycles": 10014,
+      "coverage": {
+        "vcd": 40853,
+        "unannotated": 1482
+      }
+    },
+    "idle_window": {
+      "duration_us": 99.99999999999999,
+      "coverage": {
+        "vcd": 40853,
+        "unannotated": 1482
+      },
+      "state": "clock running, full valid buffer, start low, not busy"
+    },
+    "activity_W": {
+      "internal": 0.004571204074,
+      "switching": 0.001171315438,
+      "leakage": 4.944036291e-08,
+      "total": 0.005742568988
+    },
+    "idle_W": {
+      "internal": 0.004546405282,
+      "switching": 0.001129121403,
+      "leakage": 4.922214103e-08,
+      "total": 0.005675576162
+    },
+    "vectorless_W": {
+      "internal": 0.004568852484,
+      "switching": 0.001162701054,
+      "leakage": 4.985781032e-08,
+      "total": 0.005731603596
+    },
+    "energy_activity_window_uJ": 3.611277676362668,
+    "energy_same_window_if_idle_uJ": 3.5691485008114823,
+    "incremental_over_idle_uJ": 0.042129175551186164,
+    "mean_energy_per_vector_in_window_uJ": 0.1805638838181334,
+    "mean_incremental_per_vector_nJ": 2.1064587775593084,
+    "leakage_energy_activity_window_nJ": 0.031091116059945512,
+    "clock_group_W": 0.002775923582
+  }
+}

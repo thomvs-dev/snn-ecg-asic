@@ -1,0 +1,108 @@
+Yosys 0.68+post (git sha1 UNKNOWN, Release, GNU /usr/local/bin/wrapped-cc/g++ 15.2.0)
+Using ABC speed script.
+1. Executing Liberty frontend: /OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+2. Executing Liberty frontend: /OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+3. Executing Verilog-2005 frontend: /work/rtl/arbitrator.v
+4. Executing Verilog-2005 frontend: /work/rtl/ecg_snn_core.v
+5. Executing Verilog-2005 frontend: /work/rtl/handler_block.v
+6. Executing Verilog-2005 frontend: /work/rtl/hidden_controler.v
+7. Executing Verilog-2005 frontend: /work/rtl/hidden_neuron.v
+8. Executing Verilog-2005 frontend: /work/rtl/input_neuron.v
+9. Executing Verilog-2005 frontend: /work/rtl/main_counter.v
+10. Executing Verilog-2005 frontend: /work/rtl/output_controller.v
+11. Executing Verilog-2005 frontend: /work/rtl/output_neuron.v
+12. Executing Verilog-2005 frontend: /work/rtl/snn_network.v
+13. Executing Verilog-2005 frontend: /OpenROAD-flow-scripts/flow/platforms/sky130hd/cells_clkgate_hd.v
+14. Executing HIERARCHY pass (managing design hierarchy).
+15. Executing AST frontend in derive mode using pre-parsed AST for module `\ecg_snn_core'.
+15.1. Analyzing design hierarchy..
+15.2. Executing AST frontend in derive mode using pre-parsed AST for module `\snn_network'.
+15.3. Analyzing design hierarchy..
+15.4. Executing AST frontend in derive mode using pre-parsed AST for module `\arbitrator'.
+15.5. Executing AST frontend in derive mode using pre-parsed AST for module `\output_neuron'.
+15.6. Executing AST frontend in derive mode using pre-parsed AST for module `\output_neuron'.
+15.7. Executing AST frontend in derive mode using pre-parsed AST for module `\output_neuron'.
+15.8. Executing AST frontend in derive mode using pre-parsed AST for module `\output_neuron'.
+15.9. Executing AST frontend in derive mode using pre-parsed AST for module `\output_neuron'.
+15.10. Executing AST frontend in derive mode using pre-parsed AST for module `\output_neuron'.
+15.11. Executing AST frontend in derive mode using pre-parsed AST for module `\output_controller'.
+15.12. Executing AST frontend in derive mode using pre-parsed AST for module `\hidden_neuron'.
+15.13. Executing AST frontend in derive mode using pre-parsed AST for module `\hidden_neuron'.
+15.14. Executing AST frontend in derive mode using pre-parsed AST for module `\hidden_neuron'.
+15.15. Executing AST frontend in derive mode using pre-parsed AST for module `\hidden_neuron'.
+15.16. Executing AST frontend in derive mode using pre-parsed AST for module `\hidden_neuron'.
+15.17. Executing AST frontend in derive mode using pre-parsed AST for module `\hidden_neuron'.
+15.18. Executing AST frontend in derive mode using pre-parsed AST for module `\hidden_neuron'.
+15.19. Executing AST frontend in derive mode using pre-parsed AST for module `\hidden_neuron'.
+15.20. Executing AST frontend in derive mode using pre-parsed AST for module `\hidden_controler'.
+15.21. Executing AST frontend in derive mode using pre-parsed AST for module `\handler_block'.
+15.22. Executing AST frontend in derive mode using pre-parsed AST for module `\input_neuron'.
+15.23. Executing AST frontend in derive mode using pre-parsed AST for module `\main_counter'.
+15.24. Analyzing design hierarchy..
+15.25. Analyzing design hierarchy..
+15.26. Executing AST frontend in derive mode using pre-parsed AST for module `\ROMFile_out'.
+15.27. Executing AST frontend in derive mode using pre-parsed AST for module `\IF_neuron_out'.
+15.28. Executing AST frontend in derive mode using pre-parsed AST for module `\ROMFile_out'.
+15.29. Executing AST frontend in derive mode using pre-parsed AST for module `\ROMFile_out'.
+15.30. Executing AST frontend in derive mode using pre-parsed AST for module `\ROMFile_out'.
+15.31. Executing AST frontend in derive mode using pre-parsed AST for module `\ROMFile_out'.
+15.32. Executing AST frontend in derive mode using pre-parsed AST for module `\ROMFile_out'.
+15.33. Executing AST frontend in derive mode using pre-parsed AST for module `\ROMFile_hidden'.
+15.34. Executing AST frontend in derive mode using pre-parsed AST for module `\IF_neuron_hidden'.
+15.35. Executing AST frontend in derive mode using pre-parsed AST for module `\ROMFile_hidden'.
+15.36. Executing AST frontend in derive mode using pre-parsed AST for module `\ROMFile_hidden'.
+15.37. Executing AST frontend in derive mode using pre-parsed AST for module `\ROMFile_hidden'.
+15.38. Executing AST frontend in derive mode using pre-parsed AST for module `\ROMFile_hidden'.
+15.39. Executing AST frontend in derive mode using pre-parsed AST for module `\ROMFile_hidden'.
+15.40. Executing AST frontend in derive mode using pre-parsed AST for module `\ROMFile_hidden'.
+15.41. Executing AST frontend in derive mode using pre-parsed AST for module `\ROMFile_hidden'.
+15.42. Analyzing design hierarchy..
+15.43. Analyzing design hierarchy..
+16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Warning: Ignoring module $paramod$7da11a9906229b71209c23e6008cfe02decea3e9\ROMFile_out because it contains processes (run 'proc' command first).
+Warning: Ignoring module snn_network because it contains processes (run 'proc' command first).
+Warning: Ignoring module input_neuron because it contains processes (run 'proc' command first).
+Warning: Ignoring module handler_block because it contains processes (run 'proc' command first).
+Warning: Ignoring module hidden_controler because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod\hidden_neuron\ROM_ID=s32'00000000000000000000000000000000 because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod\hidden_neuron\ROM_ID=s32'00000000000000000000000000000001 because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod\hidden_neuron\ROM_ID=s32'00000000000000000000000000000010 because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod\hidden_neuron\ROM_ID=s32'00000000000000000000000000000011 because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod\hidden_neuron\ROM_ID=s32'00000000000000000000000000000100 because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod\hidden_neuron\ROM_ID=s32'00000000000000000000000000000101 because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod\hidden_neuron\ROM_ID=s32'00000000000000000000000000000110 because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod\hidden_neuron\ROM_ID=s32'00000000000000000000000000000111 because it contains processes (run 'proc' command first).
+Warning: Ignoring module output_controller because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod\output_neuron\ROM_ID=s32'00000000000000000000000000000000 because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod\output_neuron\ROM_ID=s32'00000000000000000000000000000001 because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod\output_neuron\ROM_ID=s32'00000000000000000000000000000010 because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod\output_neuron\ROM_ID=s32'00000000000000000000000000000011 because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod\output_neuron\ROM_ID=s32'00000000000000000000000000000100 because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod\output_neuron\ROM_ID=s32'00000000000000000000000000000101 because it contains processes (run 'proc' command first).
+Warning: Ignoring module arbitrator because it contains processes (run 'proc' command first).
+Warning: Ignoring module main_counter because it contains processes (run 'proc' command first).
+Warning: Ignoring module ecg_snn_core because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod$fe4ac7baf76f8bea9eabce7bb66bc4d61040b45c\ROMFile_hidden because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod$94357fabc26e2f989a60163ac3565d5147f6b9f5\ROMFile_hidden because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod$71204d554e079491e9fb5d162201e97d61b02375\ROMFile_hidden because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod$bcacc319336ed93352f02c8853e89de6442b0091\ROMFile_hidden because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod$9e0ecfa458a98f20771874a2931ca4998f578bf7\ROMFile_hidden because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod$7da11a9906229b71209c23e6008cfe02decea3e9\ROMFile_hidden because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod$73d149916605789587ae80e6c4ffed2498a20b41\ROMFile_hidden because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod\IF_neuron_hidden\n_bit=s32'00000000000000000000000000000111 because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod$bc35fa49f3e790097a4d9e7e1418aa19a2f1e80b\ROMFile_hidden because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod$fe4ac7baf76f8bea9eabce7bb66bc4d61040b45c\ROMFile_out because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod$94357fabc26e2f989a60163ac3565d5147f6b9f5\ROMFile_out because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod$71204d554e079491e9fb5d162201e97d61b02375\ROMFile_out because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod$bcacc319336ed93352f02c8853e89de6442b0091\ROMFile_out because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod$9e0ecfa458a98f20771874a2931ca4998f578bf7\ROMFile_out because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod\IF_neuron_out\n_bit=s32'00000000000000000000000000000111 because it contains processes (run 'proc' command first).
+17. Executing RTLIL backend.
+Warnings: 38 unique messages, 38 total
+End of script. Logfile hash: 127d53ec31, time: 3.68s, user: 0.52s, system: 0.20s, MEM: 78.25 MB peak
+Yosys 0.68+post (git sha1 UNKNOWN, Release, GNU /usr/local/bin/wrapped-cc/g++ 15.2.0)
+Time spent: 39% 1x hierarchy (0 sec), 39% 4x read_liberty (0 sec), ...
+Elapsed time: 0:03.72[h:]min:sec. CPU time: user 0.66 sys 0.22 (23%). Peak memory: 84140KB.
+Log                    Ext     Elapsed      CPU     CPU/ Peak Mem sha1sum
+                                     s        s  Elapsed       MB [0:10)
+1_1_yosys_canonicalize .rtlil        3        1     0.24       82 18addf03f6
