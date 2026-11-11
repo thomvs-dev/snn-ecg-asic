@@ -1,0 +1,2 @@
+ICG instances in synthesis netlist: 2
+ICG instances in final netlist:     2

@@ -25,4 +25,5 @@
 - [ ] SDF-annotated gate simulation.
 - [ ] Labelled data and corrected six-bit input encoding before any accuracy claim.
 - [x] Clock-gated variant: RTL + mapped-netlist verification (docs/CLOCK_GATING.md).
-- [ ] Clock-gated variant: ORFS run, post-route regression, power comparison (scripts/run_physical_cg.sh, verify_cg.sh, activity_power_variant.sh).
+- [x] Clock-gated variant: ORFS run, DRC/LVS, post-route regression, power comparison (reports/cg/comparison.md).
+- [ ] Stop the root clock when idle (remaining 114 µW is root tree + wrapper).

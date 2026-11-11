@@ -56,7 +56,11 @@
   42 nJ. Leakage is about 0.03 nJ. This is an OpenSTA estimate from
   zero-delay activity, not a silicon measurement, and it is not comparable
   with the paper's 1.78 µJ/beat.
-- **Why is idle power almost as high as active power?** The clock runs and
+- **What did clock gating change?** Two ICGs stop the storage and network clocks between beats. In the
+  OpenSTA estimate, clock-on idle power drops from 5.68 mW to 0.114 mW and the 20-vector window energy
+  from 3.61 to 2.14 µJ, for +3 % cell area. The post-route netlist still matches all 500 vectors.
+  See docs/CLOCK_GATING.md.
+- **Why was baseline idle power almost as high as active power?** The clock runs and
   2,625 flip-flops toggle their clock pins every cycle. There is no clock
   gating and no power gating, so idle is not leakage-only.
 - **Is timing closed?** At the TT 25 °C 1.8 V corner with extracted RC, yes.

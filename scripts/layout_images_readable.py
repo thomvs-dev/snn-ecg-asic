@@ -23,7 +23,10 @@ except ImportError:  # running inside the KLayout application
     import pya as db
 
 root = Path(__file__).resolve().parents[1]
-gds = root / 'physical/results/sky130hd/ecg_snn_core/base/6_final.gds'
+import os
+VARIANT = os.environ.get('VARIANT', 'base')   # base | cg
+SUFFIX = '' if VARIANT == 'base' else '_' + VARIANT
+gds = root / f'physical/results/sky130hd/ecg_snn_core/{VARIANT}/6_final.gds'
 out = root / 'reports'
 
 # SKY130 GDS layer/datatype numbers (drawing layers).
@@ -137,10 +140,10 @@ def main():
     top = layout.top_cell()
     die = top.dbbox()
 
-    full_path = out / 'layout_full_readable.png'
+    full_path = out / f'layout_full_readable{SUFFIX}.png'
     v = make_view(FULL)
     render(v, die, full_path, 1800, 1800)
-    legend(full_path, 'ecg_snn_core, full die 609.36 x 609.36 um (routed SKY130HD GDS)',
+    legend(full_path, f'ecg_snn_core ({VARIANT}), full die {die.width():.2f} x {die.height():.2f} um (routed SKY130HD GDS)',
            FULL, 100, die.width(), 1800)
 
     # Close-up: a 24 x 16 um window near the die centre, snapped to the
@@ -149,7 +152,7 @@ def main():
     row = 2.72
     y0 = round((cy - 8.0) / row) * row
     box = db.DBox(cx - 12.0, y0, cx + 12.0, y0 + 16.0)
-    close_path = out / 'layout_closeup_readable.png'
+    close_path = out / f'layout_closeup_readable{SUFFIX}.png'
     v = make_view(CLOSE)
     render(v, box, close_path, 1800, 1200)
     legend(close_path, f'Close-up {box.width():.0f} x {box.height():.0f} um at '
@@ -167,7 +170,7 @@ def main():
                     'layers': [x[0] for x in CLOSE]},
         'renderer': renderer_version(),
     }
-    (out / 'layout_images_readable.json').write_text(json.dumps(meta, indent=2) + '\n')
+    (out / f'layout_images_readable{SUFFIX}.json').write_text(json.dumps(meta, indent=2) + '\n')
     print(json.dumps(meta, indent=2))
 
 

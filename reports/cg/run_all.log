@@ -1,0 +1,13 @@
+=== 2026-11-11T16:52:19+00:00 START physical_cg
+=== 2026-11-11T17:12:02+00:00 OK    physical_cg (1182 s)
+=== 2026-11-11T17:12:02+00:00 START icg_check
+=== 2026-11-11T17:12:02+00:00 OK    icg_check (0 s)
+=== 2026-11-11T17:12:02+00:00 START verify_cg
+=== 2026-11-11T17:13:54+00:00 OK    verify_cg (112 s)
+=== 2026-11-11T17:13:54+00:00 START power_cg
+=== 2026-11-11T17:14:41+00:00 OK    power_cg (47 s)
+=== 2026-11-11T17:14:41+00:00 START power_base
+=== 2026-11-11T17:15:40+00:00 OK    power_base (59 s)
+=== 2026-11-11T17:15:40+00:00 START compare
+=== 2026-11-11T17:15:40+00:00 OK    compare (0 s)
+All steps passed. Results: reports/cg/comparison.md

@@ -196,21 +196,26 @@ Readable views come from `scripts/layout_images_readable.py` (KLayout Python
 module 0.30.13). Only display properties change; the GDS is read-only. The
 region rendered is recorded in `reports/layout_images_readable.json`.
 
-## Clock-gated variant (cg): in progress
+## Clock-gated variant (cg)
 
 Two SKY130 integrated clock gates stop the clock to the input storage outside
-load writes, and to the rest of the network outside reset, PREP and RUN
-(docs/CLOCK_GATING.md). The baseline above is unchanged.
+load writes, and to the rest of the network outside reset, PREP and RUN. The
+baseline above is unchanged. Full details are in docs/CLOCK_GATING.md; the
+table is generated in reports/cg/comparison.md.
 
-| Check | Status | Evidence |
+| | Baseline | cg |
 |---|---|---|
-| RTL: 500 vectors, protocol, idle | PASS; predictions byte-identical to baseline.csv | reports/cg/ |
-| Yosys 0.33 SKY130 mapping + gate simulation (sanity check, not ORFS) | PASS; 2 ICGs, 2,624 flip-flops | reports/cg/precheck/ |
-| ORFS implementation, timing, DRC/LVS | **pending** (scripts/run_physical_cg.sh) | physical/*/cg/ |
-| Post-route netlist regression | **pending** (scripts/verify_cg.sh) | reports/cg/final_gate_* |
-| Power, base vs cg on final netlists | **pending** (scripts/activity_power_variant.sh) | reports/cg/comparison.md |
+| Post-route netlist, 500 vectors + protocol | PASS | PASS (byte-identical predictions) |
+| Setup / hold WNS (TT, 40 ns) | +29.86 / +0.047 ns | +28.82 / +0.044 ns |
+| Std-cell area (excl. fillers) | 137,481 µm² | 141,565 µm² (+3.0 %) |
+| DRC / LVS / antenna | 0 / match / 0 | 0 / match / 0 |
+| Workload window power (20 vectors, 628.861 µs) | 5.743 mW → 3.611 µJ | 3.397 mW → 2.136 µJ (−40.8 %) |
+| **Clock-running idle power** | **5.676 mW** | **0.114 mW (49.6× lower)** |
 
-No power, timing or area result is claimed for cg until those files exist.
+Power for both columns was re-estimated with activity simulated on each
+final post-route netlist (reports/power_base/, reports/power_cg/). The
+baseline value reproduces the original estimate. These are OpenSTA estimates
+(zero-delay activity, TT corner), not measurements.
 
 ## Limitations and negative findings
 

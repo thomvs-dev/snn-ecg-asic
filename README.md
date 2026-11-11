@@ -20,8 +20,10 @@ fabricated silicon or a fabrication-ready chip.
 
 ![Routed layout, full die](reports/layout_full_readable.png)
 
-A clock-gated variant that targets the idle power is in progress; see
-[docs/CLOCK_GATING.md](docs/CLOCK_GATING.md). The numbers above are for the ungated baseline.
+A clock-gated variant cuts the estimated clock-running idle power from 5.68 mW to 0.114 mW
+(49.6× lower) and the 20-vector window energy from 3.61 to 2.14 µJ, at +3 % cell area and with
+the same function, DRC/LVS and timing status; see [docs/CLOCK_GATING.md](docs/CLOCK_GATING.md).
+The numbers above are for the ungated baseline.
 
 Close-up: [reports/layout_closeup_readable.png](reports/layout_closeup_readable.png).
 GDS: `physical/results/sky130hd/ecg_snn_core/base/6_final.gds`.

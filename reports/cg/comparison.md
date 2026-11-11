@@ -5,21 +5,23 @@ Power: OpenSTA estimate, TT 25 C 1.8 V, extracted RC, activity from zero-delay s
 
 | Metric | Baseline (base) | Clock-gated (cg) | cg / base |
 |---|---|---|---|
-| final_netlist_500_vectors | PASS | pending |  |
-| setup_ws_ns | 29.8642 | pending |  |
-| setup_tns_ns | 0 | pending |  |
-| hold_ws_ns | 0.0465724 | pending |  |
-| hold_tns_ns | 0 | pending |  |
-| stdcell_count | 16632 | pending |  |
-| stdcell_area_um2 | 137481 | pending |  |
-| utilization | 0.397421 | pending |  |
-| clock_buffers | 444 | pending |  |
-| drc_violations | 0 | pending |  |
-| lvs | match | pending |  |
-| antenna_net_violations | 0 | pending |  |
-| activity_unannotated_pins | pending | pending |  |
-| activity_window_us | pending | pending |  |
-| activity_power_mW | pending | pending |  |
-| idle_power_mW | pending | pending |  |
-| idle_clock_group_mW | pending | pending |  |
-| leakage_nW | pending | pending |  |
+| final_netlist_500_vectors | PASS | PASS |  |
+| setup_ws_ns | 29.8642 | 28.8224 | 0.9651 |
+| setup_tns_ns | 0 | 0 |  |
+| hold_ws_ns | 0.0465724 | 0.0436343 | 0.9369 |
+| hold_tns_ns | 0 | 0 |  |
+| stdcell_count | 16632 | 17184 | 1.033 |
+| stdcell_area_um2 | 137481 | 141565 | 1.03 |
+| utilization | 0.397421 | 0.401706 | 1.011 |
+| clock_buffers | 444 | 527 | 1.187 |
+| drc_violations | 0 | 0 |  |
+| lvs | match | match |  |
+| antenna_net_violations | 0 | 0 |  |
+| activity_unannotated_pins | 2 | 2 | 1 |
+| activity_window_us | 628.861 | 628.861 | 1 |
+| activity_power_mW | 5.74257 | 3.39705 | 0.5916 |
+| window_energy_uJ | 3.61128 | 2.13627 | 0.5916 |
+| idle_power_mW | 5.67558 | 0.114451 | 0.02017 |
+| idle_clock_group_mW | 2.77592 | 0.0825417 | 0.02973 |
+| idle_energy_per_s_uJ | 5675.58 | 114.451 | 0.02017 |
+| leakage_nW | 49.4404 | 51.3121 | 1.038 |

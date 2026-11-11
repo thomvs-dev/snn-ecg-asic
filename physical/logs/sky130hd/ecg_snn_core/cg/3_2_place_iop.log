@@ -1,0 +1,27 @@
+OpenROAD unknown 
+Features included (+) or not (-): -GPU +GUI
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 4 thread(s).
+read_liberty /work/physical/objects/binary_libs/sky130hd/sky130_fd_sc_hd__tt_025C_1v80@12800135-1794015536-ed1652ed.blib
+read_db /work/physical/results/sky130hd/ecg_snn_core/cg/3_1_place_gp_skip_io.odb
+read_sdc /work/physical/results/sky130hd/ecg_snn_core/cg/3_1_place_gp_skip_io.sdc
+source /OpenROAD-flow-scripts/flow/platforms/sky130hd/setRC.tcl
+place_pins -hor_layers met3 -ver_layers met2
+Found 0 macro blocks.
+Using 2 tracks default min distance between IO pins.
+[INFO PPL-0001] Number of available slots 2228
+[INFO PPL-0002] Number of I/O             31
+[INFO PPL-0003] Number of I/O w/sink      31
+[INFO PPL-0004] Number of I/O w/o sink    0
+[INFO PPL-0005] Slots per section         200
+[INFO PPL-0008] Successfully assigned pins to sections.
+[INFO PPL-0012] I/O nets HPWL: 9239.51 um.
+Design area 129737 um^2 37% utilization.
+write_sdc -no_timestamp /work/physical/results/sky130hd/ecg_snn_core/cg/3_2_place_iop.sdc
+write_db /work/physical/results/sky130hd/ecg_snn_core/cg/3_2_place_iop.odb
+Elapsed time: 0:04.11[h:]min:sec. CPU time: user 0.40 sys 0.13 (12%). Peak memory: 128588KB.
+Log                    Ext     Elapsed      CPU     CPU/ Peak Mem sha1sum
+                                     s        s  Elapsed       MB [0:10)
+3_2_place_iop          .odb          4        1     0.13      125 cbccd2e58e
+3_2_place_iop          .sdc                                       9f86335f39

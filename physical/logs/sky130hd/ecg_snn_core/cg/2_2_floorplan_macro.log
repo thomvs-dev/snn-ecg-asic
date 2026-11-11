@@ -1,0 +1,18 @@
+OpenROAD unknown 
+Features included (+) or not (-): -GPU +GUI
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 4 thread(s).
+read_liberty /work/physical/objects/binary_libs/sky130hd/sky130_fd_sc_hd__tt_025C_1v80@12800135-1794015536-ed1652ed.blib
+read_db /work/physical/results/sky130hd/ecg_snn_core/cg/2_1_floorplan.odb
+read_sdc /work/physical/results/sky130hd/ecg_snn_core/cg/2_1_floorplan.sdc
+source /OpenROAD-flow-scripts/flow/platforms/sky130hd/setRC.tcl
+No macros found: Skipping macro_placement
+Design area 123819 um^2 35% utilization.
+write_sdc -no_timestamp /work/physical/results/sky130hd/ecg_snn_core/cg/2_2_floorplan_macro.sdc
+write_db /work/physical/results/sky130hd/ecg_snn_core/cg/2_2_floorplan_macro.odb
+Elapsed time: 0:02.79[h:]min:sec. CPU time: user 0.35 sys 0.12 (16%). Peak memory: 122916KB.
+Log                    Ext     Elapsed      CPU     CPU/ Peak Mem sha1sum
+                                     s        s  Elapsed       MB [0:10)
+2_2_floorplan_macro    .odb          2        0     0.17      120 beae18ca42
+2_2_floorplan_macro    .sdc                                       9f86335f39

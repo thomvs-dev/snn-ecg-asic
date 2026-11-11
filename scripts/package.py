@@ -22,6 +22,8 @@ for folder in ['rtl', 'rtl_cg', 'tb', 'scripts', 'flow', 'flow_cg', 'docs', 'ven
             continue  # IEEE paper extracts; upstream tool documentation
         if p.name.endswith('.~backup') or p.suffix.lower() == '.pdf':
             continue
+        if p.parent.name.startswith('power_') and p.suffix == '.vcd':
+            continue  # 4 x 4-118 MB final-netlist traces; regenerate with activity_power_variant.sh
         files.append(p)
 finals = [root / BASE] + [d for d in [root / BASE.replace('/base', '/cg')] if (d / '6_final.gds').exists()]
 for p in [q for d in finals for q in d.glob('*')]:
@@ -41,7 +43,7 @@ REQUIRED = [
     'vendor/HDL-SpikingNet-ECG/LICENSE', 'vendor/HDL-SpikingNet-ECG/hex_files/input_data.hex',
     'tb/tb_core.sv', 'tb/tb_protocol.sv', 'tb/tb_idle.sv',
     'scripts/verify.sh', 'scripts/verify_mapped.sh', 'scripts/verify_final.sh',
-    'scripts/activity_power.sh', 'scripts/run_physical.sh', 'docs/CLOCK_GATING.md', 'rtl_cg/clock_gate.v', 'scripts/physical_checks.sh',
+    'scripts/activity_power.sh', 'scripts/run_physical.sh', 'docs/CLOCK_GATING.md', 'rtl_cg/clock_gate.v', 'reports/cg/comparison.md', 'reports/power_cg/idle.json', 'reports/power_base/idle.json', 'reports/layout_full_readable_cg.png', 'scripts/physical_checks.sh',
     'reports/baseline.csv', 'reports/final_gate_simulation.log', 'reports/final_gate_protocol.log',
     'reports/power_activity.json', 'reports/power_idle.json', 'reports/mapped_activity.vcd',
     'reports/idle_activity.vcd', 'reports/layout_full_readable.png', 'reports/layout_closeup_readable.png',
