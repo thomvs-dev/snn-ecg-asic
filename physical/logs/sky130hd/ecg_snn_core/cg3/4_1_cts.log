@@ -1,0 +1,459 @@
+OpenROAD unknown 
+Features included (+) or not (-): -GPU +GUI
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 4 thread(s).
+read_liberty /work/physical/objects/binary_libs/sky130hd/sky130_fd_sc_hd__tt_025C_1v80@12800135-1794015536-ed1652ed.blib
+read_db /work/physical/results/sky130hd/ecg_snn_core/cg3/3_place.odb
+read_sdc /work/physical/results/sky130hd/ecg_snn_core/cg3/3_place.sdc
+source /OpenROAD-flow-scripts/flow/platforms/sky130hd/setRC.tcl
+clock_tree_synthesis -sink_clustering_enable -repair_clock_nets
+[INFO CTS-0050] Root buffer is sky130_fd_sc_hd__clkbuf_16.
+[INFO CTS-0051] Sink buffer is sky130_fd_sc_hd__clkbuf_16.
+[INFO CTS-0052] The following clock buffers will be used for CTS:
+                    sky130_fd_sc_hd__clkbuf_16
+[INFO CTS-0049] Characterization buffer is sky130_fd_sc_hd__clkbuf_16.
+[INFO CTS-0007] Net "clk" found for clock "core_clk".
+[WARNING CTS-0041] Net "clk" has 1 sinks. Skipping...
+[INFO CTS-0011]  Clock net "clk_root" for macros has 2 sinks.
+[INFO CTS-0011]  Clock net "clk_root_regs" for registers has 32 sinks.
+[INFO CTS-0010]  Clock net "clk_net" has 1568 sinks.
+[INFO CTS-0010]  Clock net "clk_load" has 1024 sinks.
+[INFO CTS-0008] TritonCTS found 4 clock nets.
+[INFO CTS-0097] Characterization used 1 buffer(s) types.
+[INFO CTS-0201] 0 blockages from hard placement blockages and placed macros will be used.
+[INFO CTS-0027] Generating H-Tree topology for net clk_root.
+[INFO CTS-0028]  Total number of sinks: 2.
+[INFO CTS-0060]  Macro  sinks will be clustered in groups of up to 4 and based on buffer max cap.
+[INFO CTS-0030]  Number of static layers: 0.
+[INFO CTS-0020]  Wire segment unit: 13600  dbu (13 um).
+[INFO CTS-0023]  Original sink region: [(237163, 240571), (250695, 247608)].
+[INFO CTS-0024]  Normalized sink region: [(17.4385, 17.689), (18.4335, 18.2065)].
+[INFO CTS-0025]     Width:  0.9950.
+[INFO CTS-0026]     Height: 0.5174.
+ Level 1
+    Direction: Horizontal
+    Sinks per sub-region: 1
+    Sub-region size: 0.4975 X 0.5174
+[INFO CTS-0034]     Segment length (rounded): 1.
+[INFO CTS-0038]  Stop criterion found. Sink region hpwl is smaller than max wirelength (1911.535 um) and max number of sinks is 15.
+[INFO CTS-0035]  Number of sinks covered: 2.
+[INFO CTS-0201] 0 blockages from hard placement blockages and placed macros will be used.
+[INFO CTS-0027] Generating H-Tree topology for net clk_root_regs.
+[INFO CTS-0028]  Total number of sinks: 32.
+[INFO CTS-0090]  Sinks will be clustered based on buffer max cap.
+[INFO CTS-0030]  Number of static layers: 0.
+[INFO CTS-0020]  Wire segment unit: 13600  dbu (13 um).
+[INFO CTS-0023]  Original sink region: [(428525, 238060), (476825, 327700)].
+[INFO CTS-0024]  Normalized sink region: [(31.5092, 17.5044), (35.0607, 24.0956)].
+[INFO CTS-0025]     Width:  3.5515.
+[INFO CTS-0026]     Height: 6.5912.
+ Level 1
+    Direction: Vertical
+    Sinks per sub-region: 16
+    Sub-region size: 3.5515 X 3.2956
+[INFO CTS-0034]     Segment length (rounded): 1.
+ Level 2
+    Direction: Horizontal
+    Sinks per sub-region: 8
+    Sub-region size: 1.7757 X 3.2956
+[INFO CTS-0034]     Segment length (rounded): 1.
+[INFO CTS-0038]  Stop criterion found. Sink region hpwl is smaller than max wirelength (1911.535 um) and max number of sinks is 15.
+[INFO CTS-0035]  Number of sinks covered: 32.
+[INFO CTS-0201] 0 blockages from hard placement blockages and placed macros will be used.
+[INFO CTS-0027] Generating H-Tree topology for net clk_net.
+[INFO CTS-0028]  Total number of sinks: 1568.
+[INFO CTS-0090]  Sinks will be clustered based on buffer max cap.
+[INFO CTS-0030]  Number of static layers: 0.
+[INFO CTS-0020]  Wire segment unit: 13600  dbu (13 um).
+[INFO CTS-0206] Best clustering solution was found from max clustering size of 15 and max clustering diameter of 80.
+[INFO CTS-0019]  Total number of sinks after clustering: 169.
+[INFO CTS-0024]  Normalized sink region: [(1.95841, 1.3), (34.9165, 34.759)].
+[INFO CTS-0025]     Width:  32.9581.
+[INFO CTS-0026]     Height: 33.4590.
+ Level 1
+    Direction: Vertical
+    Sinks per sub-region: 85
+    Sub-region size: 32.9581 X 16.7295
+[INFO CTS-0034]     Segment length (rounded): 8.
+ Level 2
+    Direction: Horizontal
+    Sinks per sub-region: 43
+    Sub-region size: 16.4791 X 16.7295
+[INFO CTS-0034]     Segment length (rounded): 8.
+ Level 3
+    Direction: Vertical
+    Sinks per sub-region: 22
+    Sub-region size: 16.4791 X 8.3648
+[INFO CTS-0034]     Segment length (rounded): 4.
+ Level 4
+    Direction: Horizontal
+    Sinks per sub-region: 11
+    Sub-region size: 8.2395 X 8.3648
+[INFO CTS-0034]     Segment length (rounded): 4.
+[INFO CTS-0038]  Stop criterion found. Sink region hpwl is smaller than max wirelength (1911.535 um) and max number of sinks is 15.
+[INFO CTS-0035]  Number of sinks covered: 169.
+[INFO CTS-0201] 0 blockages from hard placement blockages and placed macros will be used.
+[INFO CTS-0027] Generating H-Tree topology for net clk_load.
+[INFO CTS-0028]  Total number of sinks: 1024.
+[INFO CTS-0090]  Sinks will be clustered based on buffer max cap.
+[INFO CTS-0030]  Number of static layers: 0.
+[INFO CTS-0020]  Wire segment unit: 13600  dbu (13 um).
+[INFO CTS-0206] Best clustering solution was found from max clustering size of 13 and max clustering diameter of 95.
+[INFO CTS-0019]  Total number of sinks after clustering: 110.
+[INFO CTS-0024]  Normalized sink region: [(0.789338, 2.12), (33.2718, 33.5493)].
+[INFO CTS-0025]     Width:  32.4824.
+[INFO CTS-0026]     Height: 31.4293.
+ Level 1
+    Direction: Horizontal
+    Sinks per sub-region: 55
+    Sub-region size: 16.2412 X 31.4293
+[INFO CTS-0034]     Segment length (rounded): 8.
+ Level 2
+    Direction: Vertical
+    Sinks per sub-region: 28
+    Sub-region size: 16.2412 X 15.7146
+[INFO CTS-0034]     Segment length (rounded): 8.
+ Level 3
+    Direction: Horizontal
+    Sinks per sub-region: 14
+    Sub-region size: 8.1206 X 15.7146
+[INFO CTS-0034]     Segment length (rounded): 4.
+[INFO CTS-0038]  Stop criterion found. Sink region hpwl is smaller than max wirelength (1911.535 um) and max number of sinks is 15.
+[INFO CTS-0035]  Number of sinks covered: 110.
+[INFO CTS-0018]     Created 3 clock buffers.
+[INFO CTS-0012]     Minimum number of buffers in the clock path: 2.
+[INFO CTS-0013]     Maximum number of buffers in the clock path: 2.
+[INFO CTS-0015]     Created 3 clock nets.
+[INFO CTS-0016]     Fanout distribution for the current clock = 1:2..
+[INFO CTS-0017]     Max level of the clock tree: 1.
+[INFO CTS-0018]     Created 5 clock buffers.
+[INFO CTS-0012]     Minimum number of buffers in the clock path: 2.
+[INFO CTS-0013]     Maximum number of buffers in the clock path: 2.
+[INFO CTS-0015]     Created 5 clock nets.
+[INFO CTS-0016]     Fanout distribution for the current clock = 5:1, 8:2, 11:1..
+[INFO CTS-0017]     Max level of the clock tree: 2.
+[INFO CTS-0018]     Created 186 clock buffers.
+[INFO CTS-0012]     Minimum number of buffers in the clock path: 3.
+[INFO CTS-0013]     Maximum number of buffers in the clock path: 3.
+[INFO CTS-0015]     Created 186 clock nets.
+[INFO CTS-0016]     Fanout distribution for the current clock = 5:1, 6:2, 7:13, 8:28, 9:57, 10:50, 11:21, 12:10, 13:2, 15:1..
+[INFO CTS-0017]     Max level of the clock tree: 4.
+[INFO CTS-0018]     Created 119 clock buffers.
+[INFO CTS-0012]     Minimum number of buffers in the clock path: 3.
+[INFO CTS-0013]     Maximum number of buffers in the clock path: 3.
+[INFO CTS-0015]     Created 119 clock nets.
+[INFO CTS-0016]     Fanout distribution for the current clock = 6:4, 7:12, 8:20, 9:17, 10:36, 11:14, 12:9, 13:1, 14:1, 15:1, 16:2, 17:1..
+[INFO CTS-0017]     Max level of the clock tree: 3.
+[INFO CTS-0098] Clock net "clk_root"
+[INFO CTS-0099]  Sinks 2
+[INFO CTS-0100]  Leaf buffers 0
+[INFO CTS-0101]  Average sink wire length 172.40 um
+[INFO CTS-0102]  Path depth 2 - 2
+[INFO CTS-0207]  Dummy loads inserted 0
+[INFO CTS-0098] Clock net "clk_root_regs"
+[INFO CTS-0099]  Sinks 35
+[INFO CTS-0100]  Leaf buffers 0
+[INFO CTS-0101]  Average sink wire length 45.95 um
+[INFO CTS-0102]  Path depth 2 - 2
+[INFO CTS-0207]  Dummy loads inserted 3
+[INFO CTS-0098] Clock net "clk_net"
+[INFO CTS-0099]  Sinks 1735
+[INFO CTS-0100]  Leaf buffers 169
+[INFO CTS-0101]  Average sink wire length 317.20 um
+[INFO CTS-0102]  Path depth 2 - 3
+[INFO CTS-0207]  Dummy loads inserted 167
+[INFO CTS-0098] Clock net "clk_load"
+[INFO CTS-0099]  Sinks 1131
+[INFO CTS-0100]  Leaf buffers 110
+[INFO CTS-0101]  Average sink wire length 311.32 um
+[INFO CTS-0102]  Path depth 2 - 3
+[INFO CTS-0207]  Dummy loads inserted 107
+[INFO CTS-0033] Balancing latency for clock core_clk
+[INFO CTS-0036]  inserted 3 delay buffers
+[INFO CTS-0037] Total number of delay buffers: 3
+[INFO CTS-0500] Runtime: 1.52s
+estimate_parasitics
+detailed_placement -quiet
+[INFO DPL-0009] Utilization: 61.9%
+[INFO DPL-0501] Legalized with 10904 moves: displacement total 13388.2 u, max 21.9 u; HPWL 232586.3 -> 239484.7 u (+3.0 %).
+[INFO DPL-0500] Runtime: 0.40s
+estimate_parasitics
+Warning: master sky130_ef_sc_hd__decap_12 has signal pins but no liberty cell
+repair_timing -setup_margin 0 -hold_margin 0.3 -repair_tns 100 -match_cell_footprint -verbose
+[INFO RSZ-0100] Repair move sequence: UnbufferMove SizeUpMove SwapPinsMove BufferMove CloneMove SplitLoadMove 
+[INFO RSZ-0098] No setup violations found
+[INFO RSZ-0505] Runtime: 0.54s
+[INFO RSZ-0046] Found 2433 endpoints with hold violations.
+Iteration | Resized | Buffers | Cloned Gates |   Area   |   WNS   |   TNS   | Endpoint
+--------------------------------------------------------------------------------------
+        0 |       0 |       0 |            0 |    +0.0% |  -1.102 | -381.734 | busy$_SDFFE_PP0P_/D
+       10 |       0 |       8 |            0 |    +0.1% |  -0.850 | -275.273 | network.in_period[87][3]$_DFFE_PP_/D
+       20 |       0 |      12 |            0 |    +0.1% |  -0.798 | -188.583 | network.in_period[105][1]$_DFFE_PP_/D
+       30 |       0 |      14 |            0 |    +0.1% |  -0.780 | -105.044 | network.in_period[89][2]$_DFFE_PP_/D
+       40 |       0 |      14 |            0 |    +0.1% |  -0.780 | -105.044 | network.in_period[89][2]$_DFFE_PP_/D
+       50 |       0 |      14 |            0 |    +0.1% |  -0.780 | -105.044 | network.in_period[89][2]$_DFFE_PP_/D
+       60 |       0 |      16 |            0 |    +0.1% |   0.031 |   0.000 | network.in_period[237][2]$_DFFE_PP_/DE
+       70 |       0 |      16 |            0 |    +0.1% |   0.031 |   0.000 | network.in_period[237][2]$_DFFE_PP_/DE
+       80 |       0 |      16 |            0 |    +0.1% |   0.031 |   0.000 | network.in_period[237][2]$_DFFE_PP_/DE
+       90 |       0 |      16 |            0 |    +0.1% |   0.031 |   0.000 | network.in_period[237][2]$_DFFE_PP_/DE
+      100 |       0 |      16 |            0 |    +0.1% |   0.031 |   0.000 | network.in_period[237][2]$_DFFE_PP_/DE
+      110 |       0 |      16 |            0 |    +0.1% |   0.031 |   0.000 | network.in_period[237][2]$_DFFE_PP_/DE
+      120 |       0 |      17 |            0 |    +0.1% |   0.031 |   0.000 | network.in_period[237][2]$_DFFE_PP_/DE
+      130 |       0 |      17 |            0 |    +0.1% |   0.031 |   0.000 | network.in_period[237][2]$_DFFE_PP_/DE
+      140 |       0 |      18 |            0 |    +0.1% |   0.070 |   0.000 | loaded[6]$_SDFFE_PP0P_/D
+      150 |       0 |      18 |            0 |    +0.1% |   0.070 |   0.000 | loaded[6]$_SDFFE_PP0P_/D
+      160 |       0 |      18 |            0 |    +0.1% |   0.070 |   0.000 | loaded[6]$_SDFFE_PP0P_/D
+      170 |       0 |      19 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      180 |       0 |      19 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      190 |       0 |      19 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      200 |       0 |      19 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      210 |       0 |      19 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      220 |       0 |      19 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      230 |       0 |      20 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      240 |       0 |      20 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      250 |       0 |      20 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      260 |       0 |      20 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      270 |       0 |      20 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      280 |       0 |      20 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      290 |       0 |      20 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      300 |       0 |      20 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      310 |       0 |      20 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      320 |       0 |      20 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      330 |       0 |      20 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      340 |       0 |      20 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      350 |       0 |      20 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      360 |       0 |      20 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      370 |       0 |      20 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      380 |       0 |      20 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      390 |       0 |      20 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      400 |       0 |      20 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      410 |       0 |      20 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      420 |       0 |      20 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      430 |       0 |      20 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      440 |       0 |      20 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      450 |       0 |      20 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      460 |       0 |      20 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      470 |       0 |      20 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      480 |       0 |      20 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      490 |       0 |      20 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      500 |       0 |      20 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      510 |       0 |      20 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      520 |       0 |      20 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      530 |       0 |      20 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      540 |       0 |      20 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      550 |       0 |      20 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      560 |       0 |      20 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      570 |       0 |      20 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      580 |       0 |      20 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      590 |       0 |      20 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      600 |       0 |      20 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      610 |       0 |      20 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      620 |       0 |      20 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      630 |       0 |      20 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      640 |       0 |      20 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      650 |       0 |      20 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      660 |       0 |      20 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      670 |       0 |      20 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      680 |       0 |      20 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      690 |       0 |      20 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      700 |       0 |      20 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      710 |       0 |      20 |            0 |    +0.1% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      720 |       0 |      22 |            0 |    +0.2% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      730 |       0 |      22 |            0 |    +0.2% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      740 |       0 |      22 |            0 |    +0.2% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      750 |       0 |      22 |            0 |    +0.2% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      760 |       0 |      22 |            0 |    +0.2% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      770 |       0 |      22 |            0 |    +0.2% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      780 |       0 |      22 |            0 |    +0.2% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      790 |       0 |      22 |            0 |    +0.2% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      800 |       0 |      25 |            0 |    +0.2% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      810 |       0 |      29 |            0 |    +0.2% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      820 |       0 |      37 |            0 |    +0.3% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      830 |       0 |      38 |            0 |    +0.3% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      840 |       0 |      38 |            0 |    +0.3% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      850 |       0 |      38 |            0 |    +0.3% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      860 |       0 |      38 |            0 |    +0.3% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      870 |       0 |      38 |            0 |    +0.3% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      880 |       0 |      38 |            0 |    +0.3% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      890 |       0 |      38 |            0 |    +0.3% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      900 |       0 |      38 |            0 |    +0.3% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      910 |       0 |      38 |            0 |    +0.3% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      920 |       0 |      39 |            0 |    +0.3% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      930 |       0 |      39 |            0 |    +0.3% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      940 |       0 |      39 |            0 |    +0.3% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      950 |       0 |      39 |            0 |    +0.3% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      960 |       0 |      39 |            0 |    +0.3% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      970 |       0 |      39 |            0 |    +0.3% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      980 |       0 |      39 |            0 |    +0.3% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+      990 |       0 |      39 |            0 |    +0.3% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1000 |       0 |      39 |            0 |    +0.3% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1010 |       0 |      39 |            0 |    +0.3% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1020 |       0 |      39 |            0 |    +0.3% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1030 |       0 |      40 |            0 |    +0.3% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1040 |       0 |      40 |            0 |    +0.3% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1050 |       0 |      40 |            0 |    +0.3% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1060 |       0 |      40 |            0 |    +0.3% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1070 |       0 |      41 |            0 |    +0.3% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1080 |       0 |      42 |            0 |    +0.3% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1090 |       0 |      43 |            0 |    +0.3% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1100 |       0 |      46 |            0 |    +0.3% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1110 |       0 |      46 |            0 |    +0.3% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1120 |       0 |      46 |            0 |    +0.3% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1130 |       0 |      46 |            0 |    +0.3% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1140 |       0 |      46 |            0 |    +0.3% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1150 |       0 |      48 |            0 |    +0.3% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1160 |       0 |      49 |            0 |    +0.4% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1170 |       0 |      49 |            0 |    +0.4% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1180 |       0 |      50 |            0 |    +0.4% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1190 |       0 |      50 |            0 |    +0.4% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1200 |       0 |      50 |            0 |    +0.4% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1210 |       0 |      50 |            0 |    +0.4% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1220 |       0 |      50 |            0 |    +0.4% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1230 |       0 |      50 |            0 |    +0.4% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1240 |       0 |      50 |            0 |    +0.4% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1250 |       0 |      50 |            0 |    +0.4% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1260 |       0 |      51 |            0 |    +0.4% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1270 |       0 |      53 |            0 |    +0.4% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1280 |       0 |      53 |            0 |    +0.4% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1290 |       0 |      54 |            0 |    +0.4% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1300 |       0 |      56 |            0 |    +0.4% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1310 |       0 |      56 |            0 |    +0.4% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1320 |       0 |      57 |            0 |    +0.4% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1330 |       0 |      57 |            0 |    +0.4% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1340 |       0 |      58 |            0 |    +0.4% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1350 |       0 |      59 |            0 |    +0.4% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1360 |       0 |      59 |            0 |    +0.4% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1370 |       0 |      60 |            0 |    +0.4% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1380 |       0 |      60 |            0 |    +0.4% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1390 |       0 |      60 |            0 |    +0.4% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1400 |       0 |      61 |            0 |    +0.4% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1410 |       0 |      61 |            0 |    +0.4% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1420 |       0 |      61 |            0 |    +0.4% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1430 |       0 |      62 |            0 |    +0.4% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1440 |       0 |      63 |            0 |    +0.5% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1450 |       0 |      65 |            0 |    +0.5% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1460 |       0 |      66 |            0 |    +0.5% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1470 |       0 |      66 |            0 |    +0.5% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1480 |       0 |      66 |            0 |    +0.5% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1490 |       0 |      66 |            0 |    +0.5% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1500 |       0 |      66 |            0 |    +0.5% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1510 |       0 |      66 |            0 |    +0.5% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1520 |       0 |      66 |            0 |    +0.5% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1530 |       0 |      66 |            0 |    +0.5% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1540 |       0 |      66 |            0 |    +0.5% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1550 |       0 |      66 |            0 |    +0.5% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1560 |       0 |      66 |            0 |    +0.5% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1570 |       0 |      66 |            0 |    +0.5% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1580 |       0 |      66 |            0 |    +0.5% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1590 |       0 |      66 |            0 |    +0.5% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1600 |       0 |      66 |            0 |    +0.5% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1610 |       0 |      66 |            0 |    +0.5% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1620 |       0 |      66 |            0 |    +0.5% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1630 |       0 |      66 |            0 |    +0.5% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1640 |       0 |      66 |            0 |    +0.5% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1650 |       0 |      66 |            0 |    +0.5% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1660 |       0 |      66 |            0 |    +0.5% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1670 |       0 |      66 |            0 |    +0.5% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1680 |       0 |      67 |            0 |    +0.5% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1690 |       0 |      69 |            0 |    +0.5% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1700 |       0 |      71 |            0 |    +0.5% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1710 |       0 |      74 |            0 |    +0.5% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1720 |       0 |      76 |            0 |    +0.6% |   0.208 |   0.000 | network.neuron_in226.counter[1]$_DFFE_PP_/D
+     1730 |       0 |      78 |            0 |    +0.6% |   0.210 |   0.000 | network.neuron_in150.counter[1]$_DFFE_PP_/D
+     1740 |       0 |      80 |            0 |    +0.6% |   0.210 |   0.000 | network.neuron_in150.counter[1]$_DFFE_PP_/D
+     1750 |       0 |      80 |            0 |    +0.6% |   0.210 |   0.000 | network.neuron_in150.counter[1]$_DFFE_PP_/D
+     1760 |       0 |      81 |            0 |    +0.6% |   0.210 |   0.000 | network.neuron_in150.counter[1]$_DFFE_PP_/D
+     1770 |       0 |      83 |            0 |    +0.6% |   0.210 |   0.000 | network.neuron_in150.counter[1]$_DFFE_PP_/D
+     1780 |       0 |      85 |            0 |    +0.6% |   0.210 |   0.000 | network.neuron_in150.counter[1]$_DFFE_PP_/D
+     1790 |       0 |      86 |            0 |    +0.6% |   0.210 |   0.000 | network.neuron_in150.counter[1]$_DFFE_PP_/D
+     1800 |       0 |      90 |            0 |    +0.7% |   0.210 |   0.000 | network.neuron_in150.counter[1]$_DFFE_PP_/D
+     1810 |       0 |      90 |            0 |    +0.7% |   0.210 |   0.000 | network.neuron_in150.counter[1]$_DFFE_PP_/D
+     1820 |       0 |      91 |            0 |    +0.7% |   0.210 |   0.000 | network.neuron_in150.counter[1]$_DFFE_PP_/D
+     1830 |       0 |      92 |            0 |    +0.7% |   0.210 |   0.000 | network.neuron_in150.counter[1]$_DFFE_PP_/D
+     1840 |       0 |      93 |            0 |    +0.7% |   0.210 |   0.000 | network.neuron_in150.counter[1]$_DFFE_PP_/D
+     1850 |       0 |      94 |            0 |    +0.7% |   0.210 |   0.000 | network.neuron_in150.counter[1]$_DFFE_PP_/D
+     1860 |       0 |      95 |            0 |    +0.7% |   0.210 |   0.000 | network.neuron_in150.counter[1]$_DFFE_PP_/D
+     1870 |       0 |      98 |            0 |    +0.7% |   0.210 |   0.000 | network.neuron_in150.counter[1]$_DFFE_PP_/D
+     1880 |       0 |     103 |            0 |    +0.7% |   0.210 |   0.000 | network.neuron_in150.counter[1]$_DFFE_PP_/D
+     1890 |       0 |     109 |            0 |    +0.8% |   0.210 |   0.000 | network.neuron_in150.counter[1]$_DFFE_PP_/D
+     1900 |       0 |     114 |            0 |    +0.8% |   0.210 |   0.000 | network.neuron_in150.counter[1]$_DFFE_PP_/D
+     1910 |       0 |     116 |            0 |    +0.8% |   0.213 |   0.000 | network.neuron_in231.counter[0]$_DFFE_PP_/D
+     1920 |       0 |     117 |            0 |    +0.8% |   0.213 |   0.000 | network.neuron_in231.counter[0]$_DFFE_PP_/D
+     1930 |       0 |     120 |            0 |    +0.9% |   0.218 |   0.000 | network.neuron_in150.counter[0]$_DFFE_PP_/D
+     1940 |       0 |     121 |            0 |    +0.9% |   0.218 |   0.000 | network.neuron_in150.counter[0]$_DFFE_PP_/D
+     1950 |       0 |     123 |            0 |    +0.9% |   0.222 |   0.000 | network.neuron_in231.counter[3]$_DFFE_PP_/D
+     1960 |       0 |     127 |            0 |    +0.9% |   0.225 |   0.000 | network.neuron_in147.counter[1]$_DFFE_PP_/D
+     1970 |       0 |     130 |            0 |    +0.9% |   0.229 |   0.000 | network.neuron_in218.counter[1]$_DFFE_PP_/D
+     1980 |       0 |     131 |            0 |    +0.9% |   0.232 |   0.000 | network.neuron_in208.counter[0]$_DFFE_PP_/D
+     1990 |       0 |     131 |            0 |    +0.9% |   0.232 |   0.000 | network.neuron_in208.counter[0]$_DFFE_PP_/D
+     2000 |       0 |     133 |            0 |    +1.0% |   0.235 |   0.000 | network.neuron_in229.counter[1]$_DFFE_PP_/D
+     2010 |       0 |     138 |            0 |    +1.0% |   0.237 |   0.000 | network.neuron_in208.counter[1]$_DFFE_PP_/D
+     2020 |       0 |     142 |            0 |    +1.0% |   0.238 |   0.000 | network.neuron_in227.counter[0]$_DFFE_PP_/D
+     2030 |       0 |     149 |            0 |    +1.1% |   0.242 |   0.000 | network.neuron_in195.counter[1]$_DFFE_PP_/D
+     2040 |       0 |     149 |            0 |    +1.1% |   0.242 |   0.000 | network.neuron_in195.counter[1]$_DFFE_PP_/D
+     2050 |       0 |     150 |            0 |    +1.1% |   0.245 |   0.000 | network.neuron_in154.counter[0]$_DFFE_PP_/D
+     2060 |       0 |     153 |            0 |    +1.1% |   0.246 |   0.000 | network.neuron_in146.counter[0]$_DFFE_PP_/D
+     2070 |       0 |     156 |            0 |    +1.1% |   0.248 |   0.000 | network.neuron_in217.counter[0]$_DFFE_PP_/D
+     2080 |       0 |     157 |            0 |    +1.1% |   0.254 |   0.000 | network.neuron_in147.counter[3]$_DFFE_PP_/D
+     2090 |       0 |     160 |            0 |    +1.2% |   0.255 |   0.000 | network.neuron_in227.counter[1]$_DFFE_PP_/D
+     2100 |       0 |     162 |            0 |    +1.2% |   0.259 |   0.000 | network.neuron_in151.counter[0]$_DFFE_PP_/D
+     2110 |       0 |     164 |            0 |    +1.2% |   0.262 |   0.000 | network.neuron_in200.counter[1]$_DFFE_PP_/D
+     2120 |       0 |     165 |            0 |    +1.2% |   0.264 |   0.000 | network.neuron_in083.counter[0]$_DFFE_PP_/D
+     2130 |       0 |     166 |            0 |    +1.2% |   0.266 |   0.000 | network.neuron_in195.counter[0]$_DFFE_PP_/D
+     2140 |       0 |     172 |            0 |    +1.2% |   0.268 |   0.000 | network.neuron_in142.counter[1]$_DFFE_PP_/D
+     2150 |       0 |     174 |            0 |    +1.3% |   0.269 |   0.000 | network.neuron_in114.counter[0]$_DFFE_PP_/D
+     2160 |       0 |     176 |            0 |    +1.3% |   0.270 |   0.000 | network.neuron_in252.counter[0]$_DFFE_PP_/D
+     2170 |       0 |     181 |            0 |    +1.3% |   0.272 |   0.000 | network.neuron_in200.counter[0]$_DFFE_PP_/D
+     2180 |       0 |     188 |            0 |    +1.4% |   0.273 |   0.000 | network.neuron_in038.counter[3]$_DFFE_PP_/D
+     2190 |       0 |     197 |            0 |    +1.4% |   0.275 |   0.000 | network.neuron_in214.counter[0]$_DFFE_PP_/D
+     2200 |       0 |     203 |            0 |    +1.5% |   0.276 |   0.000 | network.neuron_in178.counter[1]$_DFFE_PP_/D
+     2210 |       0 |     211 |            0 |    +1.5% |   0.278 |   0.000 | network.neuron_in176.counter[1]$_DFFE_PP_/D
+     2220 |       0 |     217 |            0 |    +1.6% |   0.280 |   0.000 | network.neuron_in148.counter[0]$_DFFE_PP_/D
+     2230 |       0 |     222 |            0 |    +1.6% |   0.282 |   0.000 | network.neuron_in223.spike$_SDFFE_PP0P_/D
+     2240 |       0 |     228 |            0 |    +1.7% |   0.285 |   0.000 | network.neuron_in187.counter[1]$_DFFE_PP_/D
+     2250 |       0 |     233 |            0 |    +1.7% |   0.286 |   0.000 | network.neuron_in077.counter[0]$_DFFE_PP_/D
+     2260 |       0 |     237 |            0 |    +1.7% |   0.286 |   0.000 | network.neuron_in153.counter[1]$_DFFE_PP_/D
+     2270 |       0 |     241 |            0 |    +1.7% |   0.288 |   0.000 | network.neuron_in180.counter[1]$_DFFE_PP_/D
+     2280 |       0 |     243 |            0 |    +1.8% |   0.289 |   0.000 | network.neuron_in159.counter[0]$_DFFE_PP_/D
+     2290 |       0 |     247 |            0 |    +1.8% |   0.289 |   0.000 | network.neuron_in046.counter[1]$_DFFE_PP_/D
+     2300 |       0 |     254 |            0 |    +1.8% |   0.290 |   0.000 | network.neuron_in095.counter[0]$_DFFE_PP_/D
+     2310 |       0 |     260 |            0 |    +1.9% |   0.290 |   0.000 | network.neuron_in232.counter[3]$_DFFE_PP_/D
+     2320 |       0 |     264 |            0 |    +1.9% |   0.291 |   0.000 | network.neuron_in182.counter[0]$_DFFE_PP_/D
+     2330 |       0 |     270 |            0 |    +2.0% |   0.292 |   0.000 | network.neuron_in181.counter[1]$_DFFE_PP_/D
+     2340 |       0 |     277 |            0 |    +2.0% |   0.293 |   0.000 | network.neuron_in111.spike$_SDFFE_PP0P_/D
+     2350 |       0 |     283 |            0 |    +2.1% |   0.294 |   0.000 | network.neuron_in114.counter[3]$_DFFE_PP_/D
+     2360 |       0 |     287 |            0 |    +2.1% |   0.296 |   0.000 | network.neuron_in028.counter[0]$_DFFE_PP_/D
+     2370 |       0 |     294 |            0 |    +2.1% |   0.296 |   0.000 | network.neuron_in090.counter[0]$_DFFE_PP_/D
+     2380 |       0 |     302 |            0 |    +2.2% |   0.297 |   0.000 | network.neuron_in046.counter[3]$_DFFE_PP_/D
+     2390 |       0 |     310 |            0 |    +2.2% |   0.297 |   0.000 | network.neuron_in162.counter[0]$_DFFE_PP_/D
+     2400 |       0 |     317 |            0 |    +2.3% |   0.298 |   0.000 | network.neuron_in254.spike$_SDFFE_PP0P_/D
+     2410 |       0 |     323 |            0 |    +2.3% |   0.299 |   0.000 | network.neuron_in052.counter[1]$_DFFE_PP_/D
+     2420 |       0 |     332 |            0 |    +2.4% |   0.299 |   0.000 | network.neuron_in095.spike$_SDFFE_PP0P_/D
+     2430 |       0 |     342 |            0 |    +2.5% |   0.300 |   0.000 | network.neuron_in162.counter[1]$_DFFE_PP_/D
+    final |       0 |     345 |            0 |    +2.5% |   0.300 |   0.000 | network.neuron_out1.IF0.membrane_potential[7]$_SDFF_PP0_/D
+--------------------------------------------------------------------------------------
+[INFO RSZ-0032] Inserted 345 hold buffers.
+[INFO RSZ-0506] Runtime: 1.54s
+Warning: master sky130_ef_sc_hd__decap_12 has signal pins but no liberty cell
+Elapsed time: 0:06.33[h:]min:sec. CPU time: user 2.49 sys 0.65 (49%). Peak memory: 82548KB.
+Repair timing output passed lec test
+detailed_placement -quiet
+[INFO DPL-0009] Utilization: 63.5%
+[INFO DPL-0501] Legalized with 7191 moves: displacement total 2567.4 u, max 14.7 u; HPWL 240771.6 -> 243450.7 u (+1.1 %).
+[INFO DPL-0500] Runtime: 0.43s
+check_placement -placeable -verbose
+estimate_parasitics
+Report metrics stage 4, cts final...
+
+==========================================================================
+cts final report_design_area
+--------------------------------------------------------------------------
+Design area 141524 um^2 63% utilization.
+write_sdc -no_timestamp /work/physical/results/sky130hd/ecg_snn_core/cg3/4_1_cts.sdc
+write_db /work/physical/results/sky130hd/ecg_snn_core/cg3/4_1_cts.odb
+Elapsed time: 0:28.82[h:]min:sec. CPU time: user 22.69 sys 3.08 (89%). Peak memory: 313548KB.
+Log                    Ext     Elapsed      CPU     CPU/ Peak Mem sha1sum
+                                     s        s  Elapsed       MB [0:10)
+4_1_cts                .odb          6        3     0.50       80 0d8e9baa07
+4_1_cts                .sdc                                       936a5bb03b

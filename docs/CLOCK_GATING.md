@@ -171,3 +171,32 @@ cd /mnt/d/snn
 sudo bash scripts/run_cg_all.sh     # flow, checks, verification, power for cg and base, comparison
 VARIANT=cg python3 scripts/layout_images_readable.py   # reports/layout_*_readable_cg.png
 ```
+
+## Variant cg3: root clock gate (2026-11-12) — final design
+
+The 111 µW left in cg2 was the clock root up to the two gates (79 µW in the
+clock group) plus the 32 wrapper flip-flops. cg3 adds a third gate on the
+clock input (`scripts/generate_rtl_cg3.py`, `rtl_cg3/ecg_snn_core.v`):
+
+    root enable = reset || load_valid || start || state != IDLE || done
+
+Everything, including the wrapper and the two existing gates, is clocked from
+the root gate output. With the enable low the wrapper is in IDLE with `done`
+low and no input asserted; in that condition no register changes on a clock
+edge in the two-gate design, so removing those edges changes nothing. `done`
+is in the enable so its one-clock pulse is cleared. The enable uses the raw
+inputs, so a rejected `load_valid` or `start` costs clock power but not
+function.
+
+| | base | cg2 | cg3 |
+|---|---|---|---|
+| Idle power, clock input running, 25 MHz | 5.676 mW | 111.1 µW | 0.713 µW |
+| Idle clock group | 2.776 mW | 79.3 µW | 0.664 µW |
+| 20-vector window energy | 3.611 µJ | 2.044 µJ | 2.018 µJ |
+| Leakage | 49.4 nW | 50.7 nW | 52.0 nW |
+
+Verification: `scripts/verify_cg3.sh` (500 vectors, protocol bench,
+`tb/tb_root_gate.sv`, random-stimulus traces from `tb/tb_random.sv` compared
+with the ungated RTL) and the post-route checks in `scripts/run_cg3.sh`.
+The same layout run adds the fast/slow corner timing margins. Full table and
+caveats: `reports/RESULTS.md`, section "Variant cg3".

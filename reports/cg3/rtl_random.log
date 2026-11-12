@@ -1,0 +1,10 @@
+base: DONE random: seed=1 cycles=400000 beats=273 resets=93
+cg3:  DONE random: seed=1 cycles=400000 beats=273 resets=93
+seed 1: output traces identical (400000 clocks)
+base: DONE random: seed=2 cycles=400000 beats=342 resets=119
+cg3:  DONE random: seed=2 cycles=400000 beats=342 resets=119
+seed 2: output traces identical (400000 clocks)
+base: DONE random: seed=3 cycles=400000 beats=256 resets=82
+cg3:  DONE random: seed=3 cycles=400000 beats=256 resets=82
+seed 3: output traces identical (400000 clocks)
+PASS cg3 RTL: 500 vectors, protocol, root gate, random traces

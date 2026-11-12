@@ -1,0 +1,5 @@
+input  /work/physical/results/sky130hd/ecg_snn_core/cg3/6_final_no_pin_metal.gds
+output /work/physical/results/sky130hd/ecg_snn_core/cg3/6_final.gds
+top    ecg_snn_core
+met3: 31 pin shapes; drawing coverage 0.397 -> 1.000
+met5: 34 pin shapes; drawing coverage 1.000 -> 1.000

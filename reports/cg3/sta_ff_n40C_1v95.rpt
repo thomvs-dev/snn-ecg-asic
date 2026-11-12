@@ -1,0 +1,294 @@
+OPENROAD: /OpenROAD-flow-scripts/tools/OpenROAD
+OpenROAD unknown 
+Features included (+) or not (-): -GPU +GUI
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+corner_lib /work/build/corner_libs/sky130_fd_sc_hd__ff_n40C_1v95.lib
+variant cg3
+worst slack max 29.5379
+worst slack min 0.0806
+tns max 0.0000
+### worst setup paths
+Startpoint: reset (input port clocked by core_clk)
+Endpoint: load_ready (output port clocked by core_clk)
+Path Group: core_clk
+Path Type: max
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock core_clk (rise edge)
+   0.000    0.000   clock network delay (propagated)
+   4.000    4.000 v input external delay
+   0.000    4.000 v reset (in)
+   0.580    4.580 v hold462/X (sky130_fd_sc_hd__dlygate4sd3_1)
+   0.504    5.084 v hold447/X (sky130_fd_sc_hd__dlygate4sd3_1)
+   0.174    5.258 v input24/X (sky130_fd_sc_hd__clkbuf_2)
+   0.348    5.607 v _12584_/X (sky130_fd_sc_hd__or3_1)
+   0.201    5.808 ^ _12585_/Y (sky130_fd_sc_hd__nor2_1)
+   0.248    6.056 ^ output45/X (sky130_fd_sc_hd__buf_1)
+   0.006    6.062 ^ load_ready (out)
+            6.062   data arrival time
+
+  40.000   40.000   clock core_clk (rise edge)
+   0.000   40.000   clock network delay (propagated)
+  -0.400   39.600   clock uncertainty
+   0.000   39.600   clock reconvergence pessimism
+  -4.000   35.600   output external delay
+           35.600   data required time
+-----------------------------------------------------------
+           35.600   data required time
+           -6.062   data arrival time
+-----------------------------------------------------------
+           29.538   slack (MET)
+
+
+Startpoint: loaded[0]$_SDFFE_PP0P_
+            (rising edge-triggered flip-flop clocked by core_clk)
+Endpoint: input_complete (output port clocked by core_clk)
+Path Group: core_clk
+Path Type: max
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock core_clk (rise edge)
+   1.150    1.150   clock network delay (propagated)
+   0.000    1.150 ^ loaded[0]$_SDFFE_PP0P_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.229    1.379 v loaded[0]$_SDFFE_PP0P_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.084    1.462 ^ _12450_/Y (sky130_fd_sc_hd__inv_1)
+   0.465    1.928 ^ _18729_/COUT (sky130_fd_sc_hd__ha_1)
+   0.310    2.237 v _12499_/Y (sky130_fd_sc_hd__nand2_8)
+   0.427    2.664 ^ _12505_/Y (sky130_fd_sc_hd__nor3_1)
+   0.213    2.878 ^ output44/X (sky130_fd_sc_hd__buf_1)
+   0.005    2.883 ^ input_complete (out)
+            2.883   data arrival time
+
+  40.000   40.000   clock core_clk (rise edge)
+   0.000   40.000   clock network delay (propagated)
+  -0.400   39.600   clock uncertainty
+   0.000   39.600   clock reconvergence pessimism
+  -4.000   35.600   output external delay
+           35.600   data required time
+-----------------------------------------------------------
+           35.600   data required time
+           -2.883   data arrival time
+-----------------------------------------------------------
+           32.717   slack (MET)
+
+
+Startpoint: reset (input port clocked by core_clk)
+Endpoint: network.neuron_in049.counter[3]$_DFFE_PP_
+          (rising edge-triggered flip-flop clocked by core_clk)
+Path Group: core_clk
+Path Type: max
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock core_clk (rise edge)
+   0.000    0.000   clock network delay (propagated)
+   4.000    4.000 ^ input external delay
+   0.000    4.000 ^ reset (in)
+   0.494    4.494 ^ hold462/X (sky130_fd_sc_hd__dlygate4sd3_1)
+   0.585    5.079 ^ hold447/X (sky130_fd_sc_hd__dlygate4sd3_1)
+   0.186    5.264 ^ input24/X (sky130_fd_sc_hd__clkbuf_2)
+   0.314    5.578 ^ _09750_/X (sky130_fd_sc_hd__or3_2)
+   0.329    5.908 ^ place365/X (sky130_fd_sc_hd__buf_4)
+   0.362    6.270 ^ place356/X (sky130_fd_sc_hd__buf_4)
+   0.385    6.655 ^ place355/X (sky130_fd_sc_hd__buf_4)
+   0.339    6.994 ^ place354/X (sky130_fd_sc_hd__buf_4)
+   0.364    7.358 ^ place353/X (sky130_fd_sc_hd__buf_4)
+   0.031    7.389 v _16838_/Y (sky130_fd_sc_hd__nor4_1)
+   0.096    7.485 ^ _16839_/Y (sky130_fd_sc_hd__mux2i_1)
+   0.052    7.537 v _16842_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.000    7.537 v network.neuron_in049.counter[3]$_DFFE_PP_/D (sky130_fd_sc_hd__edfxtp_1)
+            7.537   data arrival time
+
+  40.000   40.000   clock core_clk (rise edge)
+   1.175   41.175   clock network delay (propagated)
+  -0.400   40.775   clock uncertainty
+   0.000   40.775   clock reconvergence pessimism
+           40.775 ^ network.neuron_in049.counter[3]$_DFFE_PP_/CLK (sky130_fd_sc_hd__edfxtp_1)
+  -0.145   40.630   library setup time
+           40.630   data required time
+-----------------------------------------------------------
+           40.630   data required time
+           -7.537   data arrival time
+-----------------------------------------------------------
+           33.093   slack (MET)
+
+
+### worst hold paths
+Startpoint: network.in_period[225][3]$_DFFE_PP_
+            (rising edge-triggered flip-flop clocked by core_clk)
+Endpoint: network.neuron_in225.counter[3]$_DFFE_PP_
+          (rising edge-triggered flip-flop clocked by core_clk)
+Path Group: core_clk
+Path Type: min
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock core_clk (rise edge)
+   1.112    1.112   clock network delay (propagated)
+   0.000    1.112 ^ network.in_period[225][3]$_DFFE_PP_/CLK (sky130_fd_sc_hd__edfxtp_1)
+   0.206    1.318 ^ network.in_period[225][3]$_DFFE_PP_/Q (sky130_fd_sc_hd__edfxtp_1)
+   0.022    1.340 v _18310_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.052    1.392 ^ _18311_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.000    1.392 ^ network.neuron_in225.counter[3]$_DFFE_PP_/D (sky130_fd_sc_hd__edfxtp_1)
+            1.392   data arrival time
+
+   0.000    0.000   clock core_clk (rise edge)
+   1.172    1.172   clock network delay (propagated)
+   0.200    1.372   clock uncertainty
+   0.000    1.372   clock reconvergence pessimism
+            1.372 ^ network.neuron_in225.counter[3]$_DFFE_PP_/CLK (sky130_fd_sc_hd__edfxtp_1)
+  -0.061    1.311   library hold time
+            1.311   data required time
+-----------------------------------------------------------
+            1.311   data required time
+           -1.392   data arrival time
+-----------------------------------------------------------
+            0.081   slack (MET)
+
+
+Startpoint: network.in_period[194][2]$_DFFE_PP_
+            (rising edge-triggered flip-flop clocked by core_clk)
+Endpoint: network.neuron_in194.counter[2]$_DFFE_PP_
+          (rising edge-triggered flip-flop clocked by core_clk)
+Path Group: core_clk
+Path Type: min
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock core_clk (rise edge)
+   1.121    1.121   clock network delay (propagated)
+   0.000    1.121 ^ network.in_period[194][2]$_DFFE_PP_/CLK (sky130_fd_sc_hd__edfxtp_1)
+   0.207    1.329 ^ network.in_period[194][2]$_DFFE_PP_/Q (sky130_fd_sc_hd__edfxtp_1)
+   0.025    1.353 v _09940_/Y (sky130_fd_sc_hd__nor2_1)
+   0.043    1.396 ^ _09941_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.000    1.396 ^ network.neuron_in194.counter[2]$_DFFE_PP_/D (sky130_fd_sc_hd__edfxtp_1)
+            1.396   data arrival time
+
+   0.000    0.000   clock core_clk (rise edge)
+   1.173    1.173   clock network delay (propagated)
+   0.200    1.373   clock uncertainty
+   0.000    1.373   clock reconvergence pessimism
+            1.373 ^ network.neuron_in194.counter[2]$_DFFE_PP_/CLK (sky130_fd_sc_hd__edfxtp_1)
+  -0.059    1.315   library hold time
+            1.315   data required time
+-----------------------------------------------------------
+            1.315   data required time
+           -1.396   data arrival time
+-----------------------------------------------------------
+            0.081   slack (MET)
+
+
+Startpoint: network.in_period[211][3]$_DFFE_PP_
+            (rising edge-triggered flip-flop clocked by core_clk)
+Endpoint: network.neuron_in211.counter[3]$_DFFE_PP_
+          (rising edge-triggered flip-flop clocked by core_clk)
+Path Group: core_clk
+Path Type: min
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock core_clk (rise edge)
+   1.119    1.119   clock network delay (propagated)
+   0.000    1.119 ^ network.in_period[211][3]$_DFFE_PP_/CLK (sky130_fd_sc_hd__edfxtp_1)
+   0.202    1.322 ^ network.in_period[211][3]$_DFFE_PP_/Q (sky130_fd_sc_hd__edfxtp_1)
+   0.022    1.343 v _18195_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.057    1.401 ^ _18196_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.000    1.401 ^ network.neuron_in211.counter[3]$_DFFE_PP_/D (sky130_fd_sc_hd__edfxtp_1)
+            1.401   data arrival time
+
+   0.000    0.000   clock core_clk (rise edge)
+   1.181    1.181   clock network delay (propagated)
+   0.200    1.381   clock uncertainty
+   0.000    1.381   clock reconvergence pessimism
+            1.381 ^ network.neuron_in211.counter[3]$_DFFE_PP_/CLK (sky130_fd_sc_hd__edfxtp_1)
+  -0.062    1.319   library hold time
+            1.319   data required time
+-----------------------------------------------------------
+            1.319   data required time
+           -1.401   data arrival time
+-----------------------------------------------------------
+            0.082   slack (MET)
+
+
+Startpoint: network.in_period[208][3]$_DFFE_PP_
+            (rising edge-triggered flip-flop clocked by core_clk)
+Endpoint: network.neuron_in208.counter[3]$_DFFE_PP_
+          (rising edge-triggered flip-flop clocked by core_clk)
+Path Group: core_clk
+Path Type: min
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock core_clk (rise edge)
+   1.120    1.120   clock network delay (propagated)
+   0.000    1.120 ^ network.in_period[208][3]$_DFFE_PP_/CLK (sky130_fd_sc_hd__edfxtp_1)
+   0.215    1.335 ^ network.in_period[208][3]$_DFFE_PP_/Q (sky130_fd_sc_hd__edfxtp_1)
+   0.024    1.360 v _18168_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.047    1.406 ^ _18169_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.000    1.407 ^ network.neuron_in208.counter[3]$_DFFE_PP_/D (sky130_fd_sc_hd__edfxtp_1)
+            1.407   data arrival time
+
+   0.000    0.000   clock core_clk (rise edge)
+   1.181    1.181   clock network delay (propagated)
+   0.200    1.381   clock uncertainty
+   0.000    1.381   clock reconvergence pessimism
+            1.381 ^ network.neuron_in208.counter[3]$_DFFE_PP_/CLK (sky130_fd_sc_hd__edfxtp_1)
+  -0.059    1.322   library hold time
+            1.322   data required time
+-----------------------------------------------------------
+            1.322   data required time
+           -1.407   data arrival time
+-----------------------------------------------------------
+            0.085   slack (MET)
+
+
+Startpoint: network.in_period[214][3]$_DFFE_PP_
+            (rising edge-triggered flip-flop clocked by core_clk)
+Endpoint: network.neuron_in214.counter[3]$_DFFE_PP_
+          (rising edge-triggered flip-flop clocked by core_clk)
+Path Group: core_clk
+Path Type: min
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock core_clk (rise edge)
+   1.136    1.136   clock network delay (propagated)
+   0.000    1.136 ^ network.in_period[214][3]$_DFFE_PP_/CLK (sky130_fd_sc_hd__edfxtp_1)
+   0.203    1.339 ^ network.in_period[214][3]$_DFFE_PP_/Q (sky130_fd_sc_hd__edfxtp_1)
+   0.022    1.361 v _18219_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.045    1.406 ^ _18220_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.000    1.406 ^ network.neuron_in214.counter[3]$_DFFE_PP_/D (sky130_fd_sc_hd__edfxtp_1)
+            1.406   data arrival time
+
+   0.000    0.000   clock core_clk (rise edge)
+   1.178    1.178   clock network delay (propagated)
+   0.200    1.378   clock uncertainty
+   0.000    1.378   clock reconvergence pessimism
+            1.378 ^ network.neuron_in214.counter[3]$_DFFE_PP_/CLK (sky130_fd_sc_hd__edfxtp_1)
+  -0.059    1.319   library hold time
+            1.319   data required time
+-----------------------------------------------------------
+            1.319   data required time
+           -1.406   data arrival time
+-----------------------------------------------------------
+            0.087   slack (MET)
+
+
+### violators
+Group                                    Slack
+----------------------------------------------
+No paths found.
+
+### end violators
+### clock skew
+Clock core_clk
+  1.149 source latency done$_SDFF_PP0_/CLK ^
+ -0.004 target latency icg_root.icg/CLK ^
+  0.400 clock uncertainty
+  0.000 CRPR
+--------------
+  1.546 setup skew
+

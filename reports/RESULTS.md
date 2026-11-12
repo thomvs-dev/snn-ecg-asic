@@ -301,6 +301,65 @@ flow (rtl_cg timestamps had changed). A layer-by-layer XOR showed the new
 layout identical to the first, so the cg2 timing, power and netlist results
 stand.
 
+## Variant cg3: root clock gate and corner timing margins (2026-11-12) — final design
+
+RTL `rtl_cg3/` (`scripts/generate_rtl_cg3.py`): a third integrated clock gate,
+`icg_root`, on the clock input. Every flip-flop and both existing gates are
+clocked from its output. Enable: `reset || load_valid || start || state != IDLE || done`.
+When the enable is low no register in the two-gate design would have changed,
+so the port behaviour is cycle-identical. Floorplan settings and pin plan are
+those of cg2. Driver `scripts/run_cg3.sh`; run log `reports/cg3/run_all.log`;
+table `reports/cg3/comparison.md`.
+
+Timing changes (`flow_cg3/config.mk`, `flow_cg3/constraint.sdc`):
+
+- Clock uncertainty 0.4 ns for setup and **0.2 ns for hold** (was 0.4 ns for
+  both). A hold check compares the same clock edge at launch and capture, so
+  source jitter cancels; the clock is propagated, so skew is in the path delays.
+- `HOLD_SLACK_MARGIN` 0.30 ns: 345 hold buffers at CTS (cg2: 8).
+- `SLEW_MARGIN` and `CAP_MARGIN` 50 %: repair to half the TT limits so the slow
+  corner stays inside its limits.
+
+| | cg2 | cg3 |
+|---|---|---|
+| Clock gates in final netlist | 2 | 3 (`reports/cg3/icg_check.txt`) |
+| Die | 494.35 µm square | 494.07 µm square |
+| Utilization / cells / area | 61.6 % / 15,357 / 138,239 µm² | 63.6 % / 15,672 / 141,826 µm² (+2.6 %) |
+| RTL: 500 vectors, protocol | PASS | PASS (`reports/cg3/rtl_simulation.log`, `rtl_protocol.log`) |
+| RTL: root gate bench | — | PASS: gated clocks static in 5 idle phases of 2,500 clocks; wake on load, start, done clear, reset (`rtl_root_gate.log`) |
+| RTL: random stimulus against ungated `rtl/` | — | output traces identical, 3 seeds × 400,000 clocks, 871 beats, 294 resets (`rtl_random.log`) |
+| Post-route netlist: 500 vectors + protocol | PASS | PASS (predictions byte-identical to baseline.csv) |
+| Post-route netlist: random stimulus | — | trace identical to ungated RTL, seed 1, 100,000 clocks, 76 beats, 20 resets (`final_gate_random.log`) |
+| ORFS DRC / LVS / antenna | 0 / match / 0 | 0 / match / 0 |
+| Full-chip DRC (sky130A_mr.drc) | 0 | 0 (`reports/cg3/drc_mr.lyrdb`) |
+| TT setup / hold WNS | +28.60 / +0.036 ns; 4 max-slew and 1 max-cap rows on one net | +28.51 / +0.292 ns; 0 violations |
+| ff setup / hold WNS | hold −0.143 ns, 1,426 endpoints | +29.54 / **+0.081 ns**; 0 violations |
+| ss setup / hold WNS, slew / cap | +25.03 ns; 547 / 58 | +25.59 / +0.759 ns; **0 / 0** |
+| Window power / energy (25 MHz) | 3.251 mW / 2.044 µJ | 3.209 mW / 2.018 µJ |
+| Idle power, clock input running (25 MHz) | 111.1 µW (clock group 79.3 µW) | **0.713 µW** (clock group 0.664 µW) |
+| Leakage | 50.7 nW | 52.0 nW |
+
+How to read this:
+
+- **The ff hold pass needs both changes.** The cg3 hold slacks include 0.2 ns
+  of uncertainty. With the earlier 0.4 ns the ff slack would be −0.12 ns
+  (TT +0.09 ns). The buffers moved TT hold slack from +0.036 to +0.292 ns; the
+  constraint change supplies the rest.
+- **cg2 was not fully clean at TT.** `reports/cg2/sta_tt_025C_1v80.rpt` lists
+  one net (`_12598_/Y` to `output44`) over max slew by 0.05 ns and max
+  capacitance by 0.003 pF. The repair margins remove it.
+- **Idle is now close to leakage.** The idle bench keeps the clock input
+  toggling with `load_valid` and `start` low. What remains is the clock input
+  net, the root gate and leakage. A host that holds `load_valid` or `start`
+  high while idle keeps the tree running.
+- **Average power at one beat per second, 25 MHz:** about 0.713 µW + 0.10 µJ/s
+  ≈ 0.8 µW, using the window-average energy per vector (2.018 µJ / 20), which
+  over-represents one long beat. No frequency sweep was run on cg3.
+- The corners use one nominal extracted RC; only the cell library changes.
+  This is a library-corner check, not RC-corner signoff.
+- The random stimulus reaches class codes 0 and 2 and timeouts only through the
+  supplied vectors' behaviour; class 1 is still never produced.
+
 ## Limitations and negative findings
 
 - Supplied inputs are six-bit; the RTL keeps the low four bits. 125,332 of
@@ -310,12 +369,20 @@ stand.
   supplied. Baseline agreement is not accuracy. The paper's 97.9 % accuracy,
   88.0 % F1 and 1.78 µJ/beat are not claimed for this hardware, and the
   released RTL differs from the paper's model (docs/RTL_AUDIT.md).
-- Timing closes at TT only: fast-corner hold fails (−0.12 ns, >1,100 endpoints) and the
-  slow corner has max-slew/cap violations (see Extra checks).
-- Full-chip DRC with the open_pdks mr deck: cg clean, base 2 met3 min-area hits. Pin
-  shapes are not on the drawing layer (both designs). Density/fill not checked; not foundry signoff.
-- Power is a tool estimate from zero-delay activity on the synthesis netlist,
-  with 1,482 unannotated pins.
+- Timing: base, cg and cg2 close setup and hold at TT only (fast-corner hold
+  fails, slow corner has max-slew/cap violations; cg2 also has one net over
+  max slew/cap at TT). cg3 has no violations at TT, ff and ss, with 0.2 ns hold
+  uncertainty instead of 0.4 ns and one nominal RC extraction. No RC corners,
+  no on-chip variation derates.
+- Full-chip DRC with the open_pdks mr deck: cg, cg2 and cg3 clean, base 2 met3
+  min-area hits. Pin shapes are on the drawing layer in cg2 and cg3 only.
+  Density/fill not checked; not foundry signoff.
+- Power is a tool estimate from zero-delay activity, so glitch power is not
+  modelled. The baseline headline run used the synthesis netlist (1,482
+  unannotated pins); the per-variant runs (`reports/power_*/`) use each final
+  netlist (2 unannotated pins).
+- The 500 vectors produce only class codes 0 and 2 and no timeout. Class 1 is
+  never exercised; timeout only by the directed protocol bench.
 - There is no SDF simulation and no RTL-to-gate formal equivalence.
 - There is no pad ring, analog acquisition, on-chip training or fabricated
   chip.

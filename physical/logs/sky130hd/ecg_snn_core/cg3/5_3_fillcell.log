@@ -1,0 +1,19 @@
+OpenROAD unknown 
+Features included (+) or not (-): -GPU +GUI
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 4 thread(s).
+read_liberty /work/physical/objects/binary_libs/sky130hd/sky130_fd_sc_hd__tt_025C_1v80@12800135-1794015536-ed1652ed.blib
+read_db /work/physical/results/sky130hd/ecg_snn_core/cg3/5_2_route.odb
+read_sdc /work/physical/results/sky130hd/ecg_snn_core/cg3/5_2_route.sdc
+source /OpenROAD-flow-scripts/flow/platforms/sky130hd/setRC.tcl
+filler_placement "sky130_fd_sc_hd__fill_1 sky130_fd_sc_hd__fill_2 sky130_fd_sc_hd__fill_4 sky130_fd_sc_hd__fill_8"
+[INFO DPL-0001] Placed 16656 filler instances.
+Design area 141826 um^2 64% utilization.
+write_sdc -no_timestamp /work/physical/results/sky130hd/ecg_snn_core/cg3/5_3_fillcell.sdc
+write_db /work/physical/results/sky130hd/ecg_snn_core/cg3/5_3_fillcell.odb
+Elapsed time: 0:05.65[h:]min:sec. CPU time: user 0.76 sys 0.29 (18%). Peak memory: 174988KB.
+Log                    Ext     Elapsed      CPU     CPU/ Peak Mem sha1sum
+                                     s        s  Elapsed       MB [0:10)
+5_3_fillcell           .odb          5        1     0.19      170 b028e2bcad
+5_3_fillcell           .sdc                                       936a5bb03b

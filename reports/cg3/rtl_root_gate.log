@@ -1,0 +1,2 @@
+PASS root clock gate: static in 5 idle phases (2500 clocks each), wakes for load, start, done clear and reset
+tb/tb_root_gate.sv:52: $finish called at 612000000 (1ps)

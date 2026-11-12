@@ -74,3 +74,12 @@
   antenna repair edit the netlist. Simulating 6_final.v shows these edits
   preserved function. The ORFS LEC also reports the post-resizer and final
   netlists as identical.
+
+## Final design (cg3)
+
+Steps 6 to 8 above describe the ungated baseline. For the final design show
+`reports/layout_full_readable_cg3.png`, `reports/chip_art_cg3.png` and the
+"Variant cg3" table in `reports/RESULTS.md`: three clock gates, idle 0.713 µW
+against 5.68 mW, no timing violations at TT, ff and ss. Be ready to explain
+why hold uncertainty is 0.2 ns while setup uncertainty is 0.4 ns, and that the
+corners share one nominal RC extraction.

@@ -13,7 +13,7 @@ out.mkdir(exist_ok=True)
 BASE = 'physical/results/sky130hd/ecg_snn_core/base'
 
 files = [root / n for n in ['README.md', 'LICENSE', 'TASKS.md', 'toolchain.json']]
-for folder in ['rtl', 'rtl_cg', 'tb', 'scripts', 'flow', 'flow_cg', 'flow_cg2', 'docs', 'vendor/HDL-SpikingNet-ECG',
+for folder in ['rtl', 'rtl_cg', 'tb', 'scripts', 'flow', 'flow_cg', 'flow_cg2', 'flow_cg3', 'rtl_cg3', 'docs', 'vendor/HDL-SpikingNet-ECG',
                'reports', 'physical/logs', 'physical/reports']:
     for p in (root / folder).rglob('*'):
         if not p.is_file() or '.git' in p.parts or '__pycache__' in p.parts:
@@ -27,7 +27,7 @@ for folder in ['rtl', 'rtl_cg', 'tb', 'scripts', 'flow', 'flow_cg', 'flow_cg2', 
         if p.parent.name.startswith('power_') and p.suffix == '.vcd':
             continue  # 4 x 4-118 MB final-netlist traces; regenerate with activity_power_variant.sh
         files.append(p)
-finals = [root / BASE] + [d for d in [root / BASE.replace('/base', v) for v in ('/cg', '/cg2')] if (d / '6_final.gds').exists()]
+finals = [root / BASE] + [d for d in [root / BASE.replace('/base', v) for v in ('/cg', '/cg2', '/cg3')] if (d / '6_final.gds').exists()]
 for p in [q for d in finals for q in d.glob('*')]:
     # Final outputs only; 6_1_* are intermediate copies of the final ODB/GDS.
     if p.is_file() and ((p.name.startswith('6_') and not p.name.startswith('6_1_'))
@@ -49,6 +49,13 @@ REQUIRED = [
     'reports/cg2/comparison.md', 'reports/cg2/chip_art.txt', 'reports/chip_art_cg2.png', 'reports/layout_full_readable_cg2.png',
     'scripts/chip_art.py', 'scripts/chip_art_render.py', 'scripts/run_cg2.sh', 'flow_cg2/config.mk',
     'physical/results/sky130hd/ecg_snn_core/cg2/6_final.gds', 'physical/reports/sky130hd/ecg_snn_core/cg2/6_drc_count.rpt',
+    'rtl_cg3/ecg_snn_core.v', 'flow_cg3/config.mk', 'flow_cg3/constraint.sdc', 'scripts/run_cg3.sh', 'scripts/verify_cg3.sh',
+    'tb/tb_root_gate.sv', 'tb/tb_random.sv', 'reports/cg3/comparison.md', 'reports/cg3/chip_art.txt',
+    'reports/cg3/rtl_random.log', 'reports/cg3/rtl_root_gate.log', 'reports/cg3/final_gate_simulation.log',
+    'reports/cg3/final_gate_random.log', 'reports/cg3/drc_mr.lyrdb', 'reports/cg3/sta_tt_025C_1v80.rpt',
+    'reports/cg3/sta_ff_n40C_1v95.rpt', 'reports/cg3/sta_ss_100C_1v60.rpt', 'reports/power_cg3/idle.json',
+    'reports/chip_art_cg3.png', 'reports/layout_full_readable_cg3.png',
+    'physical/results/sky130hd/ecg_snn_core/cg3/6_final.gds', 'physical/reports/sky130hd/ecg_snn_core/cg3/6_drc_count.rpt',
     'reports/baseline.csv', 'reports/final_gate_simulation.log', 'reports/final_gate_protocol.log',
     'reports/power_activity.json', 'reports/power_idle.json', 'reports/mapped_activity.vcd',
     'reports/idle_activity.vcd', 'reports/layout_full_readable.png', 'reports/layout_closeup_readable.png',

@@ -1,0 +1,1 @@
+ICG instances in final netlist: 3
