@@ -22,3 +22,12 @@ Done: reports/cg2/comparison.md
 === 2026-11-12T08:27:32+00:00 START compare
 === 2026-11-12T08:27:34+00:00 OK    compare (2 s)
 Done: reports/cg2/comparison.md
+=== 2026-11-12T09:11:00+00:00 START physical
+=== 2026-11-12T09:18:56+00:00 OK    physical (476 s)
+=== 2026-11-12T09:18:56+00:00 START checks
+=== 2026-11-12T09:18:56+00:00 OK    checks (0 s)
+=== 2026-11-12T09:18:56+00:00 START drc_mr
+=== 2026-11-12T09:22:05+00:00 OK    drc_mr (189 s)
+=== 2026-11-12T09:22:05+00:00 START compare
+=== 2026-11-12T09:22:06+00:00 OK    compare (1 s)
+Done: reports/cg2/comparison.md

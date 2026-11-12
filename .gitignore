@@ -26,3 +26,8 @@ physical/results/sky130hd/ecg_snn_core/*/*
 # Final-netlist activity traces can exceed GitHub's 50 MB warning; regenerate
 # with scripts/activity_power_variant.sh (they are in the release ZIP).
 reports/power_*/*.vcd
+
+# Posters: contain figures from the IEEE paper and sponsor logos; not redistributed
+docs/*poster*
+# Superseded art previews (reports/chip_art_cg2.png is rendered from the final GDS)
+reports/cg2/chip_art_preview*.png

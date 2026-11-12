@@ -9,24 +9,54 @@ fabricated silicon or a fabrication-ready chip.
 
 ## Results at a glance
 
-| | Result | Evidence type |
+The final design is the **cg2** variant: the clock-gated core on a denser
+494.35 × 494.35 µm die, with evenly spaced pins and a met5 heart/ECG engraving.
+The ungated baseline (`base`) and the first clock-gated layout (`cg`) are kept
+for comparison; see [reports/cg2/comparison.md](reports/cg2/comparison.md).
+
+| | Final design (cg2) | Evidence type |
 |---|---|---|
 | Function | Final post-route netlist matches the reference RTL on all 500 supplied vectors (class, timeout, cycle count); directed protocol bench passes | zero-delay simulation |
-| Timing | 40 ns (25 MHz): clean at TT (setup +29.86 ns, hold +0.047 ns). **Not clean at other corners:** ff hold −0.12 ns, ss slew/cap violations; fix pending | STA, TT/ff/ss library corners |
-| Layout | 609.36 × 609.36 µm die; 16,632 cells (excluding fillers), 137,481 µm², 39.7 % utilization | routed GDS |
-| Physical checks | Router 0; antenna 0; full-chip DRC with open_pdks mr deck: base 2 (met3 min-area at pins), clock-gated 0; LVS match; pin shapes missing on the drawing layer (fix pending) | open_pdks and ORFS decks, not foundry signoff |
-| Power | 5.74 mW over a 20-vector, 628.861 µs window (3.61 µJ); 5.68 mW clock-on idle | OpenSTA estimate |
+| Timing | 40 ns (25 MHz): clean at TT (setup +28.60 ns, hold +0.036 ns). **Not clean at other corners:** ff hold −0.143 ns (1,426 endpoints), ss slew/cap violations (547/58); fix pending | STA, TT/ff/ss library corners |
+| Layout | 494.35 × 494.35 µm die; 15,357 cells (excluding fillers), 2,624 flip-flops, 138,239 µm², 61.6 % utilization | routed GDS |
+| Physical checks | Router 0; antenna 0; DRC 0 with both the ORFS deck and the open_pdks mr deck (full chip, including pin metal and engraving); LVS match | open_pdks and ORFS decks, not foundry signoff |
+| Power | Idle with clock running 0.111 mW (baseline 5.68 mW, −98 %); 20-vector, 628.861 µs window 3.25 mW / 2.04 µJ (baseline 3.61 µJ, −43 %); +0.6 % cell area | OpenSTA estimate, TT 25 °C 1.8 V |
 | Accuracy | Not computable: no labels supplied | — |
 
-![Routed layout, full die](reports/layout_full_readable.png)
+![Routed layout of the final cg2 core](reports/layout_full_readable_cg2.png)
 
-A clock-gated variant cuts the estimated clock-running idle power from 5.68 mW to 0.114 mW
-(49.6× lower; 4.6 µW at a 1 MHz clock) and the 20-vector window energy from 3.61 to 2.14 µJ, at +3 % cell area and with
-the same function, DRC/LVS and timing status; see [docs/CLOCK_GATING.md](docs/CLOCK_GATING.md).
-The numbers above are for the ungated baseline.
+Clock gating uses two `sky130_fd_sc_hd__dlclkp_1` cells: one clocks the
+1,024 input-storage flip-flops only while a load is accepted, the other clocks
+the 1,568 network flip-flops only outside IDLE. Details and the power-versus-
+frequency sweep (run on the `cg` layout, same gated RTL) are in
+[docs/CLOCK_GATING.md](docs/CLOCK_GATING.md). All power values are tool
+estimates, not measurements.
 
-Close-up: [reports/layout_closeup_readable.png](reports/layout_closeup_readable.png).
-GDS: `physical/results/sky130hd/ecg_snn_core/base/6_final.gds`.
+Close-up: [reports/layout_closeup_readable_cg2.png](reports/layout_closeup_readable_cg2.png).
+Pin map: [reports/layout_pins_cg2.png](reports/layout_pins_cg2.png).
+GDS: `physical/results/sky130hd/ecg_snn_core/cg2/6_final.gds`.
+
+### Chip art: heart and ECG trace on met5
+
+![met5 heart and ECG engraving](reports/chip_art_cg2.png)
+
+`scripts/chip_art.py` adds a heart with an ECG trace on the top metal (met5)
+between the power straps, after routing. The art is 56 floating met5 pieces
+(8,507 µm²) on a 2 µm grid. It keeps at least 1.6 µm from all existing met5
+and via4, and passes the met5 width, spacing, area and hole rules
+(`reports/cg2/chip_art.txt`). Because it connects to nothing, LVS is unchanged
+(match). Full-chip DRC after the engraving is 0 with both decks. The image is
+rendered from the final GDS by `scripts/chip_art_render.py`.
+
+### Variant comparison
+
+| | base | cg | cg2 |
+|---|---|---|---|
+| Die | 609.36 µm | 614.63 µm | 494.35 µm |
+| Cells / area | 16,632 / 137,481 µm² | 17,184 / 141,565 µm² | 15,357 / 138,239 µm² |
+| Idle power (clock running) | 5.68 mW | 0.114 mW | 0.111 mW |
+| 20-vector window energy | 3.61 µJ | 2.14 µJ | 2.04 µJ |
+| Full-chip DRC (mr deck) | 2 (met3 min-area at pins) | 0 | 0 |
 
 ## Architecture
 
@@ -132,6 +162,20 @@ pip install klayout pillow && python3 scripts/layout_images_readable.py
 python3 scripts/summarize.py           # reports/final_summary.json
 python3 scripts/package.py             # deliverables/ecg_snn_sky130_demo.zip
 ```
+
+The commands above reproduce the baseline. The final cg2 design has its own
+driver; each stage can be run alone with `ONLY`:
+
+```bash
+sudo bash scripts/run_cg2.sh                                   # full cg2 flow and checks
+sudo ONLY="physical checks drc_mr compare" bash scripts/run_cg2.sh   # layout, pin metal, npc fix, engraving, DRC/LVS
+VARIANT=cg2 python3 scripts/layout_images_readable.py          # layout renders
+python3 scripts/chip_art_render.py                             # reports/chip_art_cg2.png
+```
+
+The cg2 post-processing always starts from `6_1_merged.gds`: pin metal
+(`scripts/pin_metal.py`), then the npc.2 spacing fix (`scripts/npc_fix.py`),
+then the engraving (`scripts/chip_art.py`), then DRC and LVS.
 
 `scripts/inspect_layout.sh` produced the earlier all-layer renders
 (`reports/layout_full.png`, `layout_closeup.png`) and the first power run. Do

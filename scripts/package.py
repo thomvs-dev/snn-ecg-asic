@@ -13,7 +13,7 @@ out.mkdir(exist_ok=True)
 BASE = 'physical/results/sky130hd/ecg_snn_core/base'
 
 files = [root / n for n in ['README.md', 'LICENSE', 'TASKS.md', 'toolchain.json']]
-for folder in ['rtl', 'rtl_cg', 'tb', 'scripts', 'flow', 'flow_cg', 'docs', 'vendor/HDL-SpikingNet-ECG',
+for folder in ['rtl', 'rtl_cg', 'tb', 'scripts', 'flow', 'flow_cg', 'flow_cg2', 'docs', 'vendor/HDL-SpikingNet-ECG',
                'reports', 'physical/logs', 'physical/reports']:
     for p in (root / folder).rglob('*'):
         if not p.is_file() or '.git' in p.parts or '__pycache__' in p.parts:
@@ -22,10 +22,12 @@ for folder in ['rtl', 'rtl_cg', 'tb', 'scripts', 'flow', 'flow_cg', 'docs', 'ven
             continue  # IEEE paper extracts; upstream tool documentation
         if p.name.endswith('.~backup') or p.suffix.lower() == '.pdf':
             continue
+        if 'poster' in p.name.lower() or p.name.startswith('chip_art_preview'):
+            continue  # posters hold paper figures and sponsor logos; previews superseded by chip_art_cg2.png
         if p.parent.name.startswith('power_') and p.suffix == '.vcd':
             continue  # 4 x 4-118 MB final-netlist traces; regenerate with activity_power_variant.sh
         files.append(p)
-finals = [root / BASE] + [d for d in [root / BASE.replace('/base', '/cg')] if (d / '6_final.gds').exists()]
+finals = [root / BASE] + [d for d in [root / BASE.replace('/base', v) for v in ('/cg', '/cg2')] if (d / '6_final.gds').exists()]
 for p in [q for d in finals for q in d.glob('*')]:
     # Final outputs only; 6_1_* are intermediate copies of the final ODB/GDS.
     if p.is_file() and ((p.name.startswith('6_') and not p.name.startswith('6_1_'))
@@ -44,6 +46,9 @@ REQUIRED = [
     'tb/tb_core.sv', 'tb/tb_protocol.sv', 'tb/tb_idle.sv',
     'scripts/verify.sh', 'scripts/verify_mapped.sh', 'scripts/verify_final.sh',
     'scripts/activity_power.sh', 'scripts/run_physical.sh', 'docs/CLOCK_GATING.md', 'rtl_cg/clock_gate.v', 'reports/cg/comparison.md', 'reports/power_cg/idle.json', 'reports/power_base/idle.json', 'reports/layout_full_readable_cg.png', 'scripts/physical_checks.sh',
+    'reports/cg2/comparison.md', 'reports/cg2/chip_art.txt', 'reports/chip_art_cg2.png', 'reports/layout_full_readable_cg2.png',
+    'scripts/chip_art.py', 'scripts/chip_art_render.py', 'scripts/run_cg2.sh', 'flow_cg2/config.mk',
+    'physical/results/sky130hd/ecg_snn_core/cg2/6_final.gds', 'physical/reports/sky130hd/ecg_snn_core/cg2/6_drc_count.rpt',
     'reports/baseline.csv', 'reports/final_gate_simulation.log', 'reports/final_gate_protocol.log',
     'reports/power_activity.json', 'reports/power_idle.json', 'reports/mapped_activity.vcd',
     'reports/idle_activity.vcd', 'reports/layout_full_readable.png', 'reports/layout_closeup_readable.png',
@@ -58,7 +63,7 @@ REQUIRED = [
 missing = [r for r in REQUIRED if r not in rel]
 assert not missing, f'missing required files: {missing}'
 forbidden = [r for r in rel if r.startswith(('tools/', 'deliverables/', '_to_delete/'))
-             or r.lower().endswith('.pdf') or '/paper' in r or r.startswith('paper')]
+             or r.lower().endswith('.pdf') or '/paper' in r or r.startswith('paper') or 'poster' in r.lower()]
 assert not forbidden, f'forbidden content: {forbidden}'
 
 manifest = {r: hashlib.sha256(p.read_bytes()).hexdigest() for r, p in zip(rel, files)}

@@ -5,6 +5,7 @@
 # Requires build/corner_libs/ and build/pdk/ from scripts/run_signoff_extra.sh.
 # Pin metal: pin rectangles copied onto the drawing layer (scripts/pin_metal.py).
 # npc.2: narrow npc notches between abutting cells merged (scripts/npc_fix.py).
+# Chip art on met5 (scripts/chip_art.py).
 # Timing margins are intentionally NOT changed (deferred).
 set -euo pipefail
 cd "$(dirname "$0")/.."
@@ -54,6 +55,12 @@ physical() {
     -e REPORT=/work/$O/npc_fix.txt -e QT_QPA_PLATFORM=offscreen "$IMAGE" bash -lc \
     'source /OpenROAD-flow-scripts/env.sh; klayout -b -r /work/scripts/npc_fix.py'
   grep -q "RESULT: PASS" $O/npc_fix.txt
+  # Chip art: heart outline + ECG trace on met5, in the free bands between the
+  # PDN straps, isolated from all existing met5/via4 (scripts/chip_art.py).
+  orfs -v "$ROOT:/work" -e GDS_IN=/work/$R/6_final.gds -e GDS_OUT=/work/$R/6_final.gds \
+    -e REPORT=/work/$O/chip_art.txt -e QT_QPA_PLATFORM=offscreen "$IMAGE" bash -lc \
+    'source /OpenROAD-flow-scripts/env.sh; klayout -b -r /work/scripts/chip_art.py'
+  grep -q "RESULT: PASS" $O/chip_art.txt
   orfs_make drc
   orfs_make lvs
 }

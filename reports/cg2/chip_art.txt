@@ -1,0 +1,13 @@
+input /work/physical/results/sky130hd/ecg_snn_core/cg2/6_final.gds
+art centre (247.17, 247.17) um, width 247.2 um, pixel 1.9999999999999996 um
+bitmap pixels 3236, drawn area 12944.0 um2 -> kept 8506.9 um2 in 56 floating met5 pieces
+art bbox (51.175,139.175;449.175,348.48)
+art touches or is within 1.6 um of existing met5/via4: 0
+m5.1 width < 1.6: 0
+m5.2 space < 1.6: 0
+m5.4 area < 4.0: 0
+m5.7 holes < 0.14: 0
+non-Manhattan art edges: 0
+off-grid art vertices: 0
+RESULT: PASS
+output /work/physical/results/sky130hd/ecg_snn_core/cg2/6_final.gds
