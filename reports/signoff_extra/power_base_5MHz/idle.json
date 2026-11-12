@@ -1,0 +1,38 @@
+{
+  "Sequential": {
+    "internal": 5.799226346e-04,
+    "switching": 0.000000000e+00,
+    "leakage": 2.652248554e-08,
+    "total": 5.799491773e-04
+  },
+  "Combinational": {
+    "internal": 0.000000000e+00,
+    "switching": 0.000000000e+00,
+    "leakage": 1.781130798e-08,
+    "total": 1.781130798e-08
+  },
+  "Clock": {
+    "internal": 3.293591435e-04,
+    "switching": 2.258242894e-04,
+    "leakage": 4.887239502e-09,
+    "total": 5.551883369e-04
+  },
+  "Macro": {
+    "internal": 0.000000000e+00,
+    "switching": 0.000000000e+00,
+    "leakage": 0.000000000e+00,
+    "total": 0.000000000e+00
+  },
+  "Pad": {
+    "internal": 0.000000000e+00,
+    "switching": 0.000000000e+00,
+    "leakage": 0.000000000e+00,
+    "total": 0.000000000e+00
+  },
+  "Total": {
+    "internal": 9.092826513e-04,
+    "switching": 2.258242894e-04,
+    "leakage": 4.922214103e-08,
+    "total": 1.135156141e-03
+  }
+}

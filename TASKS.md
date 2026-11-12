@@ -19,9 +19,13 @@
 
 ## Open items (not required for the demonstration)
 
-- [ ] Fast/slow corner STA (hold margin is 47 ps at TT).
+- [x] Fast/slow corner STA: ff hold fails, ss slew/cap fail (reports/signoff_extra/).
+- [x] Full-chip DRC with open_pdks mr deck: cg 0, base 2 (m3.6 at pins).
+- [x] Power vs clock frequency: cg 4.73 µW at 1 MHz, 1 beat/s.
+- [ ] Deferred (2026-11-12): rerun with hold/slew/cap margins and separate hold uncertainty (ff hold, ss slew/cap).
+- [ ] Deferred: pin plan (pins currently clustered by ORFS) and pin shapes on the drawing layer.
 - [ ] Power activity simulated on 6_final.v (ACT_NETLIST option) to remove the 1,482 unannotated pins.
-- [ ] Full FEOL/density DRC with a foundry signoff deck.
+- [ ] Density/fill checks.
 - [ ] SDF-annotated gate simulation.
 - [ ] Labelled data and corrected six-bit input encoding before any accuracy claim.
 - [x] Clock-gated variant: RTL + mapped-netlist verification (docs/CLOCK_GATING.md).

@@ -1,0 +1,177 @@
+{
+  "sta": {
+    "base": {
+      "tt_025C_1v80": {
+        "setup_wns_ns": 29.8642,
+        "hold_wns_ns": 0.0466,
+        "setup_tns_ns": 0.0,
+        "hold_or_setup_violating_endpoints": 0,
+        "hold_or_setup_tns_ns": 0,
+        "max_slew_violations": 0,
+        "max_cap_violations": 0,
+        "worst_hold_endpoint": "network.neuron_hid0.enable$_SDFF_PP0_",
+        "errors": 0
+      },
+      "ff_n40C_1v95": {
+        "setup_wns_ns": 30.4135,
+        "hold_wns_ns": -0.1234,
+        "setup_tns_ns": 0.0,
+        "hold_or_setup_violating_endpoints": 1396,
+        "hold_or_setup_tns_ns": -77.9751000000001,
+        "max_slew_violations": 0,
+        "max_cap_violations": 0,
+        "worst_hold_endpoint": "network.neuron_hid0.enable$_SDFF_PP0_",
+        "errors": 0
+      },
+      "ss_100C_1v60": {
+        "setup_wns_ns": 26.7319,
+        "hold_wns_ns": 0.4992,
+        "setup_tns_ns": 0.0,
+        "hold_or_setup_violating_endpoints": 0,
+        "hold_or_setup_tns_ns": 0,
+        "max_slew_violations": 439,
+        "max_cap_violations": 45,
+        "worst_hold_endpoint": "network.cnt_main.counter[0]$_SDFF_PP0_",
+        "errors": 0
+      }
+    },
+    "cg": {
+      "tt_025C_1v80": {
+        "setup_wns_ns": 28.8224,
+        "hold_wns_ns": 0.0436,
+        "setup_tns_ns": 0.0,
+        "hold_or_setup_violating_endpoints": 0,
+        "hold_or_setup_tns_ns": 0,
+        "max_slew_violations": 0,
+        "max_cap_violations": 0,
+        "worst_hold_endpoint": "network.cnt_main.counter[0]$_SDFF_PP0_",
+        "errors": 0
+      },
+      "ff_n40C_1v95": {
+        "setup_wns_ns": 29.7475,
+        "hold_wns_ns": -0.1173,
+        "setup_tns_ns": 0.0,
+        "hold_or_setup_violating_endpoints": 1147,
+        "hold_or_setup_tns_ns": -41.27859999999999,
+        "max_slew_violations": 0,
+        "max_cap_violations": 0,
+        "worst_hold_endpoint": "network.neuron_hid0.ROM_address[6]$_SDFF_PP0_",
+        "errors": 0
+      },
+      "ss_100C_1v60": {
+        "setup_wns_ns": 26.1961,
+        "hold_wns_ns": 0.1488,
+        "setup_tns_ns": 0.0,
+        "hold_or_setup_violating_endpoints": 0,
+        "hold_or_setup_tns_ns": 0,
+        "max_slew_violations": 464,
+        "max_cap_violations": 50,
+        "worst_hold_endpoint": "network.in_period[122][0]$_DFFE_PP_",
+        "errors": 0
+      }
+    }
+  },
+  "drc_feol": {
+    "base": {
+      "items": 2,
+      "by_rule": {
+        "m3.6": 2
+      },
+      "feol_enabled": true,
+      "exit": "0"
+    },
+    "cg": {
+      "items": 0,
+      "by_rule": {},
+      "feol_enabled": true,
+      "exit": "0"
+    }
+  },
+  "power_sweep": {
+    "base": {
+      "25": {
+        "clock_MHz": 25,
+        "window_s": 0.000628861,
+        "window_power_mW": 5.742569454,
+        "window_energy_uJ": 3.611277969411894,
+        "idle_power_uW": 5675.576162,
+        "leakage_nW": 49.222141029999996,
+        "incremental_energy_per_vector_nJ": 2.1064734300206043,
+        "avg_power_at_1_beat_per_s_uW": 5675.5782684734295
+      },
+      "10": {
+        "clock_MHz": 10,
+        "window_s": 0.0015721525,
+        "window_power_mW": 2.297069645,
+        "window_energy_uJ": 3.6113437850608627,
+        "idle_power_uW": 2270.262921,
+        "leakage_nW": 49.222141029999996,
+        "incremental_energy_per_vector_nJ": 2.1072129076705015,
+        "avg_power_at_1_beat_per_s_uW": 2270.265028212908
+      },
+      "5": {
+        "clock_MHz": 5,
+        "window_s": 0.003144305,
+        "window_power_mW": 1.148559619,
+        "window_energy_uJ": 3.6114217528197954,
+        "idle_power_uW": 1135.1561410000002,
+        "leakage_nW": 49.222141029999996,
+        "incremental_energy_per_vector_nJ": 2.107231144639497,
+        "avg_power_at_1_beat_per_s_uW": 1135.1582482311446
+      },
+      "1": {
+        "clock_MHz": 1,
+        "window_s": 0.015721525,
+        "window_power_mW": 0.2297509927,
+        "window_energy_uJ": 3.6120359755078675,
+        "idle_power_uW": 227.0708646,
+        "leakage_nW": 49.222141029999996,
+        "incremental_energy_per_vector_nJ": 2.106785046367628,
+        "avg_power_at_1_beat_per_s_uW": 227.07297138504634
+      }
+    },
+    "cg": {
+      "25": {
+        "clock_MHz": 25,
+        "window_s": 0.000628861,
+        "window_power_mW": 3.3970542719999997,
+        "window_energy_uJ": 2.1362749465441917,
+        "idle_power_uW": 114.45131529999999,
+        "leakage_nW": 52.0631751,
+        "incremental_energy_per_vector_nJ": 103.21504889766594,
+        "avg_power_at_1_beat_per_s_uW": 114.55453034889767
+      },
+      "10": {
+        "clock_MHz": 10,
+        "window_s": 0.0015721525,
+        "window_power_mW": 1.358858775,
+        "window_energy_uJ": 2.1363332202631877,
+        "idle_power_uW": 45.811772,
+        "leakage_nW": 52.0631751,
+        "incremental_energy_per_vector_nJ": 103.2155064191979,
+        "avg_power_at_1_beat_per_s_uW": 45.914987506419195
+      },
+      "5": {
+        "clock_MHz": 5,
+        "window_s": 0.003144305,
+        "window_power_mW": 0.6794550573,
+        "window_energy_uJ": 2.1364139339436763,
+        "idle_power_uW": 22.93191756,
+        "leakage_nW": 52.0631751,
+        "incremental_energy_per_vector_nJ": 103.21544954500904,
+        "avg_power_at_1_beat_per_s_uW": 23.03513300954501
+      },
+      "1": {
+        "clock_MHz": 1,
+        "window_s": 0.015721525,
+        "window_power_mW": 0.13593141920000001,
+        "window_energy_uJ": 2.1370492052382803,
+        "idle_power_uW": 4.628032912,
+        "leakage_nW": 52.0631751,
+        "incremental_energy_per_vector_nJ": 103.21447350557246,
+        "avg_power_at_1_beat_per_s_uW": 4.731247385505573
+      }
+    }
+  },
+  "corner_libs": "open_pdks sky130 version (ciel): 5740c4a81c42f9fe4af5ef2ee258a99151053d28\nfb61d91c55a7f85b1989e8149d040b13ba5e7f5478f5bf0c3c16c5da30720139  build/corner_libs/sky130_fd_sc_hd__ff_n40C_1v95.lib\n9b24f0db3967ac67b4cae1f74bb480fd47922d18d0ed577e3c121739b412c361  build/corner_libs/sky130_fd_sc_hd__ss_100C_1v60.lib\n8e78e14442062dba34d414fca6490b2f6b96038d4510d1438ca44fee31487135  build/corner_libs/sky130_fd_sc_hd__tt_025C_1v80.lib\nORFS TT lib used for implementation:\nec0e1067a35c8bf20b11e58d1e8ac53326067e4dac84a125cc1b917a3518d0d9  /OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib\n"
+}

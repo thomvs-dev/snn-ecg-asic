@@ -217,6 +217,57 @@ final post-route netlist (reports/power_base/, reports/power_cg/). The
 baseline value reproduces the original estimate. These are OpenSTA estimates
 (zero-delay activity, TT corner), not measurements.
 
+## Extra checks: corner timing, full-chip DRC, frequency sweep, pin metal
+
+Run by `scripts/run_signoff_extra.sh` on the existing routed databases (no
+re-layout). Full tables are in `reports/signoff_extra/summary.md`. Corner
+libraries come from open_pdks sky130 `5740c4a81c42f9fe4af5ef2ee258a99151053d28`
+(via ciel), with hashes in `reports/signoff_extra/corner_libs.txt`. The PDK TT
+library reproduces the ORFS TT results exactly.
+
+**Timing is clean only at the typical corner** (40 ns clock, nominal extracted
+RC; only the cell library changes):
+
+| Design | Fast ff −40 °C 1.95 V | Slow ss 100 °C 1.60 V |
+|---|---|---|
+| base | setup +30.41 ns; **hold −0.123 ns, 1,396 endpoints, TNS −78.0 ns** | setup +26.73, hold +0.499 ns; **439 max-slew, 45 max-cap violations** |
+| cg | setup +29.75 ns; **hold −0.117 ns, 1,147 endpoints, TNS −41.3 ns** | setup +26.20, hold +0.149 ns; **464 max-slew, 50 max-cap violations** |
+
+The flow optimised for TT only. The SDC applies the full 0.4 ns uncertainty to
+hold as well as setup.
+
+**Full-chip DRC with the open_pdks manufacturing-rules deck** (`sky130A_mr.drc`,
+FEOL + BEOL + off-grid, 244 rule categories): **cg 0 violations; base 2**
+(`m3.6`, met3 minimum area 0.24 µm², at the `done` and `inference_cycles[15]`
+pins). Forcing FEOL on in the ORFS deck hung for more than 8 h in deep mode,
+so that deck is not used for FEOL.
+
+**Pin metal:** ORFS writes DEF pin rectangles only on the `.pin` marker
+datatype (16). The drawing-layer metal covers about 30 % of each pin
+rectangle and stops 0.4–0.8 µm short of the die edge, for all 31 pins in both
+designs. This explains the base `m3.6` hits. It is also an integration risk,
+because a parent design connecting at the die edge may not overlap real
+metal. LVS still matches. Fix: add the pin shapes to the drawing layer and
+recheck DRC/LVS.
+
+**Power vs clock frequency** (OpenSTA, TT; the zero-delay activity is
+time-stretched, which is exact for this cycle-based design):
+
+| Clock | base idle | cg idle | cg average at 1 beat/s | 20-vector window energy (base / cg) |
+|---|---|---|---|---|
+| 25 MHz | 5,676 µW | 114.5 µW | 114.6 µW | 3.611 / 2.136 µJ |
+| 10 MHz | 2,270 µW | 45.8 µW | 45.9 µW | 3.611 / 2.136 µJ |
+| 5 MHz | 1,135 µW | 22.9 µW | 23.0 µW | 3.611 / 2.136 µJ |
+| 1 MHz | 227.1 µW | **4.63 µW** | **4.73 µW** | 3.612 / 2.137 µJ |
+
+Idle power scales with frequency. Window energy stays the same, because the
+switching per beat is unchanged. At 1 MHz a typical beat is still short
+(256 µs loading plus a mean 0.28 ms RUN, against about 1 s between beats).
+The 2,501-cycle timer tick becomes 2.5 ms instead of 0.1 ms. That leaves
+results unchanged, because the inputs are pre-computed period codes, but it
+means the tick no longer matches the original design's 100 µs interval.
+Leakage (~51 nW) is about 1 % of the gated-design power at 1 MHz.
+
 ## Limitations and negative findings
 
 - Supplied inputs are six-bit; the RTL keeps the low four bits. 125,332 of
@@ -226,10 +277,10 @@ baseline value reproduces the original estimate. These are OpenSTA estimates
   supplied. Baseline agreement is not accuracy. The paper's 97.9 % accuracy,
   88.0 % F1 and 1.78 µJ/beat are not claimed for this hardware, and the
   released RTL differs from the paper's model (docs/RTL_AUDIT.md).
-- Timing covers one TT corner. Hold margin is 47 ps at TT, and the fast
-  corner has not been checked.
-- DRC ran without FEOL, density or antenna deck sections. This is not foundry
-  signoff.
+- Timing closes at TT only: fast-corner hold fails (−0.12 ns, >1,100 endpoints) and the
+  slow corner has max-slew/cap violations (see Extra checks).
+- Full-chip DRC with the open_pdks mr deck: cg clean, base 2 met3 min-area hits. Pin
+  shapes are not on the drawing layer (both designs). Density/fill not checked; not foundry signoff.
 - Power is a tool estimate from zero-delay activity on the synthesis netlist,
   with 1,482 unannotated pins.
 - There is no SDF simulation and no RTL-to-gate formal equivalence.

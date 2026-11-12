@@ -1,0 +1,1880 @@
+OPENROAD: /OpenROAD-flow-scripts/tools/OpenROAD
+FEOL    = true # front-end-of-line checks
+BEOL    = true # back-end-of-line checks
+OFFGRID = true # manufacturing grid/angle checks
+# SKIPPED (runtime): diff.interacting(gate).not(diff.interacting(gate).width(5.7, euclidian).polygons).output("licon.12", "licon.12 : max. sd width without licon : 5.7um")
+"input" in: feol.lydrc:71
+    Polygons (raw): 44404 (flat)  280 (hierarchical)
+    Elapsed: 0.100s  Memory: 472.00M
+"polygons" in: feol.lydrc:72
+    Polygons (raw): 9156 (flat)  2 (hierarchical)
+    Elapsed: 0.050s  Memory: 472.00M
+"polygons" in: feol.lydrc:73
+    Polygons (raw): 49346 (flat)  113 (hierarchical)
+    Elapsed: 0.060s  Memory: 472.00M
+"polygons" in: feol.lydrc:74
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 472.00M
+"polygons" in: feol.lydrc:75
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 472.00M
+"polygons" in: feol.lydrc:76
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 472.00M
+"polygons" in: feol.lydrc:77
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 472.00M
+"polygons" in: feol.lydrc:78
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 472.00M
+"polygons" in: feol.lydrc:79
+    Polygons (raw): 49359 (flat)  114 (hierarchical)
+    Elapsed: 0.050s  Memory: 472.00M
+"polygons" in: feol.lydrc:80
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 472.00M
+"polygons" in: feol.lydrc:81
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 472.00M
+"polygons" in: feol.lydrc:82
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 472.00M
+"polygons" in: feol.lydrc:83
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 472.00M
+"polygons" in: feol.lydrc:84
+    Polygons (raw): 93015 (flat)  625 (hierarchical)
+    Elapsed: 0.040s  Memory: 472.00M
+"polygons" in: feol.lydrc:85
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 472.00M
+"polygons" in: feol.lydrc:86
+    Polygons (raw): 53924 (flat)  114 (hierarchical)
+    Elapsed: 0.050s  Memory: 472.00M
+"polygons" in: feol.lydrc:87
+    Polygons (raw): 58020 (flat)  116 (hierarchical)
+    Elapsed: 0.040s  Memory: 472.00M
+"polygons" in: feol.lydrc:88
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 472.00M
+"polygons" in: feol.lydrc:89
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 472.00M
+"polygons" in: feol.lydrc:90
+    Polygons (raw): 23168 (flat)  123 (hierarchical)
+    Elapsed: 0.040s  Memory: 472.00M
+"polygons" in: feol.lydrc:91
+    Polygons (raw): 357254 (flat)  2829 (hierarchical)
+    Elapsed: 0.060s  Memory: 472.00M
+"polygons" in: feol.lydrc:93
+    Polygons (raw): 353820 (flat)  2201 (hierarchical)
+    Elapsed: 0.060s  Memory: 472.00M
+"polygons" in: feol.lydrc:94
+    Polygons (raw): 619768 (flat)  1684 (hierarchical)
+    Elapsed: 0.040s  Memory: 472.00M
+"polygons" in: feol.lydrc:96
+    Polygons (raw): 357105 (flat)  55013 (hierarchical)
+    Elapsed: 0.100s  Memory: 472.00M
+"polygons" in: feol.lydrc:97
+    Polygons (raw): 65101 (flat)  7 (hierarchical)
+    Elapsed: 0.060s  Memory: 472.00M
+"polygons" in: feol.lydrc:99
+    Polygons (raw): 88913 (flat)  34966 (hierarchical)
+    Elapsed: 0.080s  Memory: 472.00M
+"polygons" in: feol.lydrc:100
+    Polygons (raw): 21513 (flat)  5 (hierarchical)
+    Elapsed: 0.040s  Memory: 474.00M
+"polygons" in: feol.lydrc:102
+    Polygons (raw): 19832 (flat)  7018 (hierarchical)
+    Elapsed: 0.050s  Memory: 474.00M
+"polygons" in: feol.lydrc:103
+    Polygons (raw): 19301 (flat)  5 (hierarchical)
+    Elapsed: 0.040s  Memory: 474.00M
+"polygons" in: feol.lydrc:105
+    Polygons (raw): 6666 (flat)  441 (hierarchical)
+    Elapsed: 0.050s  Memory: 474.00M
+"polygons" in: feol.lydrc:106
+    Polygons (raw): 925 (flat)  1 (hierarchical)
+    Elapsed: 0.060s  Memory: 474.00M
+"polygons" in: feol.lydrc:108
+    Polygons (raw): 1011 (flat)  87 (hierarchical)
+    Elapsed: 0.030s  Memory: 474.00M
+"polygons" in: feol.lydrc:110
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 474.00M
+"polygons" in: feol.lydrc:111
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 474.00M
+"polygons" in: feol.lydrc:112
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 474.00M
+"polygons" in: feol.lydrc:113
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 474.00M
+"polygons" in: feol.lydrc:114
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 474.00M
+"polygons" in: feol.lydrc:115
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 474.00M
+"polygons" in: feol.lydrc:116
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 474.00M
+"polygons" in: feol.lydrc:117
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 474.00M
+"polygons" in: feol.lydrc:118
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 474.00M
+"polygons" in: feol.lydrc:119
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 474.00M
+"polygons" in: feol.lydrc:120
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 474.00M
+"polygons" in: feol.lydrc:121
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 474.00M
+"polygons" in: feol.lydrc:122
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 474.00M
+"polygons" in: feol.lydrc:123
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 474.00M
+"polygons" in: feol.lydrc:124
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 474.00M
+"polygons" in: feol.lydrc:125
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 474.00M
+"polygons" in: feol.lydrc:126
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 474.00M
+"polygons" in: feol.lydrc:127
+    Polygons (raw): 49346 (flat)  113 (hierarchical)
+    Elapsed: 0.030s  Memory: 474.00M
+"polygons" in: feol.lydrc:128
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 474.00M
+"polygons" in: feol.lydrc:129
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 474.00M
+"polygons" in: feol.lydrc:130
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 474.00M
+"polygons" in: feol.lydrc:131
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 474.00M
+"polygons" in: feol.lydrc:132
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 474.00M
+"polygons" in: feol.lydrc:133
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 474.00M
+"polygons" in: feol.lydrc:134
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 474.00M
+"polygons" in: feol.lydrc:135
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 474.00M
+"polygons" in: feol.lydrc:136
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 474.00M
+"polygons" in: feol.lydrc:137
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 474.00M
+"polygons" in: feol.lydrc:138
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 474.00M
+"polygons" in: feol.lydrc:139
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 474.00M
+"polygons" in: feol.lydrc:140
+    Polygons (raw): 10 (flat)  1 (hierarchical)
+    Elapsed: 0.040s  Memory: 474.00M
+"polygons" in: feol.lydrc:141
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 474.00M
+"polygons" in: feol.lydrc:142
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 474.00M
+"polygons" in: feol.lydrc:143
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 474.00M
+"polygons" in: feol.lydrc:144
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 474.00M
+"polygons" in: feol.lydrc:145
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 474.00M
+"polygons" in: feol.lydrc:146
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 474.00M
+"polygons" in: feol.lydrc:147
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 474.00M
+"polygons" in: feol.lydrc:148
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 474.00M
+"polygons" in: feol.lydrc:149
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 474.00M
+"polygons" in: feol.lydrc:150
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 474.00M
+"polygons" in: feol.lydrc:151
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 474.00M
+"polygons" in: feol.lydrc:152
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 474.00M
+"polygons" in: feol.lydrc:153
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 474.00M
+"polygons" in: feol.lydrc:154
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 474.00M
+"polygons" in: feol.lydrc:155
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 474.00M
+"polygons" in: feol.lydrc:156
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 474.00M
+"polygons" in: feol.lydrc:157
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 474.00M
+"polygons" in: feol.lydrc:158
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 474.00M
+"polygons" in: feol.lydrc:159
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 474.00M
+"polygons" in: feol.lydrc:160
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 474.00M
+"polygons" in: feol.lydrc:161
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 474.00M
+"polygons" in: feol.lydrc:162
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 474.00M
+DRC section
+FEOL section
+"&" in: feol.lydrc:186
+    Polygons (raw): 153015 (flat)  1218 (hierarchical)
+    Elapsed: 0.150s  Memory: 479.00M
+"width" in: feol.lydrc:189
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 479.00M
+"output" in: feol.lydrc:189
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 479.00M
+"-" in: feol.lydrc:190
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 479.00M
+"-" in: feol.lydrc:190
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 479.00M
+"isolated" in: feol.lydrc:190
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.040s  Memory: 479.00M
+"output" in: feol.lydrc:190
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 479.00M
+"&" in: feol.lydrc:191
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 479.00M
+"output" in: feol.lydrc:191
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 479.00M
+"&" in: feol.lydrc:192
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 479.00M
+"edges" in: feol.lydrc:192
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 479.00M
+"edges" in: feol.lydrc:192
+    Edges: 135233 (flat)  17513 (hierarchical)
+    Elapsed: 4.350s  Memory: 518.00M
+"-" in: feol.lydrc:192
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.040s  Memory: 518.00M
+"output" in: feol.lydrc:192
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 518.00M
+"width" in: feol.lydrc:196
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.940s  Memory: 536.00M
+"output" in: feol.lydrc:196
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.100s  Memory: 536.00M
+"isolated" in: feol.lydrc:197
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.050s  Memory: 536.00M
+"output" in: feol.lydrc:197
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 536.00M
+"-" in: feol.lydrc:200
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 536.00M
+"-" in: feol.lydrc:200
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 536.00M
+"enclosing" in: feol.lydrc:200
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 536.00M
+"output" in: feol.lydrc:200
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 536.00M
+"-" in: feol.lydrc:201
+    Polygons (raw): 49346 (flat)  113 (hierarchical)
+    Elapsed: 0.010s  Memory: 536.00M
+"enclosing" in: feol.lydrc:201
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 536.00M
+"output" in: feol.lydrc:201
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.090s  Memory: 536.00M
+"separation" in: feol.lydrc:202
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 536.00M
+"output" in: feol.lydrc:202
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 536.00M
+"-" in: feol.lydrc:205
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 536.00M
+"output" in: feol.lydrc:205
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 536.00M
+"&" in: feol.lydrc:206
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 536.00M
+"edges" in: feol.lydrc:206
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 536.00M
+"-" in: feol.lydrc:206
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 536.00M
+"output" in: feol.lydrc:206
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 536.00M
+"-" in: feol.lydrc:209
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 536.00M
+"output" in: feol.lydrc:209
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 536.00M
+"-" in: feol.lydrc:210
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 536.00M
+"output" in: feol.lydrc:210
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 536.00M
+"-" in: feol.lydrc:211
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 536.00M
+"output" in: feol.lydrc:211
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 536.00M
+"width" in: feol.lydrc:215
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.810s  Memory: 550.00M
+"output" in: feol.lydrc:215
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.040s  Memory: 550.00M
+"isolated" in: feol.lydrc:216
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.070s  Memory: 550.00M
+"output" in: feol.lydrc:216
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 550.00M
+"&" in: feol.lydrc:217
+    Polygons (raw): 76564 (flat)  617 (hierarchical)
+    Elapsed: 0.320s  Memory: 554.00M
+"enclosing" in: feol.lydrc:217
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 4.340s  Memory: 589.00M
+"output" in: feol.lydrc:217
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.100s  Memory: 589.00M
+"&" in: feol.lydrc:218
+    Polygons (raw): 76564 (flat)  617 (hierarchical)
+    Elapsed: 0.290s  Memory: 589.00M
+"separation" in: feol.lydrc:218
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 4.270s  Memory: 627.00M
+"output" in: feol.lydrc:218
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.080s  Memory: 627.00M
+"with_area" in: feol.lydrc:219
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 627.00M
+"output" in: feol.lydrc:219
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 627.00M
+"width" in: feol.lydrc:222
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 627.00M
+"output" in: feol.lydrc:222
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 627.00M
+"isolated" in: feol.lydrc:223
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 627.00M
+"output" in: feol.lydrc:223
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 627.00M
+"width" in: feol.lydrc:226
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 627.00M
+"output" in: feol.lydrc:226
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 627.00M
+"isolated" in: feol.lydrc:227
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 627.00M
+"output" in: feol.lydrc:227
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 627.00M
+"&" in: feol.lydrc:228
+    Polygons (raw): 153015 (flat)  1218 (hierarchical)
+    Elapsed: 0.180s  Memory: 600.00M
+"-" in: feol.lydrc:228
+    Polygons (raw): 153015 (flat)  1218 (hierarchical)
+    Elapsed: 0.020s  Memory: 600.00M
+"separation" in: feol.lydrc:228
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 600.00M
+"output" in: feol.lydrc:228
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 600.00M
+"&" in: feol.lydrc:229
+    Polygons (raw): 21655 (flat)  135 (hierarchical)
+    Elapsed: 0.450s  Memory: 600.00M
+"-" in: feol.lydrc:229
+    Polygons (raw): 98219 (flat)  752 (hierarchical)
+    Elapsed: 0.260s  Memory: 600.00M
+"separation" in: feol.lydrc:229
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 600.00M
+"output" in: feol.lydrc:229
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 600.00M
+"-" in: feol.lydrc:230
+    Polygons (raw): 153015 (flat)  1218 (hierarchical)
+    Elapsed: 0.020s  Memory: 600.00M
+"enclosing" in: feol.lydrc:230
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 600.00M
+"output" in: feol.lydrc:230
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 600.00M
+"separation" in: feol.lydrc:231
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.100s  Memory: 600.00M
+"output" in: feol.lydrc:231
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 600.00M
+"-" in: feol.lydrc:232
+    Polygons (raw): 49346 (flat)  113 (hierarchical)
+    Elapsed: 0.020s  Memory: 600.00M
+"-" in: feol.lydrc:232
+    Polygons (raw): 49346 (flat)  113 (hierarchical)
+    Elapsed: 0.020s  Memory: 600.00M
+"&" in: feol.lydrc:232
+    Polygons (raw): 76564 (flat)  617 (hierarchical)
+    Elapsed: 0.320s  Memory: 600.00M
+"not_interacting" in: feol.lydrc:232
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.650s  Memory: 619.00M
+"-" in: feol.lydrc:232
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.080s  Memory: 619.00M
+"enclosing" in: feol.lydrc:232
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 619.00M
+"polygons" in: feol.lydrc:232
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 619.00M
+"without_area" in: feol.lydrc:232
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 619.00M
+"output" in: feol.lydrc:232
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 619.00M
+"inside" in: feol.lydrc:233
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 619.00M
+"separation" in: feol.lydrc:233
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 619.00M
+"output" in: feol.lydrc:233
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 619.00M
+"with_area" in: feol.lydrc:234
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 619.00M
+"output" in: feol.lydrc:234
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.060s  Memory: 619.00M
+"&" in: feol.lydrc:237
+    Polygons (raw): 4578 (flat)  1 (hierarchical)
+    Elapsed: 0.280s  Memory: 619.00M
+"-" in: feol.lydrc:237
+    Polygons (raw): 22687 (flat)  139 (hierarchical)
+    Elapsed: 0.450s  Memory: 619.00M
+"or" in: feol.lydrc:237
+    Polygons (raw): 27215 (flat)  138 (hierarchical)
+    Elapsed: 0.140s  Memory: 619.00M
+"&" in: feol.lydrc:237
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 619.00M
+"output" in: feol.lydrc:237
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 619.00M
+"width" in: feol.lydrc:238
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 619.00M
+"output" in: feol.lydrc:238
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 619.00M
+"isolated" in: feol.lydrc:239
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 619.00M
+"output" in: feol.lydrc:239
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 619.00M
+"&" in: feol.lydrc:240
+    Polygons (raw): 21655 (flat)  135 (hierarchical)
+    Elapsed: 0.460s  Memory: 619.00M
+"enclosing" in: feol.lydrc:240
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.080s  Memory: 619.00M
+"output" in: feol.lydrc:240
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 619.00M
+"&" in: feol.lydrc:241
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 619.00M
+"separation" in: feol.lydrc:241
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 619.00M
+"output" in: feol.lydrc:241
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 619.00M
+"-" in: feol.lydrc:242
+    Polygons (raw): 22687 (flat)  139 (hierarchical)
+    Elapsed: 0.480s  Memory: 619.00M
+"separation" in: feol.lydrc:242
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.080s  Memory: 619.00M
+"output" in: feol.lydrc:242
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 619.00M
+"with_area" in: feol.lydrc:243
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 619.00M
+"output" in: feol.lydrc:243
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 619.00M
+"+" in: feol.lydrc:246
+    Polygons (raw): 53560 (flat)  282 (hierarchical)
+    Elapsed: 0.050s  Memory: 619.00M
+"width" in: feol.lydrc:247
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.110s  Memory: 619.00M
+"output" in: feol.lydrc:247
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 619.00M
+"input" in: feol.lydrc:249
+    Polygons (raw): 44404 (flat)  280 (hierarchical)
+    Elapsed: 0.050s  Memory: 619.00M
+"-" in: feol.lydrc:250
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.260s  Memory: 623.00M
+"-" in: feol.lydrc:250
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 623.00M
+"edges" in: feol.lydrc:250
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 623.00M
+"edges" in: feol.lydrc:250
+    Edges: 612060 (flat)  4872 (hierarchical)
+    Elapsed: 0.160s  Memory: 623.00M
+"&" in: feol.lydrc:250
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 623.00M
+"with_length" in: feol.lydrc:250
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.070s  Memory: 623.00M
+"output" in: feol.lydrc:250
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 623.00M
+"&" in: feol.lydrc:251
+    Polygons (raw): 44292 (flat)  272 (hierarchical)
+    Elapsed: 0.300s  Memory: 623.00M
+"-" in: feol.lydrc:251
+    Polygons (raw): 197307 (flat)  1490 (hierarchical)
+    Elapsed: 0.260s  Memory: 623.00M
+"edges" in: feol.lydrc:251
+    Edges: 840734 (flat)  6126 (hierarchical)
+    Elapsed: 0.180s  Memory: 623.00M
+"edges" in: feol.lydrc:251
+    Edges: 612060 (flat)  4872 (hierarchical)
+    Elapsed: 0.210s  Memory: 623.00M
+"&" in: feol.lydrc:251
+    Edges: 306030 (flat)  2436 (hierarchical)
+    Elapsed: 0.200s  Memory: 623.00M
+"with_length" in: feol.lydrc:251
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.140s  Memory: 623.00M
+"output" in: feol.lydrc:251
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.100s  Memory: 623.00M
+"isolated" in: feol.lydrc:252
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.160s  Memory: 623.00M
+"output" in: feol.lydrc:252
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 623.00M
+"edges" in: feol.lydrc:253
+    Edges: 36624 (flat)  8 (hierarchical)
+    Elapsed: 0.090s  Memory: 623.00M
+"edges" in: feol.lydrc:253
+    Edges: 228799 (flat)  1259 (hierarchical)
+    Elapsed: 0.140s  Memory: 623.00M
+"&" in: feol.lydrc:253
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.110s  Memory: 623.00M
+"with_length" in: feol.lydrc:253
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.060s  Memory: 623.00M
+"output" in: feol.lydrc:253
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 623.00M
+"edges" in: feol.lydrc:254
+    Edges: 36624 (flat)  8 (hierarchical)
+    Elapsed: 0.080s  Memory: 623.00M
+"edges" in: feol.lydrc:254
+    Edges: 228799 (flat)  1259 (hierarchical)
+    Elapsed: 0.160s  Memory: 624.00M
+"&" in: feol.lydrc:254
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.140s  Memory: 624.00M
+"space" in: feol.lydrc:254
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.100s  Memory: 624.00M
+"output" in: feol.lydrc:254
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 624.00M
+"edges" in: feol.lydrc:255
+    Edges: 36624 (flat)  8 (hierarchical)
+    Elapsed: 0.100s  Memory: 624.00M
+"edges" in: feol.lydrc:255
+    Edges: 228799 (flat)  1259 (hierarchical)
+    Elapsed: 0.160s  Memory: 624.00M
+"&" in: feol.lydrc:255
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.160s  Memory: 624.00M
+"extended" in: feol.lydrc:255
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.090s  Memory: 624.00M
+"&" in: feol.lydrc:255
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.070s  Memory: 624.00M
+"-" in: feol.lydrc:255
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 624.00M
+"or" in: feol.lydrc:255
+    Polygons (raw): 53448 (flat)  274 (hierarchical)
+    Elapsed: 0.140s  Memory: 624.00M
+"&" in: feol.lydrc:255
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.120s  Memory: 624.00M
+"output" in: feol.lydrc:255
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 624.00M
+"edges" in: feol.lydrc:256
+    Edges: 36624 (flat)  8 (hierarchical)
+    Elapsed: 0.090s  Memory: 624.00M
+"edges" in: feol.lydrc:256
+    Edges: 228799 (flat)  1259 (hierarchical)
+    Elapsed: 0.170s  Memory: 624.00M
+"not_interacting" in: feol.lydrc:256
+    Edges: 36624 (flat)  8 (hierarchical)
+    Elapsed: 0.260s  Memory: 624.00M
+"edges" in: feol.lydrc:256
+    Edges: 228799 (flat)  1259 (hierarchical)
+    Elapsed: 0.130s  Memory: 624.00M
+"separation" in: feol.lydrc:256
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.180s  Memory: 624.00M
+"output" in: feol.lydrc:256
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.090s  Memory: 624.00M
+"edges" in: feol.lydrc:257
+    Edges: 228799 (flat)  1259 (hierarchical)
+    Elapsed: 0.130s  Memory: 624.00M
+"edges" in: feol.lydrc:257
+    Edges: 36624 (flat)  8 (hierarchical)
+    Elapsed: 0.100s  Memory: 624.00M
+"not_interacting" in: feol.lydrc:257
+    Edges: 228674 (flat)  1254 (hierarchical)
+    Elapsed: 0.210s  Memory: 624.00M
+"edges" in: feol.lydrc:257
+    Edges: 36624 (flat)  8 (hierarchical)
+    Elapsed: 0.160s  Memory: 624.00M
+"separation" in: feol.lydrc:257
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.210s  Memory: 624.00M
+"output" in: feol.lydrc:257
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 624.00M
+"-" in: feol.lydrc:258
+    Polygons (raw): 44404 (flat)  280 (hierarchical)
+    Elapsed: 0.020s  Memory: 624.00M
+"&" in: feol.lydrc:258
+    Polygons (raw): 21655 (flat)  135 (hierarchical)
+    Elapsed: 0.340s  Memory: 624.00M
+"enclosing" in: feol.lydrc:258
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 5.690s  Memory: 624.00M
+"output" in: feol.lydrc:258
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.110s  Memory: 624.00M
+"-" in: feol.lydrc:259
+    Polygons (raw): 44404 (flat)  280 (hierarchical)
+    Elapsed: 0.020s  Memory: 624.00M
+"&" in: feol.lydrc:259
+    Polygons (raw): 22637 (flat)  137 (hierarchical)
+    Elapsed: 0.280s  Memory: 624.00M
+"separation" in: feol.lydrc:259
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.330s  Memory: 624.00M
+"output" in: feol.lydrc:259
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.070s  Memory: 624.00M
+"-" in: feol.lydrc:260
+    Polygons (raw): 9156 (flat)  2 (hierarchical)
+    Elapsed: 0.010s  Memory: 624.00M
+"&" in: feol.lydrc:260
+    Polygons (raw): 4578 (flat)  1 (hierarchical)
+    Elapsed: 0.230s  Memory: 624.00M
+"enclosing" in: feol.lydrc:260
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 3.170s  Memory: 651.00M
+"output" in: feol.lydrc:260
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.110s  Memory: 651.00M
+"-" in: feol.lydrc:261
+    Polygons (raw): 9156 (flat)  2 (hierarchical)
+    Elapsed: 0.020s  Memory: 651.00M
+"&" in: feol.lydrc:261
+    Polygons (raw): 4578 (flat)  1 (hierarchical)
+    Elapsed: 0.240s  Memory: 651.00M
+"separation" in: feol.lydrc:261
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.200s  Memory: 651.00M
+"output" in: feol.lydrc:261
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.100s  Memory: 651.00M
+"width" in: feol.lydrc:264
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 651.00M
+"output" in: feol.lydrc:264
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 651.00M
+"isolated" in: feol.lydrc:265
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 651.00M
+"output" in: feol.lydrc:265
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 651.00M
+"enclosing" in: feol.lydrc:266
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 651.00M
+"output" in: feol.lydrc:266
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 651.00M
+"not_interacting" in: feol.lydrc:267
+    Polygons (raw): 153015 (flat)  1218 (hierarchical)
+    Elapsed: 0.020s  Memory: 651.00M
+"separation" in: feol.lydrc:267
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 651.00M
+"output" in: feol.lydrc:267
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 651.00M
+"&" in: feol.lydrc:268
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 651.00M
+"edges" in: feol.lydrc:268
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.080s  Memory: 651.00M
+"edges" in: feol.lydrc:268
+    Edges: 612060 (flat)  4872 (hierarchical)
+    Elapsed: 0.160s  Memory: 651.00M
+"-" in: feol.lydrc:268
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 651.00M
+"output" in: feol.lydrc:268
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 651.00M
+"-" in: feol.lydrc:269
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 651.00M
+"output" in: feol.lydrc:269
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 651.00M
+"with_area" in: feol.lydrc:270
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 651.00M
+"output" in: feol.lydrc:270
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.090s  Memory: 651.00M
+"width" in: feol.lydrc:273
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.110s  Memory: 651.00M
+"output" in: feol.lydrc:273
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 651.00M
+"-" in: feol.lydrc:274
+    Polygons (raw): 241802 (flat)  1803 (hierarchical)
+    Elapsed: 0.220s  Memory: 651.00M
+"edges" in: feol.lydrc:274
+    Edges: 1424661 (flat)  10387 (hierarchical)
+    Elapsed: 0.180s  Memory: 651.00M
+"&" in: feol.lydrc:274
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 651.00M
+"edges" in: feol.lydrc:274
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 651.00M
+"&" in: feol.lydrc:274
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 651.00M
+"space" in: feol.lydrc:274
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.070s  Memory: 651.00M
+"output" in: feol.lydrc:274
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 651.00M
+"isolated" in: feol.lydrc:275
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.140s  Memory: 651.00M
+"output" in: feol.lydrc:275
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.090s  Memory: 651.00M
+"or" in: feol.lydrc:276
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.040s  Memory: 651.00M
+"or" in: feol.lydrc:276
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.040s  Memory: 651.00M
+"&" in: feol.lydrc:276
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 651.00M
+"width" in: feol.lydrc:276
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 651.00M
+"output" in: feol.lydrc:276
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 651.00M
+"-" in: feol.lydrc:277
+    Polygons (raw): 243866 (flat)  1807 (hierarchical)
+    Elapsed: 0.200s  Memory: 651.00M
+"separation" in: feol.lydrc:277
+    Edge pairs: 306030 (flat)  2436 (hierarchical)
+    Elapsed: 0.320s  Memory: 651.00M
+"polygons" in: feol.lydrc:277
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 651.00M
+"without_area" in: feol.lydrc:277
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 651.00M
+"output" in: feol.lydrc:277
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 651.00M
+"-" in: feol.lydrc:278
+    Polygons (raw): 243866 (flat)  1807 (hierarchical)
+    Elapsed: 0.200s  Memory: 651.00M
+"separation" in: feol.lydrc:278
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.230s  Memory: 651.00M
+"output" in: feol.lydrc:278
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 651.00M
+"separation" in: feol.lydrc:279
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.180s  Memory: 651.00M
+"polygons" in: feol.lydrc:279
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 651.00M
+"&" in: feol.lydrc:279
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 651.00M
+"output" in: feol.lydrc:279
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.100s  Memory: 651.00M
+"enclosing" in: feol.lydrc:280
+    Edge pairs: 306030 (flat)  2436 (hierarchical)
+    Elapsed: 0.270s  Memory: 651.00M
+"polygons" in: feol.lydrc:280
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 651.00M
+"without_area" in: feol.lydrc:280
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 651.00M
+"output" in: feol.lydrc:280
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.070s  Memory: 651.00M
+"enclosing" in: feol.lydrc:281
+    Edge pairs: 306080 (flat)  2438 (hierarchical)
+    Elapsed: 0.280s  Memory: 651.00M
+"polygons" in: feol.lydrc:281
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 651.00M
+"without_area" in: feol.lydrc:281
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 651.00M
+"output" in: feol.lydrc:281
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.080s  Memory: 651.00M
+"or" in: feol.lydrc:282
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.040s  Memory: 651.00M
+"or" in: feol.lydrc:282
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 651.00M
+"&" in: feol.lydrc:282
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 651.00M
+"or" in: feol.lydrc:282
+    Polygons (raw): 28599 (flat)  124 (hierarchical)
+    Elapsed: 0.170s  Memory: 651.00M
+"separation" in: feol.lydrc:282
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 651.00M
+"polygons" in: feol.lydrc:282
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 651.00M
+"without_area" in: feol.lydrc:282
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 651.00M
+"output" in: feol.lydrc:282
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 651.00M
+"merged" in: feol.lydrc:283
+    Polygons (raw): 44292 (flat)  272 (hierarchical)
+    Elapsed: 0.040s  Memory: 651.00M
+"edges" in: feol.lydrc:283
+    Edges: 228674 (flat)  1254 (hierarchical)
+    Elapsed: 0.000s  Memory: 651.00M
+"end_segments" in: feol.lydrc:283
+    Edges: 228674 (flat)  1254 (hierarchical)
+    Elapsed: 0.020s  Memory: 652.00M
+"&" in: feol.lydrc:283
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.100s  Memory: 652.00M
+"output" in: feol.lydrc:283
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.080s  Memory: 652.00M
+"with_angle" in: feol.lydrc:284
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.050s  Memory: 652.00M
+"output" in: feol.lydrc:284
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 652.00M
+"input" in: feol.lydrc:286
+    Polygons (raw): 93015 (flat)  625 (hierarchical)
+    Elapsed: 0.040s  Memory: 652.00M
+"-" in: feol.lydrc:287
+    Polygons (raw): 93015 (flat)  625 (hierarchical)
+    Elapsed: 0.030s  Memory: 652.00M
+"-" in: feol.lydrc:287
+    Polygons (raw): 49346 (flat)  113 (hierarchical)
+    Elapsed: 0.020s  Memory: 652.00M
+"-" in: feol.lydrc:287
+    Polygons (raw): 84698 (flat)  571 (hierarchical)
+    Elapsed: 2.960s  Memory: 652.00M
+"&" in: feol.lydrc:287
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.150s  Memory: 652.00M
+"output" in: feol.lydrc:287
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 652.00M
+"&" in: feol.lydrc:288
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 652.00M
+"output" in: feol.lydrc:288
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 652.00M
+"width" in: feol.lydrc:291
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 652.00M
+"output" in: feol.lydrc:291
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 652.00M
+"isolated" in: feol.lydrc:292
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 652.00M
+"output" in: feol.lydrc:292
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 652.00M
+"&" in: feol.lydrc:293
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.090s  Memory: 652.00M
+"&" in: feol.lydrc:293
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 652.00M
+"enclosing" in: feol.lydrc:293
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 652.00M
+"output" in: feol.lydrc:293
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 652.00M
+"&" in: feol.lydrc:294
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 652.00M
+"&" in: feol.lydrc:294
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 652.00M
+"enclosing" in: feol.lydrc:294
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 652.00M
+"output" in: feol.lydrc:294
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 652.00M
+"&" in: feol.lydrc:295
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 652.00M
+"&" in: feol.lydrc:295
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 652.00M
+"enclosing" in: feol.lydrc:295
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.060s  Memory: 652.00M
+"output" in: feol.lydrc:295
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 652.00M
+"separation" in: feol.lydrc:296
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 652.00M
+"output" in: feol.lydrc:296
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 652.00M
+"separation" in: feol.lydrc:297
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 652.00M
+"output" in: feol.lydrc:297
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 652.00M
+"&" in: feol.lydrc:298
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 652.00M
+"edges" in: feol.lydrc:298
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 652.00M
+"edges" in: feol.lydrc:298
+    Edges: 801380 (flat)  5468 (hierarchical)
+    Elapsed: 0.010s  Memory: 652.00M
+"-" in: feol.lydrc:298
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 652.00M
+"output" in: feol.lydrc:298
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 652.00M
+"&" in: feol.lydrc:299
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.100s  Memory: 652.00M
+"&" in: feol.lydrc:299
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 652.00M
+"separation" in: feol.lydrc:299
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 652.00M
+"output" in: feol.lydrc:299
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 652.00M
+"&" in: feol.lydrc:300
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 652.00M
+"output" in: feol.lydrc:300
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 652.00M
+"&" in: feol.lydrc:303
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.090s  Memory: 652.00M
+"-" in: feol.lydrc:303
+    Polygons (raw): 49346 (flat)  113 (hierarchical)
+    Elapsed: 0.020s  Memory: 652.00M
+"-" in: feol.lydrc:303
+    Polygons (raw): 49346 (flat)  113 (hierarchical)
+    Elapsed: 0.040s  Memory: 652.00M
+"&" in: feol.lydrc:303
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 652.00M
+"-" in: feol.lydrc:304
+    Polygons (raw): 9156 (flat)  2 (hierarchical)
+    Elapsed: 0.200s  Memory: 652.00M
+"edges" in: feol.lydrc:304
+    Edges: 36624 (flat)  8 (hierarchical)
+    Elapsed: 0.110s  Memory: 652.00M
+"edges" in: feol.lydrc:304
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.090s  Memory: 652.00M
+"&" in: feol.lydrc:304
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 652.00M
+"space" in: feol.lydrc:304
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.090s  Memory: 652.00M
+"output" in: feol.lydrc:304
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 652.00M
+"&" in: feol.lydrc:305
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.070s  Memory: 652.00M
+"edges" in: feol.lydrc:305
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 652.00M
+"edges" in: feol.lydrc:305
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 652.00M
+"&" in: feol.lydrc:305
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 652.00M
+"space" in: feol.lydrc:305
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.090s  Memory: 652.00M
+"output" in: feol.lydrc:305
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.090s  Memory: 652.00M
+"separation" in: feol.lydrc:306
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 652.00M
+"output" in: feol.lydrc:306
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 652.00M
+"&" in: feol.lydrc:307
+    Polygons (raw): 13734 (flat)  3 (hierarchical)
+    Elapsed: 0.150s  Memory: 652.00M
+"separation" in: feol.lydrc:307
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 652.00M
+"output" in: feol.lydrc:307
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 652.00M
+"overlapping" in: feol.lydrc:308
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 652.00M
+"enclosing" in: feol.lydrc:308
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.090s  Memory: 652.00M
+"output" in: feol.lydrc:308
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 652.00M
+"overlapping" in: feol.lydrc:309
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 652.00M
+"separation" in: feol.lydrc:309
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 652.00M
+"polygons" in: feol.lydrc:309
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 652.00M
+"without_area" in: feol.lydrc:309
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 652.00M
+"output" in: feol.lydrc:309
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 652.00M
+"overlapping" in: feol.lydrc:310
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 652.00M
+"&" in: feol.lydrc:310
+    Polygons (raw): 21655 (flat)  135 (hierarchical)
+    Elapsed: 0.470s  Memory: 653.00M
+"&" in: feol.lydrc:310
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 653.00M
+"output" in: feol.lydrc:310
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 653.00M
+"&" in: feol.lydrc:313
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 653.00M
+"edges" in: feol.lydrc:314
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 653.00M
+"without_length" in: feol.lydrc:314
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.060s  Memory: 653.00M
+"output" in: feol.lydrc:314
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 653.00M
+"isolated" in: feol.lydrc:315
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 653.00M
+"output" in: feol.lydrc:315
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 653.00M
+"separation" in: feol.lydrc:316
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 653.00M
+"output" in: feol.lydrc:316
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 653.00M
+"-" in: feol.lydrc:317
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 653.00M
+"output" in: feol.lydrc:317
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 653.00M
+"-" in: feol.lydrc:318
+    Polygons (raw): 4578 (flat)  1 (hierarchical)
+    Elapsed: 0.390s  Memory: 652.00M
+"holes" in: feol.lydrc:318
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.050s  Memory: 652.00M
+"-" in: feol.lydrc:318
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.070s  Memory: 652.00M
+"output" in: feol.lydrc:318
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 652.00M
+"&" in: feol.lydrc:319
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 652.00M
+"edges" in: feol.lydrc:319
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 652.00M
+"without_length" in: feol.lydrc:319
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.070s  Memory: 652.00M
+"output" in: feol.lydrc:319
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 652.00M
+"edges" in: feol.lydrc:320
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 652.00M
+"&" in: feol.lydrc:320
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 652.00M
+"sized" in: feol.lydrc:320
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 652.00M
+"&" in: feol.lydrc:320
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 652.00M
+"without_length" in: feol.lydrc:320
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.080s  Memory: 652.00M
+"output" in: feol.lydrc:320
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 652.00M
+"&" in: feol.lydrc:321
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 652.00M
+"edges" in: feol.lydrc:321
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 652.00M
+"without_length" in: feol.lydrc:321
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.050s  Memory: 652.00M
+"output" in: feol.lydrc:321
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 652.00M
+"width" in: feol.lydrc:324
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.310s  Memory: 652.00M
+"output" in: feol.lydrc:324
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.040s  Memory: 652.00M
+"isolated" in: feol.lydrc:325
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.080s  Memory: 652.00M
+"output" in: feol.lydrc:325
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 652.00M
+"separation" in: feol.lydrc:326
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.350s  Memory: 652.00M
+"output" in: feol.lydrc:326
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 652.00M
+"+" in: feol.lydrc:329
+    Polygons (raw): 111944 (flat)  230 (hierarchical)
+    Elapsed: 0.060s  Memory: 652.00M
+"width" in: feol.lydrc:330
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.820s  Memory: 653.00M
+"output" in: feol.lydrc:330
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.040s  Memory: 653.00M
+"width" in: feol.lydrc:331
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.980s  Memory: 655.00M
+"output" in: feol.lydrc:331
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.050s  Memory: 655.00M
+"isolated" in: feol.lydrc:332
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.110s  Memory: 655.00M
+"output" in: feol.lydrc:332
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 655.00M
+"isolated" in: feol.lydrc:333
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.100s  Memory: 655.00M
+"output" in: feol.lydrc:333
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 655.00M
+"enclosing" in: feol.lydrc:334
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 11.820s  Memory: 673.00M
+"polygons" in: feol.lydrc:334
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 673.00M
+"sized" in: feol.lydrc:334
+    Polygons (raw): 9156 (flat)  2 (hierarchical)
+    Elapsed: 0.100s  Memory: 673.00M
+"-" in: feol.lydrc:334
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 673.00M
+"output" in: feol.lydrc:334
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 673.00M
+"enclosing" in: feol.lydrc:335
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 6.480s  Memory: 673.00M
+"polygons" in: feol.lydrc:335
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 673.00M
+"sized" in: feol.lydrc:335
+    Polygons (raw): 44292 (flat)  272 (hierarchical)
+    Elapsed: 0.140s  Memory: 673.00M
+"-" in: feol.lydrc:335
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 673.00M
+"output" in: feol.lydrc:335
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 673.00M
+"edges" in: feol.lydrc:336
+    Edges: 36624 (flat)  8 (hierarchical)
+    Elapsed: 0.000s  Memory: 673.00M
+"edges" in: feol.lydrc:336
+    Edges: 228674 (flat)  1254 (hierarchical)
+    Elapsed: 0.000s  Memory: 673.00M
+"&" in: feol.lydrc:336
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.150s  Memory: 673.00M
+"-" in: feol.lydrc:336
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 673.00M
+"output" in: feol.lydrc:336
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 673.00M
+"&" in: feol.lydrc:337
+    Polygons (raw): 27215 (flat)  138 (hierarchical)
+    Elapsed: 0.360s  Memory: 673.00M
+"&" in: feol.lydrc:337
+    Polygons (raw): 26233 (flat)  136 (hierarchical)
+    Elapsed: 0.470s  Memory: 673.00M
+"separation" in: feol.lydrc:337
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.300s  Memory: 673.00M
+"polygons" in: feol.lydrc:337
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 673.00M
+"without_area" in: feol.lydrc:337
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 673.00M
+"output" in: feol.lydrc:337
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 673.00M
+"&" in: feol.lydrc:338
+    Polygons (raw): 4578 (flat)  1 (hierarchical)
+    Elapsed: 0.540s  Memory: 673.00M
+"-" in: feol.lydrc:338
+    Polygons (raw): 4578 (flat)  1 (hierarchical)
+    Elapsed: 3.180s  Memory: 674.00M
+"or" in: feol.lydrc:338
+    Polygons (raw): 9156 (flat)  2 (hierarchical)
+    Elapsed: 0.140s  Memory: 674.00M
+"&" in: feol.lydrc:338
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.110s  Memory: 674.00M
+"output" in: feol.lydrc:338
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 674.00M
+"-" in: feol.lydrc:339
+    Polygons (raw): 49322 (flat)  110 (hierarchical)
+    Elapsed: 0.620s  Memory: 674.00M
+"&" in: feol.lydrc:339
+    Polygons (raw): 53418 (flat)  112 (hierarchical)
+    Elapsed: 3.670s  Memory: 674.00M
+"or" in: feol.lydrc:339
+    Polygons (raw): 217 (flat)  217 (hierarchical)
+    Elapsed: 2.010s  Memory: 691.00M
+"&" in: feol.lydrc:339
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.290s  Memory: 691.00M
+"output" in: feol.lydrc:339
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 691.00M
+"&" in: feol.lydrc:340
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.050s  Memory: 691.00M
+"without_area" in: feol.lydrc:340
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 691.00M
+"output" in: feol.lydrc:340
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.050s  Memory: 691.00M
+"with_area" in: feol.lydrc:341
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 691.00M
+"output" in: feol.lydrc:341
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 691.00M
+"with_area" in: feol.lydrc:342
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 691.00M
+"output" in: feol.lydrc:342
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 691.00M
+"interacting" in: feol.lydrc:345
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 691.00M
+"&" in: feol.lydrc:345
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 691.00M
+"-" in: feol.lydrc:345
+    Polygons (raw): 357254 (flat)  2829 (hierarchical)
+    Elapsed: 0.020s  Memory: 691.00M
+"edges" in: feol.lydrc:345
+    Edges: 1427960 (flat)  11132 (hierarchical)
+    Elapsed: 0.230s  Memory: 691.00M
+"without_length" in: feol.lydrc:345
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.150s  Memory: 691.00M
+"output" in: feol.lydrc:345
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 691.00M
+"interacting" in: feol.lydrc:346
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 691.00M
+"&" in: feol.lydrc:346
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.080s  Memory: 691.00M
+"&" in: feol.lydrc:346
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 691.00M
+"interacting" in: feol.lydrc:346
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 691.00M
+"&" in: feol.lydrc:346
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 691.00M
+"&" in: feol.lydrc:346
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 691.00M
+"edges" in: feol.lydrc:346
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 691.00M
+"with_length" in: feol.lydrc:346
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.050s  Memory: 691.00M
+"interacting" in: feol.lydrc:346
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 691.00M
+"&" in: feol.lydrc:346
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 691.00M
+"&" in: feol.lydrc:346
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 691.00M
+"edges" in: feol.lydrc:346
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 691.00M
+"with_length" in: feol.lydrc:346
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.050s  Memory: 691.00M
+"or" in: feol.lydrc:346
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 691.00M
+"not_interacting" in: feol.lydrc:346
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 691.00M
+"output" in: feol.lydrc:346
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 691.00M
+"isolated" in: feol.lydrc:347
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.260s  Memory: 691.00M
+"output" in: feol.lydrc:347
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.060s  Memory: 691.00M
+"interacting" in: feol.lydrc:348
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 691.00M
+"&" in: feol.lydrc:348
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 691.00M
+"&" in: feol.lydrc:348
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 691.00M
+"edges" in: feol.lydrc:348
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 691.00M
+"with_length" in: feol.lydrc:348
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.050s  Memory: 691.00M
+"space" in: feol.lydrc:348
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.040s  Memory: 691.00M
+"output" in: feol.lydrc:348
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 691.00M
+"interacting" in: feol.lydrc:349
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 691.00M
+"&" in: feol.lydrc:349
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 691.00M
+"&" in: feol.lydrc:349
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.030s  Memory: 691.00M
+"edges" in: feol.lydrc:349
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 691.00M
+"with_length" in: feol.lydrc:349
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.050s  Memory: 691.00M
+"interacting" in: feol.lydrc:349
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 691.00M
+"interacting" in: feol.lydrc:349
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 691.00M
+"&" in: feol.lydrc:349
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 691.00M
+"&" in: feol.lydrc:349
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 691.00M
+"separation" in: feol.lydrc:349
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 691.00M
+"output" in: feol.lydrc:349
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 691.00M
+"interacting" in: feol.lydrc:350
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 691.00M
+"&" in: feol.lydrc:350
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 691.00M
+"&" in: feol.lydrc:350
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.040s  Memory: 691.00M
+"interacting" in: feol.lydrc:350
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 691.00M
+"&" in: feol.lydrc:350
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 691.00M
+"-" in: feol.lydrc:350
+    Polygons (raw): 357254 (flat)  2829 (hierarchical)
+    Elapsed: 0.030s  Memory: 691.00M
+"separation" in: feol.lydrc:350
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 691.00M
+"output" in: feol.lydrc:350
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 691.00M
+"-" in: feol.lydrc:352
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.940s  Memory: 692.00M
+"or" in: feol.lydrc:352
+    Polygons (raw): 19443 (flat)  122 (hierarchical)
+    Elapsed: 0.170s  Memory: 692.00M
+"or" in: feol.lydrc:352
+    Polygons (raw): 28599 (flat)  124 (hierarchical)
+    Elapsed: 0.130s  Memory: 692.00M
+"-" in: feol.lydrc:352
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 692.00M
+"output" in: feol.lydrc:352
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 692.00M
+"enclosing" in: feol.lydrc:353
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.270s  Memory: 692.00M
+"output" in: feol.lydrc:353
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.070s  Memory: 692.00M
+"edges" in: feol.lydrc:354
+    Edges: 36624 (flat)  8 (hierarchical)
+    Elapsed: 0.000s  Memory: 692.00M
+"edges" in: feol.lydrc:354
+    Edges: 228674 (flat)  1254 (hierarchical)
+    Elapsed: 0.000s  Memory: 692.00M
+"&" in: feol.lydrc:354
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.070s  Memory: 692.00M
+"&" in: feol.lydrc:354
+    Polygons (raw): 13734 (flat)  3 (hierarchical)
+    Elapsed: 0.110s  Memory: 692.00M
+"edges" in: feol.lydrc:354
+    Edges: 54936 (flat)  12 (hierarchical)
+    Elapsed: 0.090s  Memory: 692.00M
+"separation" in: feol.lydrc:354
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.120s  Memory: 691.00M
+"output" in: feol.lydrc:354
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 691.00M
+"enclosing" in: feol.lydrc:355
+    Edge pairs: 27468 (flat)  6 (hierarchical)
+    Elapsed: 0.150s  Memory: 691.00M
+"second_edges" in: feol.lydrc:355
+    Edges: 27468 (flat)  6 (hierarchical)
+    Elapsed: 0.000s  Memory: 691.00M
+"edges" in: feol.lydrc:356
+    Edges: 1427960 (flat)  11132 (hierarchical)
+    Elapsed: 0.010s  Memory: 691.00M
+"-" in: feol.lydrc:356
+    Edges: 1400492 (flat)  11126 (hierarchical)
+    Elapsed: 0.120s  Memory: 691.00M
+"width" in: feol.lydrc:356
+    Edge pairs: 700246 (flat)  5563 (hierarchical)
+    Elapsed: 0.360s  Memory: 691.00M
+"polygons" in: feol.lydrc:356
+    Polygons (raw): 700246 (flat)  5563 (hierarchical)
+    Elapsed: 0.000s  Memory: 691.00M
+"not_interacting" in: feol.lydrc:357
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.170s  Memory: 691.00M
+"output" in: feol.lydrc:357
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.090s  Memory: 691.00M
+"enclosing" in: feol.lydrc:358
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.250s  Memory: 691.00M
+"output" in: feol.lydrc:358
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 691.00M
+"enclosing" in: feol.lydrc:359
+    Edge pairs: 120104 (flat)  757 (hierarchical)
+    Elapsed: 0.290s  Memory: 691.00M
+"polygons" in: feol.lydrc:359
+    Polygons (raw): 120104 (flat)  757 (hierarchical)
+    Elapsed: 0.020s  Memory: 691.00M
+"interacting" in: feol.lydrc:359
+    Polygons (raw): 67781 (flat)  414 (hierarchical)
+    Elapsed: 0.160s  Memory: 692.00M
+"enclosing" in: feol.lydrc:360
+    Edge pairs: 111156 (flat)  673 (hierarchical)
+    Elapsed: 0.260s  Memory: 691.00M
+"second_edges" in: feol.lydrc:360
+    Edges: 111156 (flat)  673 (hierarchical)
+    Elapsed: 0.020s  Memory: 691.00M
+"edges" in: feol.lydrc:361
+    Edges: 1427960 (flat)  11132 (hierarchical)
+    Elapsed: 0.010s  Memory: 691.00M
+"-" in: feol.lydrc:361
+    Edges: 1344989 (flat)  10585 (hierarchical)
+    Elapsed: 0.140s  Memory: 691.00M
+"width" in: feol.lydrc:361
+    Edge pairs: 652123 (flat)  5202 (hierarchical)
+    Elapsed: 0.280s  Memory: 691.00M
+"polygons" in: feol.lydrc:361
+    Polygons (raw): 652123 (flat)  5202 (hierarchical)
+    Elapsed: 0.020s  Memory: 691.00M
+"not_interacting" in: feol.lydrc:362
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.120s  Memory: 691.00M
+"output" in: feol.lydrc:362
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 691.00M
+"-" in: feol.lydrc:364
+    Polygons (raw): 49346 (flat)  113 (hierarchical)
+    Elapsed: 0.010s  Memory: 691.00M
+"&" in: feol.lydrc:364
+    Polygons (raw): 4578 (flat)  1 (hierarchical)
+    Elapsed: 0.240s  Memory: 692.00M
+"&" in: feol.lydrc:364
+    Polygons (raw): 9156 (flat)  2 (hierarchical)
+    Elapsed: 0.150s  Memory: 692.00M
+"separation" in: feol.lydrc:364
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 692.00M
+"output" in: feol.lydrc:364
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 692.00M
+"input" in: feol.lydrc:366
+    Polygons (raw): 357254 (flat)  2829 (hierarchical)
+    Elapsed: 0.040s  Memory: 692.00M
+"or" in: feol.lydrc:367
+    Polygons (raw): 53448 (flat)  274 (hierarchical)
+    Elapsed: 0.100s  Memory: 692.00M
+"&" in: feol.lydrc:367
+    Polygons (raw): 275623 (flat)  2205 (hierarchical)
+    Elapsed: 0.230s  Memory: 692.00M
+"-" in: feol.lydrc:367
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.270s  Memory: 692.00M
+"separation" in: feol.lydrc:367
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 692.00M
+"output" in: feol.lydrc:367
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 692.00M
+"or" in: feol.lydrc:368
+    Polygons (raw): 53448 (flat)  274 (hierarchical)
+    Elapsed: 0.100s  Memory: 692.00M
+"&" in: feol.lydrc:368
+    Polygons (raw): 275623 (flat)  2205 (hierarchical)
+    Elapsed: 0.190s  Memory: 692.00M
+"&" in: feol.lydrc:368
+    Polygons (raw): 153015 (flat)  1218 (hierarchical)
+    Elapsed: 0.270s  Memory: 692.00M
+"separation" in: feol.lydrc:368
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.250s  Memory: 692.00M
+"output" in: feol.lydrc:368
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.060s  Memory: 692.00M
+"input" in: feol.lydrc:370
+    Polygons (raw): 357254 (flat)  2829 (hierarchical)
+    Elapsed: 0.040s  Memory: 692.00M
+"or" in: feol.lydrc:371
+    Polygons (raw): 53448 (flat)  274 (hierarchical)
+    Elapsed: 0.110s  Memory: 692.00M
+"&" in: feol.lydrc:371
+    Polygons (raw): 275623 (flat)  2205 (hierarchical)
+    Elapsed: 0.220s  Memory: 692.00M
+"separation" in: feol.lydrc:371
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.270s  Memory: 692.00M
+"output" in: feol.lydrc:371
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 692.00M
+"or" in: feol.lydrc:374
+    Polygons (raw): 53448 (flat)  274 (hierarchical)
+    Elapsed: 0.090s  Memory: 692.00M
+"&" in: feol.lydrc:374
+    Polygons (raw): 275623 (flat)  2205 (hierarchical)
+    Elapsed: 0.220s  Memory: 692.00M
+"separation" in: feol.lydrc:374
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.260s  Memory: 692.00M
+"output" in: feol.lydrc:374
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 692.00M
+"&" in: feol.lydrc:375
+    Polygons (raw): 81367 (flat)  578 (hierarchical)
+    Elapsed: 0.150s  Memory: 692.00M
+"or" in: feol.lydrc:375
+    Polygons (raw): 53448 (flat)  274 (hierarchical)
+    Elapsed: 0.100s  Memory: 692.00M
+"separation" in: feol.lydrc:375
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.250s  Memory: 692.00M
+"output" in: feol.lydrc:375
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 692.00M
+"&" in: feol.lydrc:376
+    Polygons (raw): 81367 (flat)  578 (hierarchical)
+    Elapsed: 0.130s  Memory: 692.00M
+"enclosing" in: feol.lydrc:376
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.380s  Memory: 692.00M
+"output" in: feol.lydrc:376
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.060s  Memory: 692.00M
+"-" in: feol.lydrc:379
+    Polygons (raw): 9156 (flat)  2 (hierarchical)
+    Elapsed: 0.020s  Memory: 692.00M
+"not_interacting" in: feol.lydrc:379
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.120s  Memory: 692.00M
+"output" in: feol.lydrc:379
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 692.00M
+"&" in: feol.lydrc:380
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.070s  Memory: 692.00M
+"edges" in: feol.lydrc:380
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 692.00M
+"edges" in: feol.lydrc:380
+    Edges: 36624 (flat)  8 (hierarchical)
+    Elapsed: 0.000s  Memory: 692.00M
+"-" in: feol.lydrc:380
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 692.00M
+"output" in: feol.lydrc:380
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 692.00M
+"&" in: feol.lydrc:381
+    Polygons (raw): 81367 (flat)  578 (hierarchical)
+    Elapsed: 0.170s  Memory: 692.00M
+"not_interacting" in: feol.lydrc:381
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.610s  Memory: 679.00M
+"output" in: feol.lydrc:381
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.060s  Memory: 672.00M
+"width" in: feol.lydrc:384
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 672.00M
+"output" in: feol.lydrc:384
+    Edge pairs: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 672.00M
+"or" in: feol.lydrc:386
+    Polygons (raw): 28599 (flat)  124 (hierarchical)
+    Elapsed: 0.110s  Memory: 672.00M
+"&" in: feol.lydrc:386
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 672.00M
+"output" in: feol.lydrc:386
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 672.00M
+"&" in: feol.lydrc:387
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 672.00M
+"edges" in: feol.lydrc:387
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 672.00M
+"edges" in: feol.lydrc:387
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 672.00M
+"-" in: feol.lydrc:387
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 672.00M
+"output" in: feol.lydrc:387
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 672.00M
+"&" in: feol.lydrc:388
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 672.00M
+"edges" in: feol.lydrc:388
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.070s  Memory: 672.00M
+"edges" in: feol.lydrc:388
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 672.00M
+"-" in: feol.lydrc:388
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 672.00M
+"output" in: feol.lydrc:388
+    Edges: 0 (flat)  0 (hierarchical)
+    Elapsed: 0.020s  Memory: 672.00M
+"or" in: feol.lydrc:389
+    Polygons (raw): 12365 (flat)  7606 (hierarchical)
+    Elapsed: 3.710s  Memory: 731.00M
+"or" in: feol.lydrc:389

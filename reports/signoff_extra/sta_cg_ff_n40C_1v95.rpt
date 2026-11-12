@@ -1,0 +1,1454 @@
+OPENROAD: /OpenROAD-flow-scripts/tools/OpenROAD
+OpenROAD unknown 
+Features included (+) or not (-): -GPU +GUI
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+corner_lib /work/build/corner_libs/sky130_fd_sc_hd__ff_n40C_1v95.lib
+variant cg
+worst slack max 29.7475
+worst slack min -0.1173
+tns max 0.0000
+### worst setup paths
+Startpoint: reset (input port clocked by core_clk)
+Endpoint: load_ready (output port clocked by core_clk)
+Path Group: core_clk
+Path Type: max
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock core_clk (rise edge)
+   0.000    0.000   clock network delay (propagated)
+   4.000    4.000 v input external delay
+   0.000    4.000 v reset (in)
+   0.514    4.514 v hold483/X (sky130_fd_sc_hd__dlygate4sd3_1)
+   0.066    4.580 v input24/X (sky130_fd_sc_hd__clkbuf_2)
+   0.359    4.939 v hold484/X (sky130_fd_sc_hd__dlygate4sd3_1)
+   0.154    5.093 v place456/X (sky130_fd_sc_hd__buf_4)
+   0.392    5.485 v _12669_/X (sky130_fd_sc_hd__or3_1)
+   0.161    5.645 ^ _12670_/Y (sky130_fd_sc_hd__nor2_1)
+   0.203    5.849 ^ output45/X (sky130_fd_sc_hd__buf_1)
+   0.004    5.853 ^ load_ready (out)
+            5.853   data arrival time
+
+  40.000   40.000   clock core_clk (rise edge)
+   0.000   40.000   clock network delay (propagated)
+  -0.400   39.600   clock uncertainty
+   0.000   39.600   clock reconvergence pessimism
+  -4.000   35.600   output external delay
+           35.600   data required time
+-----------------------------------------------------------
+           35.600   data required time
+           -5.853   data arrival time
+-----------------------------------------------------------
+           29.747   slack (MET)
+
+
+Startpoint: reset (input port clocked by core_clk)
+Endpoint: network.neuron_in121.counter[1]$_DFFE_PP_
+          (rising edge-triggered flip-flop clocked by core_clk)
+Path Group: core_clk
+Path Type: max
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock core_clk (rise edge)
+   0.000    0.000   clock network delay (propagated)
+   4.000    4.000 v input external delay
+   0.000    4.000 v reset (in)
+   0.514    4.514 v hold483/X (sky130_fd_sc_hd__dlygate4sd3_1)
+   0.066    4.580 v input24/X (sky130_fd_sc_hd__clkbuf_2)
+   0.359    4.939 v hold484/X (sky130_fd_sc_hd__dlygate4sd3_1)
+   0.154    5.093 v place456/X (sky130_fd_sc_hd__buf_4)
+   0.141    5.234 ^ _09745_/Y (sky130_fd_sc_hd__nor2_4)
+   0.213    5.446 ^ place367/X (sky130_fd_sc_hd__buf_4)
+   0.352    5.798 ^ place366/X (sky130_fd_sc_hd__buf_4)
+   0.263    6.061 ^ place361/X (sky130_fd_sc_hd__buf_4)
+   0.293    6.355 ^ place360/X (sky130_fd_sc_hd__buf_4)
+   0.407    6.762 ^ place359/X (sky130_fd_sc_hd__buf_4)
+   0.360    7.121 ^ place355/X (sky130_fd_sc_hd__buf_4)
+   0.341    7.462 ^ place354/X (sky130_fd_sc_hd__buf_4)
+   0.131    7.593 v _17487_/Y (sky130_fd_sc_hd__nand2_1)
+   0.076    7.669 ^ _18529_/Y (sky130_fd_sc_hd__nand2_1)
+   0.033    7.702 v _18530_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.000    7.702 v network.neuron_in121.counter[1]$_DFFE_PP_/D (sky130_fd_sc_hd__edfxtp_1)
+            7.702   data arrival time
+
+  40.000   40.000   clock core_clk (rise edge)
+   0.885   40.885   clock network delay (propagated)
+  -0.400   40.485   clock uncertainty
+   0.000   40.485   clock reconvergence pessimism
+           40.485 ^ network.neuron_in121.counter[1]$_DFFE_PP_/CLK (sky130_fd_sc_hd__edfxtp_1)
+  -0.145   40.340   library setup time
+           40.340   data required time
+-----------------------------------------------------------
+           40.340   data required time
+           -7.702   data arrival time
+-----------------------------------------------------------
+           32.638   slack (MET)
+
+
+Startpoint: reset (input port clocked by core_clk)
+Endpoint: network.neuron_in121.counter[0]$_DFFE_PP_
+          (rising edge-triggered flip-flop clocked by core_clk)
+Path Group: core_clk
+Path Type: max
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock core_clk (rise edge)
+   0.000    0.000   clock network delay (propagated)
+   4.000    4.000 v input external delay
+   0.000    4.000 v reset (in)
+   0.514    4.514 v hold483/X (sky130_fd_sc_hd__dlygate4sd3_1)
+   0.066    4.580 v input24/X (sky130_fd_sc_hd__clkbuf_2)
+   0.359    4.939 v hold484/X (sky130_fd_sc_hd__dlygate4sd3_1)
+   0.154    5.093 v place456/X (sky130_fd_sc_hd__buf_4)
+   0.141    5.234 ^ _09745_/Y (sky130_fd_sc_hd__nor2_4)
+   0.213    5.446 ^ place367/X (sky130_fd_sc_hd__buf_4)
+   0.352    5.798 ^ place366/X (sky130_fd_sc_hd__buf_4)
+   0.263    6.061 ^ place361/X (sky130_fd_sc_hd__buf_4)
+   0.293    6.355 ^ place360/X (sky130_fd_sc_hd__buf_4)
+   0.407    6.762 ^ place359/X (sky130_fd_sc_hd__buf_4)
+   0.360    7.121 ^ place355/X (sky130_fd_sc_hd__buf_4)
+   0.341    7.462 ^ place354/X (sky130_fd_sc_hd__buf_4)
+   0.131    7.593 v _17487_/Y (sky130_fd_sc_hd__nand2_1)
+   0.075    7.668 ^ _18534_/Y (sky130_fd_sc_hd__nand2_1)
+   0.032    7.700 v _18535_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.000    7.700 v network.neuron_in121.counter[0]$_DFFE_PP_/D (sky130_fd_sc_hd__edfxtp_1)
+            7.700   data arrival time
+
+  40.000   40.000   clock core_clk (rise edge)
+   0.885   40.885   clock network delay (propagated)
+  -0.400   40.485   clock uncertainty
+   0.000   40.485   clock reconvergence pessimism
+           40.485 ^ network.neuron_in121.counter[0]$_DFFE_PP_/CLK (sky130_fd_sc_hd__edfxtp_1)
+  -0.145   40.340   library setup time
+           40.340   data required time
+-----------------------------------------------------------
+           40.340   data required time
+           -7.700   data arrival time
+-----------------------------------------------------------
+           32.640   slack (MET)
+
+
+### worst hold paths
+Startpoint: network.hid_controler.addr_out[6]$_SDFF_PP0_
+            (rising edge-triggered flip-flop clocked by core_clk)
+Endpoint: network.neuron_hid0.ROM_address[6]$_SDFF_PP0_
+          (rising edge-triggered flip-flop clocked by core_clk)
+Path Group: core_clk
+Path Type: min
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock core_clk (rise edge)
+   0.887    0.887   clock network delay (propagated)
+   0.000    0.887 ^ network.hid_controler.addr_out[6]$_SDFF_PP0_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.185    1.072 ^ network.hid_controler.addr_out[6]$_SDFF_PP0_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.079    1.152 ^ _13214_/X (sky130_fd_sc_hd__and2_1)
+   0.000    1.152 ^ network.neuron_hid0.ROM_address[6]$_SDFF_PP0_/D (sky130_fd_sc_hd__dfxtp_1)
+            1.152   data arrival time
+
+   0.000    0.000   clock core_clk (rise edge)
+   0.887    0.887   clock network delay (propagated)
+   0.400    1.287   clock uncertainty
+   0.000    1.287   clock reconvergence pessimism
+            1.287 ^ network.neuron_hid0.ROM_address[6]$_SDFF_PP0_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.018    1.269   library hold time
+            1.269   data required time
+-----------------------------------------------------------
+            1.269   data required time
+           -1.152   data arrival time
+-----------------------------------------------------------
+           -0.117   slack (VIOLATED)
+
+
+Startpoint: network.cnt_main.counter[0]$_SDFF_PP0_
+            (rising edge-triggered flip-flop clocked by core_clk)
+Endpoint: network.cnt_main.counter[0]$_SDFF_PP0_
+          (rising edge-triggered flip-flop clocked by core_clk)
+Path Group: core_clk
+Path Type: min
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock core_clk (rise edge)
+   0.914    0.914   clock network delay (propagated)
+   0.000    0.914 ^ network.cnt_main.counter[0]$_SDFF_PP0_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.205    1.119 v network.cnt_main.counter[0]$_SDFF_PP0_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.061    1.180 ^ _14389_/Y (sky130_fd_sc_hd__nor2_1)
+   0.000    1.180 ^ network.cnt_main.counter[0]$_SDFF_PP0_/D (sky130_fd_sc_hd__dfxtp_1)
+            1.180   data arrival time
+
+   0.000    0.000   clock core_clk (rise edge)
+   0.914    0.914   clock network delay (propagated)
+   0.400    1.314   clock uncertainty
+   0.000    1.314   clock reconvergence pessimism
+            1.314 ^ network.cnt_main.counter[0]$_SDFF_PP0_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.018    1.295   library hold time
+            1.295   data required time
+-----------------------------------------------------------
+            1.295   data required time
+           -1.180   data arrival time
+-----------------------------------------------------------
+           -0.115   slack (VIOLATED)
+
+
+Startpoint: network.neuron_out3.IF0.membrane_potential[7]$_SDFF_PP0_
+            (rising edge-triggered flip-flop clocked by core_clk)
+Endpoint: network.neuron_out3.IF0.membrane_potential[7]$_SDFF_PP0_
+          (rising edge-triggered flip-flop clocked by core_clk)
+Path Group: core_clk
+Path Type: min
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock core_clk (rise edge)
+   0.902    0.902   clock network delay (propagated)
+   0.000    0.902 ^ network.neuron_out3.IF0.membrane_potential[7]$_SDFF_PP0_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.205    1.107 ^ network.neuron_out3.IF0.membrane_potential[7]$_SDFF_PP0_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.025    1.131 v _12789_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.045    1.176 ^ _12790_/Y (sky130_fd_sc_hd__nor2_1)
+   0.000    1.176 ^ network.neuron_out3.IF0.membrane_potential[7]$_SDFF_PP0_/D (sky130_fd_sc_hd__dfxtp_1)
+            1.176   data arrival time
+
+   0.000    0.000   clock core_clk (rise edge)
+   0.902    0.902   clock network delay (propagated)
+   0.400    1.302   clock uncertainty
+   0.000    1.302   clock reconvergence pessimism
+            1.302 ^ network.neuron_out3.IF0.membrane_potential[7]$_SDFF_PP0_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.018    1.284   library hold time
+            1.284   data required time
+-----------------------------------------------------------
+            1.284   data required time
+           -1.176   data arrival time
+-----------------------------------------------------------
+           -0.108   slack (VIOLATED)
+
+
+Startpoint: network.neuron_out1.IF0.membrane_potential[7]$_SDFF_PP0_
+            (rising edge-triggered flip-flop clocked by core_clk)
+Endpoint: network.neuron_out1.IF0.membrane_potential[7]$_SDFF_PP0_
+          (rising edge-triggered flip-flop clocked by core_clk)
+Path Group: core_clk
+Path Type: min
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock core_clk (rise edge)
+   0.904    0.904   clock network delay (propagated)
+   0.000    0.904 ^ network.neuron_out1.IF0.membrane_potential[7]$_SDFF_PP0_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.210    1.114 ^ network.neuron_out1.IF0.membrane_potential[7]$_SDFF_PP0_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.024    1.138 v _12844_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.045    1.183 ^ _12845_/Y (sky130_fd_sc_hd__nor2_1)
+   0.000    1.183 ^ network.neuron_out1.IF0.membrane_potential[7]$_SDFF_PP0_/D (sky130_fd_sc_hd__dfxtp_1)
+            1.183   data arrival time
+
+   0.000    0.000   clock core_clk (rise edge)
+   0.904    0.904   clock network delay (propagated)
+   0.400    1.304   clock uncertainty
+   0.000    1.304   clock reconvergence pessimism
+            1.304 ^ network.neuron_out1.IF0.membrane_potential[7]$_SDFF_PP0_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.018    1.286   library hold time
+            1.286   data required time
+-----------------------------------------------------------
+            1.286   data required time
+           -1.183   data arrival time
+-----------------------------------------------------------
+           -0.103   slack (VIOLATED)
+
+
+Startpoint: network.neuron_out4.IF0.membrane_potential[7]$_SDFF_PP0_
+            (rising edge-triggered flip-flop clocked by core_clk)
+Endpoint: network.neuron_out4.IF0.membrane_potential[7]$_SDFF_PP0_
+          (rising edge-triggered flip-flop clocked by core_clk)
+Path Group: core_clk
+Path Type: min
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock core_clk (rise edge)
+   0.905    0.905   clock network delay (propagated)
+   0.000    0.905 ^ network.neuron_out4.IF0.membrane_potential[7]$_SDFF_PP0_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.209    1.114 ^ network.neuron_out4.IF0.membrane_potential[7]$_SDFF_PP0_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.027    1.141 v _12762_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.045    1.186 ^ _12763_/Y (sky130_fd_sc_hd__nor2_1)
+   0.000    1.186 ^ network.neuron_out4.IF0.membrane_potential[7]$_SDFF_PP0_/D (sky130_fd_sc_hd__dfxtp_1)
+            1.186   data arrival time
+
+   0.000    0.000   clock core_clk (rise edge)
+   0.905    0.905   clock network delay (propagated)
+   0.400    1.305   clock uncertainty
+   0.000    1.305   clock reconvergence pessimism
+            1.305 ^ network.neuron_out4.IF0.membrane_potential[7]$_SDFF_PP0_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.018    1.287   library hold time
+            1.287   data required time
+-----------------------------------------------------------
+            1.287   data required time
+           -1.186   data arrival time
+-----------------------------------------------------------
+           -0.101   slack (VIOLATED)
+
+
+### violators
+Group                                    Slack
+----------------------------------------------
+core_clk                               -0.1173
+core_clk                               -0.1154
+core_clk                               -0.1080
+core_clk                               -0.1028
+core_clk                               -0.1006
+core_clk                               -0.0833
+core_clk                               -0.0831
+core_clk                               -0.0824
+core_clk                               -0.0822
+core_clk                               -0.0818
+core_clk                               -0.0816
+core_clk                               -0.0810
+core_clk                               -0.0805
+core_clk                               -0.0803
+core_clk                               -0.0792
+core_clk                               -0.0785
+core_clk                               -0.0778
+core_clk                               -0.0778
+core_clk                               -0.0777
+core_clk                               -0.0762
+core_clk                               -0.0761
+core_clk                               -0.0755
+core_clk                               -0.0751
+core_clk                               -0.0751
+core_clk                               -0.0748
+core_clk                               -0.0747
+core_clk                               -0.0747
+core_clk                               -0.0747
+core_clk                               -0.0743
+core_clk                               -0.0737
+core_clk                               -0.0737
+core_clk                               -0.0735
+core_clk                               -0.0733
+core_clk                               -0.0730
+core_clk                               -0.0727
+core_clk                               -0.0726
+core_clk                               -0.0723
+core_clk                               -0.0723
+core_clk                               -0.0721
+core_clk                               -0.0720
+core_clk                               -0.0712
+core_clk                               -0.0712
+core_clk                               -0.0711
+core_clk                               -0.0710
+core_clk                               -0.0709
+core_clk                               -0.0708
+core_clk                               -0.0707
+core_clk                               -0.0705
+core_clk                               -0.0704
+core_clk                               -0.0703
+core_clk                               -0.0702
+core_clk                               -0.0701
+core_clk                               -0.0700
+core_clk                               -0.0700
+core_clk                               -0.0700
+core_clk                               -0.0699
+core_clk                               -0.0698
+core_clk                               -0.0698
+core_clk                               -0.0697
+core_clk                               -0.0695
+core_clk                               -0.0695
+core_clk                               -0.0693
+core_clk                               -0.0692
+core_clk                               -0.0690
+core_clk                               -0.0689
+core_clk                               -0.0685
+core_clk                               -0.0681
+core_clk                               -0.0679
+core_clk                               -0.0678
+core_clk                               -0.0677
+core_clk                               -0.0676
+core_clk                               -0.0672
+core_clk                               -0.0671
+core_clk                               -0.0671
+core_clk                               -0.0670
+core_clk                               -0.0670
+core_clk                               -0.0669
+core_clk                               -0.0668
+core_clk                               -0.0667
+core_clk                               -0.0665
+core_clk                               -0.0665
+core_clk                               -0.0664
+core_clk                               -0.0661
+core_clk                               -0.0658
+core_clk                               -0.0654
+core_clk                               -0.0654
+core_clk                               -0.0651
+core_clk                               -0.0648
+core_clk                               -0.0648
+core_clk                               -0.0647
+core_clk                               -0.0644
+core_clk                               -0.0639
+core_clk                               -0.0638
+core_clk                               -0.0637
+core_clk                               -0.0636
+core_clk                               -0.0631
+core_clk                               -0.0630
+core_clk                               -0.0629
+core_clk                               -0.0628
+core_clk                               -0.0628
+core_clk                               -0.0626
+core_clk                               -0.0625
+core_clk                               -0.0625
+core_clk                               -0.0625
+core_clk                               -0.0623
+core_clk                               -0.0622
+core_clk                               -0.0619
+core_clk                               -0.0616
+core_clk                               -0.0614
+core_clk                               -0.0611
+core_clk                               -0.0610
+core_clk                               -0.0609
+core_clk                               -0.0608
+core_clk                               -0.0606
+core_clk                               -0.0606
+core_clk                               -0.0604
+core_clk                               -0.0603
+core_clk                               -0.0603
+core_clk                               -0.0600
+core_clk                               -0.0598
+core_clk                               -0.0596
+core_clk                               -0.0596
+core_clk                               -0.0594
+core_clk                               -0.0591
+core_clk                               -0.0590
+core_clk                               -0.0590
+core_clk                               -0.0590
+core_clk                               -0.0589
+core_clk                               -0.0584
+core_clk                               -0.0584
+core_clk                               -0.0584
+core_clk                               -0.0583
+core_clk                               -0.0582
+core_clk                               -0.0581
+core_clk                               -0.0579
+core_clk                               -0.0579
+core_clk                               -0.0578
+core_clk                               -0.0578
+core_clk                               -0.0577
+core_clk                               -0.0576
+core_clk                               -0.0573
+core_clk                               -0.0572
+core_clk                               -0.0571
+core_clk                               -0.0571
+core_clk                               -0.0570
+core_clk                               -0.0570
+core_clk                               -0.0569
+core_clk                               -0.0568
+core_clk                               -0.0568
+core_clk                               -0.0566
+core_clk                               -0.0564
+core_clk                               -0.0562
+core_clk                               -0.0560
+core_clk                               -0.0559
+core_clk                               -0.0557
+core_clk                               -0.0557
+core_clk                               -0.0556
+core_clk                               -0.0556
+core_clk                               -0.0555
+core_clk                               -0.0555
+core_clk                               -0.0554
+core_clk                               -0.0553
+core_clk                               -0.0551
+core_clk                               -0.0551
+core_clk                               -0.0549
+core_clk                               -0.0548
+core_clk                               -0.0548
+core_clk                               -0.0547
+core_clk                               -0.0546
+core_clk                               -0.0544
+core_clk                               -0.0543
+core_clk                               -0.0543
+core_clk                               -0.0541
+core_clk                               -0.0541
+core_clk                               -0.0540
+core_clk                               -0.0539
+core_clk                               -0.0538
+core_clk                               -0.0538
+core_clk                               -0.0537
+core_clk                               -0.0537
+core_clk                               -0.0536
+core_clk                               -0.0535
+core_clk                               -0.0534
+core_clk                               -0.0534
+core_clk                               -0.0534
+core_clk                               -0.0533
+core_clk                               -0.0533
+core_clk                               -0.0533
+core_clk                               -0.0532
+core_clk                               -0.0531
+core_clk                               -0.0530
+core_clk                               -0.0530
+core_clk                               -0.0529
+core_clk                               -0.0529
+core_clk                               -0.0528
+core_clk                               -0.0528
+core_clk                               -0.0528
+core_clk                               -0.0527
+core_clk                               -0.0527
+core_clk                               -0.0527
+core_clk                               -0.0526
+core_clk                               -0.0526
+core_clk                               -0.0524
+core_clk                               -0.0524
+core_clk                               -0.0520
+core_clk                               -0.0520
+core_clk                               -0.0518
+core_clk                               -0.0518
+core_clk                               -0.0517
+core_clk                               -0.0517
+core_clk                               -0.0515
+core_clk                               -0.0515
+core_clk                               -0.0515
+core_clk                               -0.0515
+core_clk                               -0.0514
+core_clk                               -0.0514
+core_clk                               -0.0513
+core_clk                               -0.0513
+core_clk                               -0.0512
+core_clk                               -0.0512
+core_clk                               -0.0511
+core_clk                               -0.0511
+core_clk                               -0.0511
+core_clk                               -0.0510
+core_clk                               -0.0510
+core_clk                               -0.0508
+core_clk                               -0.0508
+core_clk                               -0.0507
+core_clk                               -0.0507
+core_clk                               -0.0505
+core_clk                               -0.0505
+core_clk                               -0.0505
+core_clk                               -0.0505
+core_clk                               -0.0504
+core_clk                               -0.0504
+core_clk                               -0.0504
+core_clk                               -0.0504
+core_clk                               -0.0504
+core_clk                               -0.0504
+core_clk                               -0.0504
+core_clk                               -0.0503
+core_clk                               -0.0502
+core_clk                               -0.0501
+core_clk                               -0.0501
+core_clk                               -0.0501
+core_clk                               -0.0499
+core_clk                               -0.0499
+core_clk                               -0.0499
+core_clk                               -0.0498
+core_clk                               -0.0498
+core_clk                               -0.0498
+core_clk                               -0.0497
+core_clk                               -0.0495
+core_clk                               -0.0494
+core_clk                               -0.0494
+core_clk                               -0.0494
+core_clk                               -0.0494
+core_clk                               -0.0493
+core_clk                               -0.0492
+core_clk                               -0.0492
+core_clk                               -0.0492
+core_clk                               -0.0491
+core_clk                               -0.0490
+core_clk                               -0.0490
+core_clk                               -0.0487
+core_clk                               -0.0485
+core_clk                               -0.0485
+core_clk                               -0.0484
+core_clk                               -0.0484
+core_clk                               -0.0484
+core_clk                               -0.0484
+core_clk                               -0.0484
+core_clk                               -0.0484
+core_clk                               -0.0482
+core_clk                               -0.0482
+core_clk                               -0.0482
+core_clk                               -0.0481
+core_clk                               -0.0480
+core_clk                               -0.0480
+core_clk                               -0.0480
+core_clk                               -0.0480
+core_clk                               -0.0479
+core_clk                               -0.0479
+core_clk                               -0.0479
+core_clk                               -0.0479
+core_clk                               -0.0478
+core_clk                               -0.0476
+core_clk                               -0.0476
+core_clk                               -0.0476
+core_clk                               -0.0475
+core_clk                               -0.0475
+core_clk                               -0.0474
+core_clk                               -0.0474
+core_clk                               -0.0474
+core_clk                               -0.0473
+core_clk                               -0.0473
+core_clk                               -0.0473
+core_clk                               -0.0472
+core_clk                               -0.0470
+core_clk                               -0.0470
+core_clk                               -0.0469
+core_clk                               -0.0469
+core_clk                               -0.0468
+core_clk                               -0.0468
+core_clk                               -0.0467
+core_clk                               -0.0467
+core_clk                               -0.0467
+core_clk                               -0.0466
+core_clk                               -0.0466
+core_clk                               -0.0466
+core_clk                               -0.0465
+core_clk                               -0.0465
+core_clk                               -0.0464
+core_clk                               -0.0463
+core_clk                               -0.0463
+core_clk                               -0.0461
+core_clk                               -0.0461
+core_clk                               -0.0461
+core_clk                               -0.0461
+core_clk                               -0.0460
+core_clk                               -0.0460
+core_clk                               -0.0460
+core_clk                               -0.0459
+core_clk                               -0.0459
+core_clk                               -0.0459
+core_clk                               -0.0459
+core_clk                               -0.0459
+core_clk                               -0.0458
+core_clk                               -0.0458
+core_clk                               -0.0457
+core_clk                               -0.0457
+core_clk                               -0.0457
+core_clk                               -0.0456
+core_clk                               -0.0456
+core_clk                               -0.0455
+core_clk                               -0.0455
+core_clk                               -0.0454
+core_clk                               -0.0453
+core_clk                               -0.0453
+core_clk                               -0.0452
+core_clk                               -0.0452
+core_clk                               -0.0452
+core_clk                               -0.0450
+core_clk                               -0.0450
+core_clk                               -0.0450
+core_clk                               -0.0449
+core_clk                               -0.0449
+core_clk                               -0.0449
+core_clk                               -0.0449
+core_clk                               -0.0448
+core_clk                               -0.0448
+core_clk                               -0.0448
+core_clk                               -0.0447
+core_clk                               -0.0447
+core_clk                               -0.0447
+core_clk                               -0.0446
+core_clk                               -0.0444
+core_clk                               -0.0443
+core_clk                               -0.0443
+core_clk                               -0.0443
+core_clk                               -0.0442
+core_clk                               -0.0442
+core_clk                               -0.0441
+core_clk                               -0.0441
+core_clk                               -0.0440
+core_clk                               -0.0440
+core_clk                               -0.0440
+core_clk                               -0.0440
+core_clk                               -0.0439
+core_clk                               -0.0438
+core_clk                               -0.0438
+core_clk                               -0.0437
+core_clk                               -0.0437
+core_clk                               -0.0437
+core_clk                               -0.0437
+core_clk                               -0.0436
+core_clk                               -0.0435
+core_clk                               -0.0434
+core_clk                               -0.0434
+core_clk                               -0.0433
+core_clk                               -0.0433
+core_clk                               -0.0432
+core_clk                               -0.0432
+core_clk                               -0.0431
+core_clk                               -0.0431
+core_clk                               -0.0431
+core_clk                               -0.0430
+core_clk                               -0.0430
+core_clk                               -0.0429
+core_clk                               -0.0429
+core_clk                               -0.0428
+core_clk                               -0.0428
+core_clk                               -0.0428
+core_clk                               -0.0428
+core_clk                               -0.0428
+core_clk                               -0.0428
+core_clk                               -0.0427
+core_clk                               -0.0427
+core_clk                               -0.0427
+core_clk                               -0.0427
+core_clk                               -0.0426
+core_clk                               -0.0426
+core_clk                               -0.0426
+core_clk                               -0.0426
+core_clk                               -0.0426
+core_clk                               -0.0425
+core_clk                               -0.0425
+core_clk                               -0.0425
+core_clk                               -0.0424
+core_clk                               -0.0423
+core_clk                               -0.0423
+core_clk                               -0.0423
+core_clk                               -0.0422
+core_clk                               -0.0422
+core_clk                               -0.0422
+core_clk                               -0.0422
+core_clk                               -0.0421
+core_clk                               -0.0421
+core_clk                               -0.0421
+core_clk                               -0.0421
+core_clk                               -0.0420
+core_clk                               -0.0420
+core_clk                               -0.0420
+core_clk                               -0.0420
+core_clk                               -0.0419
+core_clk                               -0.0419
+core_clk                               -0.0418
+core_clk                               -0.0417
+core_clk                               -0.0416
+core_clk                               -0.0416
+core_clk                               -0.0416
+core_clk                               -0.0416
+core_clk                               -0.0415
+core_clk                               -0.0415
+core_clk                               -0.0415
+core_clk                               -0.0415
+core_clk                               -0.0413
+core_clk                               -0.0412
+core_clk                               -0.0412
+core_clk                               -0.0411
+core_clk                               -0.0411
+core_clk                               -0.0410
+core_clk                               -0.0409
+core_clk                               -0.0409
+core_clk                               -0.0408
+core_clk                               -0.0408
+core_clk                               -0.0407
+core_clk                               -0.0407
+core_clk                               -0.0407
+core_clk                               -0.0406
+core_clk                               -0.0406
+core_clk                               -0.0406
+core_clk                               -0.0406
+core_clk                               -0.0405
+core_clk                               -0.0404
+core_clk                               -0.0404
+core_clk                               -0.0404
+core_clk                               -0.0404
+core_clk                               -0.0403
+core_clk                               -0.0403
+core_clk                               -0.0402
+core_clk                               -0.0402
+core_clk                               -0.0401
+core_clk                               -0.0401
+core_clk                               -0.0399
+core_clk                               -0.0399
+core_clk                               -0.0397
+core_clk                               -0.0396
+core_clk                               -0.0396
+core_clk                               -0.0396
+core_clk                               -0.0396
+core_clk                               -0.0396
+core_clk                               -0.0395
+core_clk                               -0.0395
+core_clk                               -0.0395
+core_clk                               -0.0395
+core_clk                               -0.0395
+core_clk                               -0.0395
+core_clk                               -0.0394
+core_clk                               -0.0394
+core_clk                               -0.0394
+core_clk                               -0.0394
+core_clk                               -0.0393
+core_clk                               -0.0393
+core_clk                               -0.0393
+core_clk                               -0.0393
+core_clk                               -0.0392
+core_clk                               -0.0390
+core_clk                               -0.0390
+core_clk                               -0.0390
+core_clk                               -0.0390
+core_clk                               -0.0389
+core_clk                               -0.0389
+core_clk                               -0.0389
+core_clk                               -0.0389
+core_clk                               -0.0388
+core_clk                               -0.0388
+core_clk                               -0.0388
+core_clk                               -0.0388
+core_clk                               -0.0388
+core_clk                               -0.0387
+core_clk                               -0.0387
+core_clk                               -0.0387
+core_clk                               -0.0387
+core_clk                               -0.0386
+core_clk                               -0.0384
+core_clk                               -0.0384
+core_clk                               -0.0383
+core_clk                               -0.0383
+core_clk                               -0.0383
+core_clk                               -0.0382
+core_clk                               -0.0382
+core_clk                               -0.0382
+core_clk                               -0.0381
+core_clk                               -0.0380
+core_clk                               -0.0380
+core_clk                               -0.0380
+core_clk                               -0.0379
+core_clk                               -0.0378
+core_clk                               -0.0378
+core_clk                               -0.0377
+core_clk                               -0.0377
+core_clk                               -0.0377
+core_clk                               -0.0376
+core_clk                               -0.0376
+core_clk                               -0.0376
+core_clk                               -0.0376
+core_clk                               -0.0375
+core_clk                               -0.0375
+core_clk                               -0.0374
+core_clk                               -0.0373
+core_clk                               -0.0373
+core_clk                               -0.0373
+core_clk                               -0.0373
+core_clk                               -0.0373
+core_clk                               -0.0372
+core_clk                               -0.0372
+core_clk                               -0.0372
+core_clk                               -0.0371
+core_clk                               -0.0371
+core_clk                               -0.0370
+core_clk                               -0.0370
+core_clk                               -0.0370
+core_clk                               -0.0370
+core_clk                               -0.0370
+core_clk                               -0.0370
+core_clk                               -0.0369
+core_clk                               -0.0369
+core_clk                               -0.0368
+core_clk                               -0.0368
+core_clk                               -0.0367
+core_clk                               -0.0366
+core_clk                               -0.0366
+core_clk                               -0.0366
+core_clk                               -0.0365
+core_clk                               -0.0365
+core_clk                               -0.0365
+core_clk                               -0.0365
+core_clk                               -0.0364
+core_clk                               -0.0363
+core_clk                               -0.0363
+core_clk                               -0.0363
+core_clk                               -0.0363
+core_clk                               -0.0362
+core_clk                               -0.0361
+core_clk                               -0.0361
+core_clk                               -0.0361
+core_clk                               -0.0360
+core_clk                               -0.0360
+core_clk                               -0.0359
+core_clk                               -0.0358
+core_clk                               -0.0357
+core_clk                               -0.0357
+core_clk                               -0.0356
+core_clk                               -0.0355
+core_clk                               -0.0355
+core_clk                               -0.0354
+core_clk                               -0.0354
+core_clk                               -0.0353
+core_clk                               -0.0353
+core_clk                               -0.0352
+core_clk                               -0.0352
+core_clk                               -0.0352
+core_clk                               -0.0352
+core_clk                               -0.0352
+core_clk                               -0.0351
+core_clk                               -0.0351
+core_clk                               -0.0351
+core_clk                               -0.0349
+core_clk                               -0.0349
+core_clk                               -0.0349
+core_clk                               -0.0349
+core_clk                               -0.0349
+core_clk                               -0.0348
+core_clk                               -0.0347
+core_clk                               -0.0347
+core_clk                               -0.0346
+core_clk                               -0.0346
+core_clk                               -0.0346
+core_clk                               -0.0345
+core_clk                               -0.0345
+core_clk                               -0.0344
+core_clk                               -0.0343
+core_clk                               -0.0343
+core_clk                               -0.0343
+core_clk                               -0.0342
+core_clk                               -0.0342
+core_clk                               -0.0342
+core_clk                               -0.0342
+core_clk                               -0.0342
+core_clk                               -0.0342
+core_clk                               -0.0341
+core_clk                               -0.0340
+core_clk                               -0.0339
+core_clk                               -0.0338
+core_clk                               -0.0338
+core_clk                               -0.0338
+core_clk                               -0.0338
+core_clk                               -0.0337
+core_clk                               -0.0336
+core_clk                               -0.0336
+core_clk                               -0.0336
+core_clk                               -0.0336
+core_clk                               -0.0335
+core_clk                               -0.0334
+core_clk                               -0.0334
+core_clk                               -0.0334
+core_clk                               -0.0333
+core_clk                               -0.0333
+core_clk                               -0.0333
+core_clk                               -0.0333
+core_clk                               -0.0333
+core_clk                               -0.0331
+core_clk                               -0.0331
+core_clk                               -0.0331
+core_clk                               -0.0331
+core_clk                               -0.0329
+core_clk                               -0.0328
+core_clk                               -0.0328
+core_clk                               -0.0328
+core_clk                               -0.0327
+core_clk                               -0.0326
+core_clk                               -0.0326
+core_clk                               -0.0326
+core_clk                               -0.0325
+core_clk                               -0.0325
+core_clk                               -0.0324
+core_clk                               -0.0323
+core_clk                               -0.0322
+core_clk                               -0.0322
+core_clk                               -0.0321
+core_clk                               -0.0321
+core_clk                               -0.0320
+core_clk                               -0.0320
+core_clk                               -0.0320
+core_clk                               -0.0320
+core_clk                               -0.0319
+core_clk                               -0.0319
+core_clk                               -0.0318
+core_clk                               -0.0318
+core_clk                               -0.0317
+core_clk                               -0.0317
+core_clk                               -0.0316
+core_clk                               -0.0316
+core_clk                               -0.0316
+core_clk                               -0.0316
+core_clk                               -0.0316
+core_clk                               -0.0316
+core_clk                               -0.0316
+core_clk                               -0.0315
+core_clk                               -0.0315
+core_clk                               -0.0315
+core_clk                               -0.0315
+core_clk                               -0.0314
+core_clk                               -0.0314
+core_clk                               -0.0313
+core_clk                               -0.0313
+core_clk                               -0.0312
+core_clk                               -0.0312
+core_clk                               -0.0312
+core_clk                               -0.0312
+core_clk                               -0.0312
+core_clk                               -0.0312
+core_clk                               -0.0312
+core_clk                               -0.0312
+core_clk                               -0.0312
+core_clk                               -0.0311
+core_clk                               -0.0311
+core_clk                               -0.0310
+core_clk                               -0.0310
+core_clk                               -0.0310
+core_clk                               -0.0310
+core_clk                               -0.0310
+core_clk                               -0.0309
+core_clk                               -0.0309
+core_clk                               -0.0309
+core_clk                               -0.0308
+core_clk                               -0.0308
+core_clk                               -0.0308
+core_clk                               -0.0307
+core_clk                               -0.0307
+core_clk                               -0.0306
+core_clk                               -0.0306
+core_clk                               -0.0305
+core_clk                               -0.0304
+core_clk                               -0.0304
+core_clk                               -0.0304
+core_clk                               -0.0304
+core_clk                               -0.0303
+core_clk                               -0.0302
+core_clk                               -0.0301
+core_clk                               -0.0301
+core_clk                               -0.0300
+core_clk                               -0.0300
+core_clk                               -0.0300
+core_clk                               -0.0300
+core_clk                               -0.0299
+core_clk                               -0.0298
+core_clk                               -0.0298
+core_clk                               -0.0298
+core_clk                               -0.0297
+core_clk                               -0.0297
+core_clk                               -0.0296
+core_clk                               -0.0296
+core_clk                               -0.0296
+core_clk                               -0.0296
+core_clk                               -0.0295
+core_clk                               -0.0295
+core_clk                               -0.0294
+core_clk                               -0.0293
+core_clk                               -0.0293
+core_clk                               -0.0292
+core_clk                               -0.0292
+core_clk                               -0.0291
+core_clk                               -0.0290
+core_clk                               -0.0289
+core_clk                               -0.0289
+core_clk                               -0.0289
+core_clk                               -0.0289
+core_clk                               -0.0288
+core_clk                               -0.0288
+core_clk                               -0.0288
+core_clk                               -0.0287
+core_clk                               -0.0287
+core_clk                               -0.0287
+core_clk                               -0.0287
+core_clk                               -0.0286
+core_clk                               -0.0285
+core_clk                               -0.0285
+core_clk                               -0.0285
+core_clk                               -0.0284
+core_clk                               -0.0284
+core_clk                               -0.0284
+core_clk                               -0.0283
+core_clk                               -0.0282
+core_clk                               -0.0282
+core_clk                               -0.0282
+core_clk                               -0.0280
+core_clk                               -0.0280
+core_clk                               -0.0279
+core_clk                               -0.0279
+core_clk                               -0.0279
+core_clk                               -0.0278
+core_clk                               -0.0278
+core_clk                               -0.0278
+core_clk                               -0.0277
+core_clk                               -0.0276
+core_clk                               -0.0276
+core_clk                               -0.0276
+core_clk                               -0.0276
+core_clk                               -0.0275
+core_clk                               -0.0275
+core_clk                               -0.0275
+core_clk                               -0.0273
+core_clk                               -0.0273
+core_clk                               -0.0272
+core_clk                               -0.0271
+core_clk                               -0.0271
+core_clk                               -0.0270
+core_clk                               -0.0269
+core_clk                               -0.0269
+core_clk                               -0.0269
+core_clk                               -0.0269
+core_clk                               -0.0268
+core_clk                               -0.0268
+core_clk                               -0.0267
+core_clk                               -0.0266
+core_clk                               -0.0266
+core_clk                               -0.0263
+core_clk                               -0.0263
+core_clk                               -0.0262
+core_clk                               -0.0261
+core_clk                               -0.0261
+core_clk                               -0.0260
+core_clk                               -0.0259
+core_clk                               -0.0259
+core_clk                               -0.0259
+core_clk                               -0.0259
+core_clk                               -0.0259
+core_clk                               -0.0259
+core_clk                               -0.0258
+core_clk                               -0.0258
+core_clk                               -0.0257
+core_clk                               -0.0257
+core_clk                               -0.0257
+core_clk                               -0.0257
+core_clk                               -0.0256
+core_clk                               -0.0255
+core_clk                               -0.0255
+core_clk                               -0.0255
+core_clk                               -0.0254
+core_clk                               -0.0253
+core_clk                               -0.0253
+core_clk                               -0.0252
+core_clk                               -0.0251
+core_clk                               -0.0251
+core_clk                               -0.0250
+core_clk                               -0.0250
+core_clk                               -0.0250
+core_clk                               -0.0250
+core_clk                               -0.0249
+core_clk                               -0.0249
+core_clk                               -0.0248
+core_clk                               -0.0248
+core_clk                               -0.0247
+core_clk                               -0.0247
+core_clk                               -0.0247
+core_clk                               -0.0247
+core_clk                               -0.0246
+core_clk                               -0.0246
+core_clk                               -0.0246
+core_clk                               -0.0246
+core_clk                               -0.0244
+core_clk                               -0.0244
+core_clk                               -0.0243
+core_clk                               -0.0242
+core_clk                               -0.0241
+core_clk                               -0.0241
+core_clk                               -0.0241
+core_clk                               -0.0240
+core_clk                               -0.0239
+core_clk                               -0.0239
+core_clk                               -0.0239
+core_clk                               -0.0238
+core_clk                               -0.0238
+core_clk                               -0.0237
+core_clk                               -0.0237
+core_clk                               -0.0237
+core_clk                               -0.0237
+core_clk                               -0.0236
+core_clk                               -0.0236
+core_clk                               -0.0236
+core_clk                               -0.0234
+core_clk                               -0.0234
+core_clk                               -0.0234
+core_clk                               -0.0234
+core_clk                               -0.0234
+core_clk                               -0.0233
+core_clk                               -0.0232
+core_clk                               -0.0232
+core_clk                               -0.0232
+core_clk                               -0.0232
+core_clk                               -0.0232
+core_clk                               -0.0231
+core_clk                               -0.0230
+core_clk                               -0.0229
+core_clk                               -0.0229
+core_clk                               -0.0229
+core_clk                               -0.0229
+core_clk                               -0.0227
+core_clk                               -0.0227
+core_clk                               -0.0226
+core_clk                               -0.0225
+core_clk                               -0.0224
+core_clk                               -0.0224
+core_clk                               -0.0223
+core_clk                               -0.0223
+core_clk                               -0.0223
+core_clk                               -0.0223
+core_clk                               -0.0222
+core_clk                               -0.0222
+core_clk                               -0.0220
+core_clk                               -0.0219
+core_clk                               -0.0219
+core_clk                               -0.0219
+core_clk                               -0.0218
+core_clk                               -0.0218
+core_clk                               -0.0217
+core_clk                               -0.0215
+core_clk                               -0.0215
+core_clk                               -0.0214
+core_clk                               -0.0213
+core_clk                               -0.0212
+core_clk                               -0.0212
+core_clk                               -0.0211
+core_clk                               -0.0209
+core_clk                               -0.0208
+core_clk                               -0.0208
+core_clk                               -0.0208
+core_clk                               -0.0208
+core_clk                               -0.0207
+core_clk                               -0.0207
+core_clk                               -0.0207
+core_clk                               -0.0206
+core_clk                               -0.0205
+core_clk                               -0.0205
+core_clk                               -0.0203
+core_clk                               -0.0202
+core_clk                               -0.0202
+core_clk                               -0.0201
+core_clk                               -0.0201
+core_clk                               -0.0201
+core_clk                               -0.0200
+core_clk                               -0.0199
+core_clk                               -0.0197
+core_clk                               -0.0197
+core_clk                               -0.0196
+core_clk                               -0.0196
+core_clk                               -0.0195
+core_clk                               -0.0194
+core_clk                               -0.0194
+core_clk                               -0.0193
+core_clk                               -0.0193
+core_clk                               -0.0192
+core_clk                               -0.0192
+core_clk                               -0.0192
+core_clk                               -0.0191
+core_clk                               -0.0190
+core_clk                               -0.0190
+core_clk                               -0.0189
+core_clk                               -0.0188
+core_clk                               -0.0188
+core_clk                               -0.0186
+core_clk                               -0.0185
+core_clk                               -0.0185
+core_clk                               -0.0185
+core_clk                               -0.0184
+core_clk                               -0.0184
+core_clk                               -0.0184
+core_clk                               -0.0183
+core_clk                               -0.0183
+core_clk                               -0.0183
+core_clk                               -0.0181
+core_clk                               -0.0180
+core_clk                               -0.0179
+core_clk                               -0.0178
+core_clk                               -0.0177
+core_clk                               -0.0175
+core_clk                               -0.0175
+core_clk                               -0.0174
+core_clk                               -0.0173
+core_clk                               -0.0173
+core_clk                               -0.0173
+core_clk                               -0.0172
+core_clk                               -0.0172
+core_clk                               -0.0172
+core_clk                               -0.0171
+core_clk                               -0.0171
+core_clk                               -0.0170
+core_clk                               -0.0169
+core_clk                               -0.0169
+core_clk                               -0.0168
+core_clk                               -0.0167
+core_clk                               -0.0167
+core_clk                               -0.0166
+core_clk                               -0.0165
+core_clk                               -0.0164
+core_clk                               -0.0163
+core_clk                               -0.0162
+core_clk                               -0.0161
+core_clk                               -0.0161
+core_clk                               -0.0161
+core_clk                               -0.0158
+core_clk                               -0.0158
+core_clk                               -0.0158
+core_clk                               -0.0157
+core_clk                               -0.0156
+core_clk                               -0.0156
+core_clk                               -0.0154
+core_clk                               -0.0154
+core_clk                               -0.0154
+core_clk                               -0.0153
+core_clk                               -0.0152
+core_clk                               -0.0151
+core_clk                               -0.0151
+core_clk                               -0.0150
+core_clk                               -0.0149
+core_clk                               -0.0149
+core_clk                               -0.0148
+core_clk                               -0.0148
+core_clk                               -0.0148
+core_clk                               -0.0147
+core_clk                               -0.0147
+core_clk                               -0.0146
+core_clk                               -0.0146
+core_clk                               -0.0145
+core_clk                               -0.0145
+core_clk                               -0.0144
+core_clk                               -0.0143
+core_clk                               -0.0142
+core_clk                               -0.0140
+core_clk                               -0.0139
+core_clk                               -0.0137
+core_clk                               -0.0137
+core_clk                               -0.0136
+core_clk                               -0.0136
+core_clk                               -0.0134
+core_clk                               -0.0132
+core_clk                               -0.0129
+core_clk                               -0.0127
+core_clk                               -0.0127
+core_clk                               -0.0126
+core_clk                               -0.0126
+core_clk                               -0.0126
+core_clk                               -0.0126
+core_clk                               -0.0123
+core_clk                               -0.0123
+core_clk                               -0.0121
+core_clk                               -0.0120
+core_clk                               -0.0120
+core_clk                               -0.0119
+core_clk                               -0.0119
+core_clk                               -0.0119
+core_clk                               -0.0118
+core_clk                               -0.0115
+core_clk                               -0.0115
+core_clk                               -0.0114
+core_clk                               -0.0113
+core_clk                               -0.0111
+core_clk                               -0.0111
+core_clk                               -0.0111
+core_clk                               -0.0109
+core_clk                               -0.0108
+core_clk                               -0.0107
+core_clk                               -0.0104
+core_clk                               -0.0104
+core_clk                               -0.0102
+core_clk                               -0.0101
+core_clk                               -0.0099
+core_clk                               -0.0098
+core_clk                               -0.0098
+core_clk                               -0.0098
+core_clk                               -0.0097
+core_clk                               -0.0097
+core_clk                               -0.0096
+core_clk                               -0.0093
+core_clk                               -0.0093
+core_clk                               -0.0092
+core_clk                               -0.0092
+core_clk                               -0.0089
+core_clk                               -0.0089
+core_clk                               -0.0088
+core_clk                               -0.0085
+core_clk                               -0.0085
+core_clk                               -0.0084
+core_clk                               -0.0084
+core_clk                               -0.0084
+core_clk                               -0.0081
+core_clk                               -0.0081
+core_clk                               -0.0078
+core_clk                               -0.0077
+core_clk                               -0.0077
+core_clk                               -0.0075
+core_clk                               -0.0074
+core_clk                               -0.0073
+core_clk                               -0.0072
+core_clk                               -0.0072
+core_clk                               -0.0072
+core_clk                               -0.0071
+core_clk                               -0.0070
+core_clk                               -0.0070
+core_clk                               -0.0068
+core_clk                               -0.0066
+core_clk                               -0.0064
+core_clk                               -0.0064
+core_clk                               -0.0063
+core_clk                               -0.0060
+core_clk                               -0.0060
+core_clk                               -0.0060
+core_clk                               -0.0059
+core_clk                               -0.0058
+core_clk                               -0.0056
+core_clk                               -0.0056
+core_clk                               -0.0055
+core_clk                               -0.0054
+core_clk                               -0.0054
+core_clk                               -0.0053
+core_clk                               -0.0052
+core_clk                               -0.0051
+core_clk                               -0.0050
+core_clk                               -0.0048
+core_clk                               -0.0047
+core_clk                               -0.0045
+core_clk                               -0.0044
+core_clk                               -0.0043
+core_clk                               -0.0043
+core_clk                               -0.0043
+core_clk                               -0.0041
+core_clk                               -0.0041
+core_clk                               -0.0040
+core_clk                               -0.0038
+core_clk                               -0.0038
+core_clk                               -0.0037
+core_clk                               -0.0037
+core_clk                               -0.0037
+core_clk                               -0.0035
+core_clk                               -0.0035
+core_clk                               -0.0034
+core_clk                               -0.0033
+core_clk                               -0.0033
+core_clk                               -0.0032
+core_clk                               -0.0031
+core_clk                               -0.0030
+core_clk                               -0.0029
+core_clk                               -0.0028
+core_clk                               -0.0026
+core_clk                               -0.0026
+core_clk                               -0.0025
+core_clk                               -0.0025
+core_clk                               -0.0024
+core_clk                               -0.0024
+core_clk                               -0.0023
+core_clk                               -0.0022
+core_clk                               -0.0022
+core_clk                               -0.0020
+core_clk                               -0.0019
+core_clk                               -0.0018
+core_clk                               -0.0018
+core_clk                               -0.0018
+core_clk                               -0.0017
+core_clk                               -0.0017
+core_clk                               -0.0016
+core_clk                               -0.0016
+core_clk                               -0.0014
+core_clk                               -0.0014
+core_clk                               -0.0014
+core_clk                               -0.0013
+core_clk                               -0.0012
+core_clk                               -0.0012
+core_clk                               -0.0008
+core_clk                               -0.0007
+core_clk                               -0.0005
+core_clk                               -0.0004
+core_clk                               -0.0002
+core_clk                               -0.0002
+core_clk                               -0.0002
+core_clk                               -0.0001
+core_clk                                0.0000
+
+### end violators
+### clock skew
+Clock core_clk
+  0.880 source latency state[0]$_SDFFE_PP0P_/CLK ^
+ -0.151 target latency icg_net.icg/CLK ^
+  0.400 clock uncertainty
+  0.000 CRPR
+--------------
+  1.129 setup skew
+

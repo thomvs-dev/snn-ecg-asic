@@ -12,16 +12,16 @@ fabricated silicon or a fabrication-ready chip.
 | | Result | Evidence type |
 |---|---|---|
 | Function | Final post-route netlist matches the reference RTL on all 500 supplied vectors (class, timeout, cycle count); directed protocol bench passes | zero-delay simulation |
-| Timing | 40 ns (25 MHz), TT 25 °C 1.8 V, extracted RC: setup WNS +29.86 ns, hold WNS +0.047 ns, TNS 0 | STA, one corner |
+| Timing | 40 ns (25 MHz): clean at TT (setup +29.86 ns, hold +0.047 ns). **Not clean at other corners:** ff hold −0.12 ns, ss slew/cap violations; fix pending | STA, TT/ff/ss library corners |
 | Layout | 609.36 × 609.36 µm die; 16,632 cells (excluding fillers), 137,481 µm², 39.7 % utilization | routed GDS |
-| Physical checks | Router 0 violations; antenna 0 after repair; KLayout DRC 0 (BEOL + off-grid only; FEOL off); LVS match | platform decks, not foundry signoff |
+| Physical checks | Router 0; antenna 0; full-chip DRC with open_pdks mr deck: base 2 (met3 min-area at pins), clock-gated 0; LVS match; pin shapes missing on the drawing layer (fix pending) | open_pdks and ORFS decks, not foundry signoff |
 | Power | 5.74 mW over a 20-vector, 628.861 µs window (3.61 µJ); 5.68 mW clock-on idle | OpenSTA estimate |
 | Accuracy | Not computable: no labels supplied | — |
 
 ![Routed layout, full die](reports/layout_full_readable.png)
 
 A clock-gated variant cuts the estimated clock-running idle power from 5.68 mW to 0.114 mW
-(49.6× lower) and the 20-vector window energy from 3.61 to 2.14 µJ, at +3 % cell area and with
+(49.6× lower; 4.6 µW at a 1 MHz clock) and the 20-vector window energy from 3.61 to 2.14 µJ, at +3 % cell area and with
 the same function, DRC/LVS and timing status; see [docs/CLOCK_GATING.md](docs/CLOCK_GATING.md).
 The numbers above are for the ungated baseline.
 

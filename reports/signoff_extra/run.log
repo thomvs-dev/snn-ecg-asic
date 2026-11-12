@@ -1,0 +1,13 @@
+=== 2026-11-11T17:40:00+00:00 START corner_libs
+=== 2026-11-11T17:45:41+00:00 OK    corner_libs (341 s)
+=== 2026-11-11T17:45:41+00:00 START sta_corners
+=== 2026-11-11T17:47:05+00:00 OK    sta_corners (84 s)
+=== 2026-11-11T17:47:05+00:00 START drc_feol
+=== 2026-11-11T20:46:45+00:00 START drc_feol
+=== 2026-11-12T05:44:24+00:00 START drc_feol
+=== 2026-11-12T05:48:35+00:00 OK    drc_feol (251 s)
+=== 2026-11-12T05:48:35+00:00 START power_sweep
+=== 2026-11-12T05:56:20+00:00 OK    power_sweep (465 s)
+=== 2026-11-12T05:56:20+00:00 START summarize
+=== 2026-11-12T05:56:23+00:00 OK    summarize (3 s)
+Done: reports/signoff_extra/summary.md
