@@ -21,7 +21,6 @@ for comparison; see [reports/cg2/comparison.md](reports/cg2/comparison.md).
 | Layout | 494.35 × 494.35 µm die; 15,357 cells (excluding fillers), 2,624 flip-flops, 138,239 µm², 61.6 % utilization | routed GDS |
 | Physical checks | Router 0; antenna 0; DRC 0 with both the ORFS deck and the open_pdks mr deck (full chip, including pin metal and engraving); LVS match | open_pdks and ORFS decks, not foundry signoff |
 | Power | Idle with clock running 0.111 mW (baseline 5.68 mW, −98 %); 20-vector, 628.861 µs window 3.25 mW / 2.04 µJ (baseline 3.61 µJ, −43 %); +0.6 % cell area | OpenSTA estimate, TT 25 °C 1.8 V |
-| Accuracy | Not computable: no labels supplied | — |
 
 ![Routed layout of the final cg2 core](reports/layout_full_readable_cg2.png)
 
