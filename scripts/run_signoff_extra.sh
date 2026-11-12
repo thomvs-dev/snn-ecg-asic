@@ -18,8 +18,11 @@ step() {
   local name=$1; shift
   echo "=== $(date -Is) START $name" | tee -a "$LOG"
   local t0=$SECONDS
-  if ( set -e; "$@" ); then echo "=== $(date -Is) OK    $name ($((SECONDS - t0)) s)" | tee -a "$LOG"
-  else echo "=== $(date -Is) FAIL  $name ($((SECONDS - t0)) s)" | tee -a "$LOG"; exit 1; fi
+  # Not inside "if": bash ignores set -e in if-conditions, even in subshells.
+  local rc=0
+  set +e; ( set -e; "$@" ); rc=$?; set -e
+  if [ $rc -eq 0 ]; then echo "=== $(date -Is) OK    $name ($((SECONDS - t0)) s)" | tee -a "$LOG"
+  else echo "=== $(date -Is) FAIL  $name ($((SECONDS - t0)) s, exit $rc)" | tee -a "$LOG"; exit 1; fi
 }
 orfs() { docker run --rm "$@"; }
 
@@ -107,7 +110,8 @@ power_sweep() {
 }
 
 # ONLY="drc_feol power_sweep summarize" runs a subset (completed steps are not repeated).
-run() { [ -z "${ONLY:-}" ] || [[ " $ONLY " == *" $1 "* ]] && step "$@" || true; }
+# step must not run inside an && / || list: bash ignores set -e there, even in subshells.
+run() { if [ -z "${ONLY:-}" ] || [[ " $ONLY " == *" $1 "* ]]; then step "$@"; fi; }
 run corner_libs get_libs
 run sta_corners sta_all
 run drc_feol    drc_feol

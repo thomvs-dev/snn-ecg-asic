@@ -33,6 +33,12 @@ def sub(s, old, new):
     return s.replace(old, new)
 
 
+def write_if_changed(path, text):
+    """Rewrite only when content changes, so file timestamps (and ORFS make) are not disturbed."""
+    if not path.exists() or path.read_text() != text:
+        path.write_text(text)
+
+
 for p in sorted(SRC.glob('*.v')):
     s = p.read_text()
     if p.name == 'snn_network.v':
@@ -54,9 +60,9 @@ for p in sorted(SRC.glob('*.v')):
                 'snn_network network(.clk(clk_net), .clk_load(clk_load), .resetn(network_reset),')
         s = sub(s, '.load_valid(load_valid && load_ready)', '.load_valid(load_fire)')
         s = s.replace('// MIT; wrapper for the upstream ECG SNN.', '// MIT; clock-gated wrapper for the upstream ECG SNN.')
-    (OUT / p.name).write_text(s)
+    write_if_changed(OUT / p.name, s)
 
-(OUT / 'clock_gate.v').write_text('''// MIT. Integrated clock gate: SKY130 latch-based ICG (enable latched while
+write_if_changed(OUT / 'clock_gate.v', '''// MIT. Integrated clock gate: SKY130 latch-based ICG (enable latched while
 // clk is low, gclk = clk & latched enable), glitch-free by construction.
 // Instantiated unconditionally so synthesis never depends on a macro.
 // Simulation: add tb/sky130_icg_model.v (behavioural model of this cell).

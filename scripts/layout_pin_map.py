@@ -26,7 +26,7 @@ for blk in deff[deff.index('\nPINS'):deff.index('END PINS')].split('\n    - ')[1
     name = blk.split()[0]
     d = re.search(r'DIRECTION (\w+)', blk).group(1)
     layer = re.search(r'LAYER (\w+)', blk).group(1)
-    px, py = map(int, re.search(r'PLACED \( (-?\d+) (-?\d+) \)', blk).groups())
+    px, py = map(int, re.search(r'(?:PLACED|FIXED) \( (-?\d+) (-?\d+) \)', blk).groups())
     pins.append((name, d, layer, px, py))
 
 base = Image.open(root / f'reports/layout_full_readable{SUF}.png').convert('RGB')

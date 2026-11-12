@@ -1,0 +1,9 @@
+input /work/physical/results/sky130hd/ecg_snn_core/cg2/6_final.gds
+npc spacing violations before: 1
+  violation at (471.705,461.495;471.96,461.634): added 0.0127 um2
+spacing violations after: 0
+width violations after: 0
+non-Manhattan edges in added area: 0
+off-grid vertices in added area: 0
+RESULT: PASS
+output /work/physical/results/sky130hd/ecg_snn_core/cg2/6_final.gds

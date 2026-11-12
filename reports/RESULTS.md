@@ -268,6 +268,39 @@ results unchanged, because the inputs are pre-computed period codes, but it
 means the tick no longer matches the original design's 100 µs interval.
 Leakage (~51 nW) is about 1 % of the gated-design power at 1 MHz.
 
+## Variant cg2: denser core, evenly spaced pins, pin metal (2026-11-12)
+
+Same RTL and constraints as cg. `CORE_UTILIZATION` 55 (cg: 35); inputs evenly
+spaced on the west edge and outputs on the east edge (`flow_cg2/io.tcl`); pin
+rectangles copied onto the drawing layer after GDS export (`scripts/pin_metal.py`;
+the ORFS output is kept as `6_final_no_pin_metal.gds`). DRC and LVS ran on the
+modified GDS. Run log: `reports/cg2/run_all.log`; table:
+`reports/cg2/comparison.md`.
+
+| | cg | cg2 |
+|---|---|---|
+| Die | 614.63 µm square | **494.35 µm square (−35 % area)** |
+| Utilization / cells / area | 40.2 % / 17,184 / 141,565 µm² | 61.6 % / 15,357 / 138,239 µm² |
+| Post-route netlist 500 vectors + protocol | PASS | PASS (predictions byte-identical to baseline.csv) |
+| Pins | clustered by ORFS; drawn metal ~30 % of pin | 8 inputs west, 23 outputs east, evenly spaced; drawn metal 100 % of pin |
+| ORFS DRC / LVS / antenna | 0 / match / 0 | 0 / match / 0 |
+| Full-chip DRC (sky130A_mr.drc) | 0 | **0** after merging one npc notch (0.255 × 0.05 µm between abutting `conb_1` and `o21ai_0`; `scripts/npc_fix.py`, report `reports/cg2/npc_fix.txt`) |
+| TT setup / hold WNS | +28.82 / +0.044 ns | +28.60 / +0.036 ns |
+| ff hold | −0.117 ns, 1,147 endpoints | −0.143 ns, 1,426 endpoints, TNS −112.4 ns |
+| ss slew / cap violations | 464 / 50 | 547 / 58 (setup +25.03 ns) |
+| Window power / energy (25 MHz) | 3.397 mW / 2.136 µJ | 3.251 mW / 2.044 µJ |
+| Idle power (25 MHz) | 114.5 µW | 111.1 µW |
+
+The denser placement makes the corner issues slightly worse. They remain
+deferred: no timing margins were added. The single npc.2 hit (a notch between
+abutting cells, which the rule text says should be merged) was fixed by a
+local closing of npc in the GDS. The fix was checked for no npc spacing/width
+violations, Manhattan edges and the 5 nm grid. ORFS DRC, LVS and the full-chip
+deck were then rerun: 0 / match / 0. During that rerun ORFS repeated the whole
+flow (rtl_cg timestamps had changed). A layer-by-layer XOR showed the new
+layout identical to the first, so the cg2 timing, power and netlist results
+stand.
+
 ## Limitations and negative findings
 
 - Supplied inputs are six-bit; the RTL keeps the low four bits. 125,332 of

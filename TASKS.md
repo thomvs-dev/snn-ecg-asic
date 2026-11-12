@@ -23,7 +23,8 @@
 - [x] Full-chip DRC with open_pdks mr deck: cg 0, base 2 (m3.6 at pins).
 - [x] Power vs clock frequency: cg 4.73 µW at 1 MHz, 1 beat/s.
 - [ ] Deferred (2026-11-12): rerun with hold/slew/cap margins and separate hold uncertainty (ff hold, ss slew/cap).
-- [ ] Deferred: pin plan (pins currently clustered by ORFS) and pin shapes on the drawing layer.
+- [x] cg2: evenly spaced pins, denser core (61.6 %, die 494 µm), pin metal on drawing layer; LVS match, 500/500 PASS.
+- [x] cg2: npc.2 notch merged; full-chip DRC 0, ORFS DRC 0, LVS match.
 - [ ] Power activity simulated on 6_final.v (ACT_NETLIST option) to remove the 1,482 unannotated pins.
 - [ ] Density/fill checks.
 - [ ] SDF-annotated gate simulation.
